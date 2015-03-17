@@ -1,10 +1,13 @@
 site_name: LoopLink PRO Help
 pages:
 - [index.md, Introducing LoopLink PRO]
+- [accounts.md, Account Management]
 - [project_list.md, Project List]
-- [project.md, Project]
+- [project.md, Create a New Project]
 - [zone_group.md, Zone Group]
 - [zone.md, Zone]
-- [ghex.md, GHEX]
-- [accounts.md, Account Management]
+- [hot_water.md, Hot Water Systems]
+- [vb_ghex.md, Vertically-Bored GHEX]
+- [hb_ghex.md, Horizontally-Bored GHEX]
+- [header.md, SDSU-RR Header Design]
 theme: readthedocs

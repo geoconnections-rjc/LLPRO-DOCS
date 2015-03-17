@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hot Water Systems - LoopLink PRO Help</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LoopLink PRO Help</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../accounts">Account Management</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../project_list">Project List</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../project">Create a New Project</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../zone_group">Zone Group</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../zone">Zone</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">Hot Water Systems</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../vb_ghex">Vertically-Bored GHEX</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../hb_ghex">Horizontally-Bored GHEX</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../header">SDSU-RR Header Design</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Hot Water Systems</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="hot-water">HOT WATER</h1>
+<p>Use this page to create a new hot water generation zone within the selected Zone Group. An unlimited number of hot water zones are allowed. Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120°F, although some may be able to reach hot water delivery temperatures up to 140°F. Consult with the manufacturer for more information.</p>
+<h2 id="hot-water-zone-name">HOT WATER ZONE NAME</h2>
+<hr />
+<ul>
+<li><strong>Name</strong> - Name the hot water zone currently being designed. An unlimited number of hot water zones are allowed.</li>
+</ul>
+<h2 id="peak-block-hot-water-generation">PEAK BLOCK HOT WATER GENERATION</h2>
+<hr />
+<p>Enter the hot water demand rates for each time block increment. <strong>The most critical values will be the maximum hot water generation loads placed in the time block in which they occur.</strong>  Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor. The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> hot water demand rates in each respective time period.</p>
+<hr />
+<ul>
+<li><strong><span style="background:#FEF1E1; margin:1px;">&nbsp;HEATING MODE HOT WATER DEMAND ENTRY&nbsp;</span></strong> - Enter hot water loads in the <span style="background:#FEF1E1; margin:1px;">&nbsp;HEATING COLUMN&nbsp;</span> to account for added peak heating demand and annual ground loads due to concurrent operation of the hot water generation and space conditioning (heating) system.<ul>
+<li>Doing so will increase heating GHEX design lengths for heating dominant applications.</li>
+<li>From a design standpoint, it is most conservative to give the hot water generation system full benefit when heating is the critical load requirement. </li>
+</ul>
+</li>
+<li><strong><span style="background:#DFE8F1; margin:1px;">&nbsp;COOLING MODE HOT WATER DEMAND ENTRY&nbsp;</span></strong> - Enter hot water loads in the <span style="background:#DFE8F1; margin:1px;">&nbsp;COOLING COLUMN&nbsp;</span> to account for reduced peak cooling demand and annual ground loads due to concurrent operation of the hot water generation and space conditioning (cooling) system.<ul>
+<li>Doing so will decrease cooling GHEX design lengths for cooling dominant applications.</li>
+<li>From a design standpoint, it is most conservative to give the hot water generation system zero benefit when cooling is the critical load requirement. </li>
+</ul>
+</li>
+</ul>
+<p><em>For more information on determining peak hot water demand rates for various types of buildings, refer to Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>, specifically:</em></p>
+<ul>
+<li><strong>Table 7 (page 50.14)</strong> - Hot-Water Demands and Use for Various Types of Buildings</li>
+<li><strong>Table 10 (page 50.20)</strong> - Hot-Water Demand per Fixture for Various Types of Buildings</li>
+</ul>
+<h2 id="average-generated-volume">AVERAGE GENERATED VOLUME</h2>
+<hr />
+<h3 id="simple-hot-water-consumption-entry">Simple Hot Water Consumption Entry</h3>
+<p>With this mode selected, the <strong>Detailed Monthly Hot Water Volume</strong> inputs are hidden.</p>
+<ul>
+<li><strong>Average Monthly Consumption</strong> - The predicted <strong>AVERAGE</strong> monthly hot water consumption for the zone, which is used to determine the annual energy requirements for the hot water zone as well as its associated heating ground load.</li>
+<li><strong>Months per Year</strong> - The number of months that the hot water generation system will operate. For example, a school typically operates 9 months in a year whereas a hotel operates year round.</li>
+<li><strong>Standing/Distribution Losses (% of Total)</strong> - The amount of heat lost from the hot water system through the storage and distribution piping components of the system, expressed as a percentage.<ul>
+<li>According to Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>, <em>"Energy losses from hot-water distribution systems usually amount to at least 10-20% of total hot-water system energy use, and are often as high as 50%; losses of over 90% have been found in some installations."</em></li>
+<li>Proper hot-water distribution system design is extremely important.</li>
+</ul>
+</li>
+</ul>
+<h3 id="detailed-hot-water-consumption-entry">Detailed Hot Water Consumption Entry</h3>
+<p>With this mode selected, the <strong>Average Monthly Consumption</strong> and <strong>Months per Year</strong> inputs are hidden.</p>
+<ul>
+<li><strong>Detailed Hot Water Consumption Entry Mode</strong> - Enter the predicted <strong>AVERAGE</strong> volume of hot water used for each month of the year. </li>
+<li><strong>Standing/Distribution Losses (% of Total)</strong> - The amount of heat lost from the hot water system through the storage and distribution piping components of the system, expressed as a percentage.<ul>
+<li>According to Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>, <em>"Energy losses from hot-water distribution systems usually amount to at least 10-20% of total hot-water system energy use, and are often as high as 50%; losses of over 90% have been found in some installations."</em></li>
+<li>Proper hot-water distribution system design is extremely important.</li>
+</ul>
+</li>
+</ul>
+<h2 id="operating-conditions">OPERATING CONDITIONS</h2>
+<hr />
+<ul>
+<li><strong>Capacity</strong> - The capacity of the GSHP equipment being used for hot water generation, which must be large enough to meet the instantaneous load.<ul>
+<li><em>For more information on sizing refrigeration-based water heaters, refer to Page 50.27 in Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a></em></li>
+</ul>
+</li>
+<li><strong>Connected Flow</strong> - The required loop (source-side) flow rate for proper heat pump operation.<ul>
+<li>In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.</li>
+<li>This field will only appear if <strong>Connected</strong> is the chosen <strong>Flow Analysis Mode</strong> for the <strong>Zone Group</strong>.</li>
+</ul>
+</li>
+<li><strong>COPavg</strong> - The average heating efficiency of the hot water generation equipment, which is used to calculate the heat of extraction rate from the GHEX during hot water system operation.</li>
+<li><strong>Inlet Temperature</strong> - The temperature of the water entering the system before being heated.<ul>
+<li>A good first estimate for inlet water temperature is the local ground temperature. </li>
+</ul>
+</li>
+<li><strong>Setpoint Temperature</strong> - The desired heated water temperature to supply to the space.<ul>
+<li>Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120°F, although some may be able to reach hot water delivery temperatures up to 140°F.</li>
+<li>Consult with the manufacturer for more information.</li>
+</ul>
+</li>
+</ul>
+<h2 id="calculation-results">CALCULATION RESULTS</h2>
+<hr />
+<p>Calculation results are displayed in the left-hand output panel:</p>
+<ul>
+<li>Cooling mode calculation results are highlighted in <strong><span style="background:#DFE8F1; margin:1px;">&nbsp;BLUE&nbsp;</span></strong>.</li>
+<li>Heating mode calculations results are highlighted in <strong><span style="background:#FEF1E1; margin:1px;">&nbsp;YELLOW&nbsp;</span></strong>.</li>
+<li>Note that when an input is changed, the calculation results will not display on screen until the page is saved.</li>
+<li>Individual <strong>Zone</strong> outputs are shown on the top-half of the left-hand output panel. The aggregate <strong>Zone Group</strong> outputs (which include all space conditioning and hot water zone loads) are shown on the bottom-half of the output panel.</li>
+</ul>
+<h2 id="heat-energy-by-timeblock">HEAT ENERGY BY TIMEBLOCK</h2>
+<hr />
+<p>View the calculated loads (by time block) for the current <strong>Hot Water Zone</strong> according to the hot water generation rates entered.</p>
+<ul>
+<li><strong><span style="background:#FEF1E1; margin:1px;">&nbsp;HEATING LOAD BY TIME BLOCK&nbsp;</span></strong> - The calculated heating load increase (by time block) due to specified rate of hot water generation for the current <strong>Hot Water Zone</strong>.<ul>
+<li>This load will effectively increase the total heating load for the <strong>Zone Group</strong> as well as the associated GHEX design lengths. </li>
+</ul>
+</li>
+<li><strong><span style="background:#DFE8F1; margin:1px;">&nbsp;COOLING LOAD BY TIME BLOCK&nbsp;</span></strong> - The calculated cooling load reduction (by time block) due to specified rate of hot water generation (due to concurrent cooling mode operation) for the current <strong>Hot Water Zone</strong>.<ul>
+<li>This load will effectively decrease the total cooling load for the <strong>Zone Group</strong> as well as the associated GHEX design lengths. </li>
+</ul>
+</li>
+</ul>
+<h2 id="hwg-info">HWG INFO</h2>
+<hr />
+<ul>
+<li><strong>Ground Energy</strong> - The amount of heat energy extracted from the ground due to hot water system operation for the current <strong>Hot Water Zone</strong>.</li>
+<li><strong>Water Volume</strong> - The calculated volume of hot water generated annually for the current <strong>Hot Water Zone</strong>.</li>
+</ul>
+<h2 id="zone-group-design-day">ZONE GROUP DESIGN DAY</h2>
+<hr />
+<p>View the aggregate loads for the active <strong>Zone Group</strong>.</p>
+<ul>
+<li><strong><span style="background:#FEF1E1; margin:1px;">&nbsp;HEATING LOAD BY TIME BLOCK&nbsp;</span></strong> - The calculated heating loads (by time block) for all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><strong><span style="background:#DFE8F1; margin:1px;">&nbsp;COOLING LOAD BY TIME BLOCK&nbsp;</span></strong> - The calculated cooling loads (by time block) for all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><strong>Full Load Run Hours</strong> - The weighted average value for FLRHs, which considers all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+</ul>
+<h2 id="zone-group-equipment">ZONE GROUP EQUIPMENT</h2>
+<hr />
+<ul>
+<li><strong>Total Capacity</strong> - The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><strong>Sensible Capacity</strong> - The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the <strong>Zone Group</strong> (does not apply to heating).</li>
+<li><strong>Total Sizing</strong> - The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the <strong>Zone Group</strong>.<ul>
+<li>A value less than 100% indicates that the equipment is undersized relative to the peak load.</li>
+</ul>
+</li>
+<li><strong>Efficiency</strong> - The calculated cooling EER/heating COP for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><strong>Demand</strong> - The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+</ul>
+<h2 id="customer-support">CUSTOMER SUPPORT</h2>
+<hr />
+<p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com" title="LoopLink PRO Support">eMail</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.</p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../vb_ghex" class="btn btn-neutral float-right" title="Vertically-Bored GHEX"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../zone" class="btn btn-neutral" title="Zone"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../zone" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../vb_ghex" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
