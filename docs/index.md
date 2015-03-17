@@ -1,8 +1,3 @@
-################################################################## 
-# FIX MY LINKS DICKWAD http://stackoverflow.com/questions/4425198/markdown-target-blank
-################################################################## 
-
-
 # Welcome to LoopLink PRO
 LoopLink PRO is web-based software for commercial geothermal system design. It follows the general design procedure outlined in [Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems](http://www.techstreet.com/ashrae/products/1887017 "ASHRAE Publications") (Kavanaugh and Rafferty, 2014), which is as follows. 
 
