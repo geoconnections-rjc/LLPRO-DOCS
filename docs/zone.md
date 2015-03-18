@@ -1,20 +1,20 @@
-# ZONE
+# Zone
 
 Use this page to create a new zone within the selected Zone Group. An unlimited number of zones are allowed. 
 
-## ZONE NAME
+## Zone Name
 
 
 * **Name** Name the zone currently being designed. An unlimited number of zones are allowed.
 
 
-## LOAD PROFILE
+## Load Profile
 
 * <span class="term">Days Occupied Per Week</span> The days per week of building occupancy. If the building has periods of partial occupancy, these should be entered as a weighted average.
     * For example, if a building is occupied 8 hours per day Monday through Friday and 4 hours on Saturday, a value of 5.5 days per week is recommended. 
 Zone load entry will depend on the input method chosen:
 
-* **Simple Load Entry: Design Day** Manual Entry Only
+* **Simple Load Entry(Design Day)** Manual Entry Only
 * **Monthly Load Entry** Import or Manual Entry
 * **Hourly Load Entry** Import Only
 
