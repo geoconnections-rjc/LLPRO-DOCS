@@ -65,7 +65,7 @@ The temperature of the soil in the top 20 ft. of the earth's surface varies with
   
 **Refer to the figure below to view the correlation between u-bend pipe diameter, vertical bore depth, and gpm per flow path.**
 
-![Nominal Pipe Size vs. Bore Depth & GPM](/img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
+![Nominal Pipe Size vs. Bore Depth & GPM](img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
 
 * The target (optimum) flow rate versus pipe size is:
     * 2.8 - 3.2 gpm per loop for 0.75” loops
