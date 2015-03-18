@@ -72,13 +72,14 @@ The temperature of the soil in the top 20 ft. of the earth's surface varies with
 
 * The target (optimum) flow rate versus pipe size is:
 
-| Loop Diameter | Optimum Flow Range |
-| :-----------: | :----------------: |
-| 0.75&quot;    | 2.8 - 3.2 gpm      |
-| 1.00&quot;    | 4.0 - 6.0 gpm      |
-| 1.25&quot;    | 5.0 - 9.0 gpm      |
-   
-    Use of 1.5" and 2" loops is uncommon
+| Loop Diameter | Optimum Flow Range  |
+| :-----------: | :-----------------: |
+| 0.75&quot;    | 2.8 - 3.2 gpm       |
+| 1.00&quot;    | 4.0 - 6.0 gpm       |
+| 1.25&quot;    | 5.0 - 9.0 gpm       |
+| 1.50&quot;    | uncommon            |
+| 2.00&quot;    | uncommon            |
+
 * Design the GHEX to stay within the provided flow ranges (per parallel loop) in order to guarantee that parallel loop flow will be:
     * Low enough to operate below the maximum recommended flow rate for head loss, which is  4 ft. H2O (per 100 ft.).
     * High enough to operate with turbulent internal pipe flow through the parallel loop, which corresponds to a Reynold's number greater than 2,500.
