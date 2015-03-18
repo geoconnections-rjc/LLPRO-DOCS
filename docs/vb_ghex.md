@@ -62,7 +62,7 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 
 **Refer to the figure below to view the correlation between u-bend pipe diameter, vertical bore depth, and gpm per flow path.**
 
-![Nominal Pipe Size vs. Bore Depth & GPM](C:\Users\Ryan\Documents\GitHub\LLPRO-DOCS\site\img\diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
+![Nominal Pipe Size vs. Bore Depth & GPM](/img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
 
 * The target (optimum) flow rate versus pipe size is:  
     * 2.8 - 3.2 gpm per loop for 0.75” loops
@@ -106,7 +106,7 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 
 **Refer to the figure below to view the difference between a system with 1-, 2-, and 3-bores-in-series.**
 
-![Bores in Series](C:\Users\Ryan\Documents\GitHub\LLPRO-DOCS\site\img\Bores-in-Series-white-background.gif "Bores in Series")
+![Bores in Series](/img/Bores-in-Series-white-background.gif "Bores in Series")
 
 * **Stagger Rows** Select this box if a staggered field layout is to be used. This selection will modify the center-center bore spacing and associated temperature penalty calculations.
 * **Cc Spacing Row** The center-center spacing between rows. This value will affect the predicted temperature change of the soil resulting from imbalances between the amount of heat added to the ground in cooling mode and removed from the ground in heating mode.
