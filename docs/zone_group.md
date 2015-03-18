@@ -36,10 +36,10 @@ In **LLPRO**, a Zone Group can only be served by one active GHEX. Here are a few
 The design EWT will depend on location, type of GHEX and the trade-off between performance and GHEX size (first cost). Design EWT values will drastically affect GHEX design lengths.
 
 * **EWT Min** The minimum entering water temperature the closed-loop ground connection will be designed to provide under peak heating conditions.
-    * As a starting point for design, the minimum EWT should be 15-20°F (8.3-11.1 C) below the deep earth temperature at the project location or 25°F (-3.8 C), whichever is greater.
-    * It is not uncommon to start with a 30°F (-1.1 C) minimum EWT and adjust up or down, depending on location and the heating requirements of the system. 
+    * As a starting point for design, the minimum EWT should be 15-20&deg;F (8.3-11.1 C) below the deep earth temperature at the project location or 25&deg;F (-3.8 C), whichever is greater.
+    * It is not uncommon to start with a 30&deg;F (-1.1 C) minimum EWT and adjust up or down, depending on location and the heating requirements of the system. 
 * **EWT Max** The maximum entering water temperature the closed-loop ground connection will be designed to provide under peak cooling conditions.
-    * As a starting point for design, the maximum EWT should be 30-40°F (16.7-22.2 C) above the deep earth temperature at the project location or 95°F (35 C), whichever is less.
-    * It is not uncommon to start with a 90°F (32.2 C) maximum EWT and adjust up or down, depending on location and the cooling requirements of the system. 
+    * As a starting point for design, the maximum EWT should be 30-40&deg;F (16.7-22.2 C) above the deep earth temperature at the project location or 95&deg;F (35 C), whichever is less.
+    * It is not uncommon to start with a 90&deg;F (32.2 C) maximum EWT and adjust up or down, depending on location and the cooling requirements of the system. 
 For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's Ground Source Heat Pump Residential and Light Commercial Design and Installation Guide.
 

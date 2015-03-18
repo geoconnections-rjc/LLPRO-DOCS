@@ -1,6 +1,6 @@
 # HOT WATER
 
-Use this page to create a new hot water generation zone within the selected Zone Group. An unlimited number of hot water zones are allowed. Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120°F, although some may be able to reach hot water delivery temperatures up to 140°F. Consult with the manufacturer for more information.
+Use this page to create a new hot water generation zone within the selected Zone Group. An unlimited number of hot water zones are allowed. Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120&deg;F, although some may be able to reach hot water delivery temperatures up to 140&deg;F. Consult with the manufacturer for more information.
 
 ## HOT WATER ZONE NAME
 
@@ -57,7 +57,7 @@ With this mode selected, the **Average Monthly Consumption** and **Months per Ye
 * **Inlet Temperature** The temperature of the water entering the system before being heated.
     * A good first estimate for inlet water temperature is the local ground temperature. 
 * **Setpoint Temperature** The desired heated water temperature to supply to the space.
-    * Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120°F, although some may be able to reach hot water delivery temperatures up to 140°F.
+    * Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120&deg;F, although some may be able to reach hot water delivery temperatures up to 140&deg;F.
     * Consult with the manufacturer for more information.
 
 ## CALCULATION RESULTS

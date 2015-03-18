@@ -49,13 +49,13 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 
 * **Uses Permanent Casing** Select this box if loopfield construction will be such that permanent casing will be left in the bore.  **LLPRO** will account for the effect of increased bore diameter in the cased portion of the bore as well as the effect of increased borehole thermal resistance when PVC casing is used.
 * **Bore Diameter** The diameter of the borehole being drilled for insertion of the GHEX piping.
-    * Common borehole diameters range from 4”-6”, depending on drilling conditions and the size of the u-bend piping being utilized.
+    * Common borehole diameters range from 4&quot;-6&quot;, depending on drilling conditions and the size of the u-bend piping being utilized.
 * **Piping Material** The piping material used in the active portion of the vertical GHEX.
     * HDPE and PEXa are the only piping materials formally accepted by the [IGSHPA Standards Committee](http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html "Geo-Connections Bookstore") for use in the buried portion of a GHEX piping system.
 * **Dimension Ratio (DR)** The ratio of loop pipe outside diameter to its wall thickness.
     * Greater wall thickness (resulting in higher pipe pressure ratings) are associated with lower values of DR.
-    * DR-11 HDPE (3408/3608) is the most commonly used u-bend piping, which has a 160 psi pressure rating at 73.4°F.
-    * DR-9 HDPE (3408/3608) has a 200 psi pressure rating at 73.4°F.
+    * DR-11 HDPE (3408/3608) is the most commonly used u-bend piping, which has a 160 psi pressure rating at 73.4&deg;F.
+    * DR-9 HDPE (3408/3608) has a 200 psi pressure rating at 73.4&deg;F.
     * Refer to Table A.1 in Chapter 3 of the [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute") for more information on HDPE pipe pressure ratings.
 * **Nominal Size** The u-bend pipe diameter to be used in the active section of the vertically-bored GHEX.
     * **LLPRO** will account for film resistance (a function of Reynold's number, which is determined by calculating gpm per loop, circulating fluid type, temperature and antifreeze concentration).
@@ -65,9 +65,9 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 ![Nominal Pipe Size vs. Bore Depth & GPM](img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
 
 * The target (optimum) flow rate versus pipe size is:  
-    * 2.8 - 3.2 gpm per loop for 0.75” loops
-    * 4 - 6 gpm per loop for 1” loops
-    * 5 - 9 gpm per loop for 1.25” loops
+    * 2.8 - 3.2 gpm per loop for 0.75&quot; loops
+    * 4 - 6 gpm per loop for 1&quot; loops
+    * 5 - 9 gpm per loop for 1.25&quot; loops
     * Use of 1.5" and 2" loops is uncommon
 * Design the GHEX to stay within the provided flow ranges (per parallel loop) in order to guarantee that parallel loop flow will be:
     * Low enough to operate below the maximum recommended flow rate for head loss, which is  4 ft. H2O (per 100 ft.).
@@ -81,16 +81,16 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
     * Refer to **Bore Length as a Function of Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
 * **Bore Length as a Function of Grout TC** Click this button to view the calculated design lengths for the current GHEX layout at various grout thermal conductivity values that are readily available from most thermal grout manufacturers. 
 * Grout thermal conductivity values typically range from:
-    * 0.38 - 0.45 Btu/hr-ft-°F (0.65 - 0.78 W/m-K) for non-thermally enhanced grouting products.
-    * 0.57 - 1.60 Btu/hr-ft-°F (1.00 - 2.77 W/m-K) for thermally enhanced grouting products.
-* Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-°F (0.78 W/m-K).
+    * 0.38 - 0.45 Btu/hr-ft-&deg;F (0.65 - 0.78 W/m-K) for non-thermally enhanced grouting products.
+    * 0.57 - 1.60 Btu/hr-ft-&deg;F (1.00 - 2.77 W/m-K) for thermally enhanced grouting products.
+* Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-&deg;F (0.78 W/m-K).
     * Refer to the [Importance of Grout Thermal Conductivity](http://geoproinc.com/resources/importance_of_grout_tc.html "GeoPro Document Library") for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.
 
 ## CIRCULATING FLUID
 
-* **Circulating Fluid Selection** Specify the fluid type and antifreeze concentration to be used (if applicable). In general, freeze protection is recommended when heating mode EWTs will fall below 45°F (7.2 C).
+* **Circulating Fluid Selection** Specify the fluid type and antifreeze concentration to be used (if applicable). In general, freeze protection is recommended when heating mode EWTs will fall below 45&deg;F (7.2 C).
 * **Antifreeze Concentration Slider** When the selected circulating fluid type is propylene glycol, methanol or ethanol, the antifreeze concentration vs. freeze point temperature slider will appear. Choose the appropriate concentration based on the specified antifreeze type.
-    * The recommended freeze point will be 10°F (5.6 C) below the average loop temperature under peak heating conditions.
+    * The recommended freeze point will be 10&deg;F (5.6 C) below the average loop temperature under peak heating conditions.
 
 ## LOOPFIELD LAYOUT
 
@@ -178,7 +178,7 @@ Calculation results are displayed in the left-hand output panel:
 
 ## OPERATING CONDITIONS
 
-* **EWT** The minimum/maximum entering water temperatures from the GHEX (supplied to the GHSP equipment) will be designed to provide under peak heating/cooling conditions, typically assumed to be 30°F (-1.1 C) in heating-dominant applications and 90°F (32.2 C) in cooling-dominant applications.
+* **EWT** The minimum/maximum entering water temperatures from the GHEX (supplied to the GHSP equipment) will be designed to provide under peak heating/cooling conditions, typically assumed to be 30&deg;F (-1.1 C) in heating-dominant applications and 90&deg;F (32.2 C) in cooling-dominant applications.
     * This parameter is specified on the **Zone Group** page and will have a very large impact on calculated design lengths.
 * **LWT** The calculated minimum/maximum leaving water temperatures from the GSHP equipment (supplied to the GHEX) under peak heating/cooling conditions.
     * Leaving water temperatures are a function of the designer-specified EWTs, system flow and the heat of extraction/heat of rejection of the GSHP equipment specified for the **Zone Group**.
@@ -206,7 +206,7 @@ Calculation results are displayed in the left-hand output panel:
 
 ## FLUID PROPERTIES (DESIGN PATH)
 
-* **Freeze Protected To** The freeze point temperature of the specified fluid, based on the fluid type and antifreeze concentration. In general, freeze protection is recommended when heating mode EWTs will fall below 45°F (7.2 C). The recommended freeze point will be 10°F (5.6 C) below the average loop temperature under peak heating conditions.
+* **Freeze Protected To** The freeze point temperature of the specified fluid, based on the fluid type and antifreeze concentration. In general, freeze protection is recommended when heating mode EWTs will fall below 45&deg;F (7.2 C). The recommended freeze point will be 10&deg;F (5.6 C) below the average loop temperature under peak heating conditions.
 
 
 
