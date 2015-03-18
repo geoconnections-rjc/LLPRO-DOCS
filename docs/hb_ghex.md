@@ -32,6 +32,10 @@ Use this page to create a new horizontally-bored ground heat exchanger layout wi
 	<h3>Additional Resource</h3>
 	<p>For more information on Formation Thermal Conductivity testing, refer to Chapter 34, pages 13-14 in the <a href="https://www.ashrae.org/resources--publications/handbook">ASHRAE HVAC Applications Handbook (2011)</a>.</p>
 </div>
+  
+**Refer to the figure below to see how soil temperature in Chicago, IL varies with depth and time of year (according to the Kusudah-Achenbach model).**
+
+![Soil Temperature vs. Depth & Time of Year in Chicago, IL](img/chicago_il_air_soil_temps.gif "Soil Temperature vs. Depth & Time of Year in Chicago, IL")
 
 The temperature of the soil in the top 20 ft. of the earth's surface varies with location, time of year, and depth.  Mean Soil Temperature, Annual Swing, and Offset Day are necessary inputs to predict the soil temperature at a given location, time of year, and length using the Kusudah-Achenbach equation:
 
@@ -46,6 +50,8 @@ The temperature of the soil in the top 20 ft. of the earth's surface varies with
 	<h3>Additional Resource</h3>
 	<p>For more information on Kusudah-Achenbach soil temperature definitions (including reference tables), refer to Section 5.3.2.1 (Chapter 5, pages 52-59) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
 </div>
+
+
 ## BOREHOLE DEFINITION
 
 * <span class="term">Bore Diameter</span> The diameter of the borehole being drilled for insertion of the GHEX piping.
