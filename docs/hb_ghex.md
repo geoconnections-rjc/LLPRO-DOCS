@@ -138,9 +138,6 @@ Calculation results are displayed in the left-hand output panel:
 
 * <span class="term">Number of Bores</span> The total number of bores in the GHEX, calculated to be **(Rows) x (Bores per Row)**.
 
-
-
-
 * <span class="term">Y1 Length/Bore</span> The length of each bore required to ensure the system will operate within designer-specified limits during the first year of system operation.
     * This parameter does not account for the long-term effects of ground load imbalances.
     * Outside of the inputs provided on the GHEX design page, **Y1 Length/Bore** is most sensitive to the peak loads and the minimum/maximum EWTs specified for the **Zone Group**.
@@ -151,8 +148,6 @@ Calculation results are displayed in the left-hand output panel:
     * **YN Length/Bore** will also be a function of the number of bores in the selected layout, calculated to be **(YN Total Length) / (Number of Bores)**.
 * <span>Design Length/Bore</span> The greater of the **Y1 Length/Bore** and the **YN Length/Bore** for the dominant mode of operation.
     * This is the individual bore length to specify in the project design documents to ensure that the system will operate within designer-specified limits in both the short- and long-term.
-
-
 
 * <span class="term">Y1 Total Length</span> The total bore footage required in the specified configuration to ensure the system will operate within designer-specified limits during the first year of system operation.
     * This parameter does not account for the long-term effects of ground load imbalances.
