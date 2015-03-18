@@ -11,3 +11,4 @@ pages:
 - [hb_ghex.md, Horizontally-Bored GHEX]
 - [header.md, SDSU-RR Header Design]
 theme: readthedocs
+theme_dir: 'custom_theme'

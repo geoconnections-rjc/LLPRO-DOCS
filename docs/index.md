@@ -1,5 +1,5 @@
 # Welcome to LoopLink PRO
-LoopLink PRO is web-based software for commercial geothermal system design. It follows the general design procedure outlined in [Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems](http://www.techstreet.com/ashrae/products/1887017 "ASHRAE Publications") (Kavanaugh and Rafferty, 2014), which is as follows. 
+LoopLink PRO is web-based software for commercial geothermal system design. It follows the general design procedure outlined in [Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems](http://www.techstreet.com/ashrae/products/1887017 "ASHRAE Publications")  (Kavanaugh and Rafferty, 2014), which is as follows. 
 
 * Calculate peak zone cooling and heating loads and estimate off-peak loads.
 * Estimate the annual heat rejection into and absorption from the loopfield to account for potential ground, groundwater, or reservoir-water temperature change.
@@ -25,6 +25,3 @@ These publications will serve as excellent resources for the GSHP system designe
 * [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute")
 * [Importance of Grout Thermal Conductivity](http://geoproinc.com/resources/importance_of_grout_tc.html "GeoPro Document Library")
 
-##CUSTOMER SUPPORT
----
-Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via [eMail](mailto:looplink@geoconnectionsinc.com "LoopLink PRO Support") or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.

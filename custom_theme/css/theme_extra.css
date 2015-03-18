@@ -1,0 +1,121 @@
+html, body{
+	font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+	color:#3A3A3F;
+}
+
+.wy-side-nav-search{
+    background:#3A3A3F;
+}
+
+.wy-body-for-nav {
+    background: #FAFAFF;
+    background-image: none;
+}
+.wy-nav-side{
+    background: #6A6A6F;
+}
+.wy-nav-content{
+    background: #FAFAFF;
+}
+
+.rst-content .section ul{
+    list-style: none !important;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a{
+    background: #FAFAFF;
+    color:#3A3A3F;
+}
+.wy-menu-vertical li.current{
+    background:#F0F0F9;
+    padding-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6, legend{
+    font-family: 'Advent Pro', Verdana, Geneva, sans-serif;
+	font-weight: 700;
+	letter-spacing:0.12em;
+
+}
+h1, h2{
+    color:#3A3A3F;
+}
+h3, h4, h5, h6, legend{
+    color:#6A6A6F;
+}
+h2{
+    border-bottom: solid 1px #CACACC;
+    margin-top:2em;
+}
+
+.wy-plain-list-disc ul>li,
+.rst-content .section ul>li,
+.rst-content .toctree-wrapper ul>li,
+article ul>li{
+    list-style: none;
+    margin-left: 0.5em;
+    margin-top:1em;
+}
+
+.wy-plain-list-disc ul>li>ul,
+.rst-content .section ul>li>ul,
+.rst-content .toctree-wrapper ul>li>ul,
+article ul>li>ul{
+    margin-bottom: 2em;
+    border-left: solid 0.5em #CACACF;
+    margin-left: 2em;
+    padding-left: 0.5em;
+}
+
+.wy-plain-list-disc ul>li>ul li,
+.rst-content .section ul>li>ul li,
+.rst-content .toctree-wrapper ul>li>ul li,
+article ul>li>ul li{
+    list-style: none;
+}
+
+.rst-content .section ul>li .term{
+    font-weight: bold;
+    display:block;
+    margin-right:0.25em;
+}
+
+
+/*
+ * Sphinx doesn't have support for section dividers like we do in
+ * MkDocs, this styles the section titles in the nav
+ *
+ * https://github.com/tomchristie/mkdocs/issues/175
+ */
+.wy-menu-vertical span {
+    line-height: 18px;
+    padding: 0.4045em 1.618em;
+    display: block;
+    position: relative;
+    font-size: 90%;
+    color: #838383;
+}
+
+.wy-menu-vertical .toctree-l2 a {
+    padding: 0.4045em 2.427em;
+}
+
+/*
+ * Long navigations run off the bottom of the screen as the nav
+ * area doesn't scroll.
+ *
+ * https://github.com/tomchristie/mkdocs/pull/202
+ */
+.wy-nav-side {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/*
+ * Fix wrapping in the code highlighting
+ *
+ * https://github.com/tomchristie/mkdocs/issues/233
+ */
+code {
+    white-space: pre;
+}
