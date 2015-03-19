@@ -48,6 +48,29 @@ h2{
     margin-top:2em;
 }
 
+img{
+    display: block;
+    margin:auto;
+}
+p{
+    font-size: 1em;
+}
+
+.heating{
+    background:#FEF1E1;
+    padding:0 0.5em;
+}
+
+.cooling{
+    background:#DFE8F1;
+    padding:0 0.5em;
+}
+
+.icon_def img{
+    display: inline-block;
+    margin:0 0.5em;
+}
+
 .wy-plain-list-disc ul>li,
 .rst-content .section ul>li,
 .rst-content .toctree-wrapper ul>li,
@@ -67,10 +90,35 @@ article ul>li>ul{
     padding-left: 0.5em;
 }
 
-.wy-plain-list-disc ul>li>ul li,
-.rst-content .section ul>li>ul li,
-.rst-content .toctree-wrapper ul>li>ul li,
-article ul>li>ul li{
+.wy-plain-list-disc ul>li>ul ul,
+.rst-content .section ul>li>ul ul,
+.rst-content .toctree-wrapper ul>li>ul ul,
+article ul>li>ul ul{
+    margin-bottom: 2em;
+    border-left: none;
+    margin-left: 2em;
+    padding-left: 0.5em;
+}
+.wy-plain-list-disc ul>li>ul ol,
+.rst-content .section ul>li>ul ol,
+.rst-content .toctree-wrapper ul>li>ul ol,
+article ul>li>ul ol{
+    margin-bottom: 2em;
+    border-left: none;
+    margin-left: 2em;
+    padding-left: 0.5em;
+}
+
+.wy-plain-list-disc ul>li>ul ul>li,
+.rst-content .section ul>li>ul ul>li,
+.rst-content .toctree-wrapper ul>li>ul ul>li,
+article ul>li>ul ul>li{
+   list-style: disc;
+}
+.wy-plain-list-disc ul>li>ul>li,
+.rst-content .section ul>li>ul>li,
+.rst-content .toctree-wrapper ul>li>ul>li,
+article ul>li>ul>li{
     list-style: none;
 }
 
