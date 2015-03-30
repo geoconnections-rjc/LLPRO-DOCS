@@ -19,7 +19,7 @@ In **LoopLink PRO**, a Zone Group can only be served by one active GHEX. Here ar
 ## Zone Group Flow
 
 * <span class="term">Flow Analysis Mode</span> Select the desired mode to calculate the system flow requirements.
-    * <span class="term">Peak Block (Primary-Secondary)</span> Select this mode if the interior building loop will be decoupled from the exterior GHEX piping (i.e. - inside flow rate can be differ from the outside flow rate).
+    * <span class="term">Peak Block (Primary-Secondary)</span> Select this mode if the interior building loop will be decoupled from the exterior GHEX piping (i.e. - inside flow rate can differ from the outside flow rate).
         * In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from both reduced load and flow requirements due to the fact that the inside and outside flow rates can differ.
         * **LoopLink PRO** will calculate system flow based on the peak load requirements for the GHEX (after accounting for peak load reduction in load sharing applications) according to the desired **Block Flow Per Ton**
     * <span class="term">Peak Block (Unitary)</span> Select this mode if the interior building loop is directly coupled to the exterior GHEX piping where the inside and outside flow rates have to be the same.

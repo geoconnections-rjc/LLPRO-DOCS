@@ -23,5 +23,5 @@ These publications will serve as excellent resources for the GSHP system designe
 * [Grouting for Vertical GHP Systems](http://www.geoconnectionsinc.com/bookstore/grouting_for_vertical_ghp_systems.html "Geo-Connections Bookstore")
 * [Closed-Loop Geothermal Heat Pump System Design & Installation Standards](http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html "Geo-Connections Bookstore")
 * [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute")
-* [Importance of Grout Thermal Conductivity](http://geoproinc.com/resources/importance_of_grout_tc.html "GeoPro Document Library")
+* [Importance of Thermal Grout Conductivity](http://geoproinc.com/resources/importance_of_grout_tc.html "GeoPro Document Library")
 

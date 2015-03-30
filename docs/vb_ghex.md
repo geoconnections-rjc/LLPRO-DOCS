@@ -90,7 +90,7 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 	* ![Nominal Pipe Size vs. Bore Depth & GPM](img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
 
 
-* <span class="term">Grout Thermal Conductivity</span> The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.
+* <span class="term">Thermal Grout Conductivity</span> The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.
     * Thermal conductivity is a measure of how fast heat moves through a material due to a temperature difference.
 	*	| Grout Type              | Conductivity Range                                |
 		| :---------------------: | :-----------------------------------------------: |
@@ -98,12 +98,12 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 		| thermally enhanced      | 0.57 - 1.60 Btu/hr-ft-&deg;F (1.00 - 2.77 W/m-K)  |
 	* Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-&deg;F (0.78 W/m-K).
 	* Refer to **Bore Length as a Function of Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
-* <span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various grout thermal conductivity values that are readily available from most thermal grout manufacturers.
+* <span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various Thermal Grout Conductivity values that are readily available from most thermal grout manufacturers.
 	* This feature is not available until the ghex has been saved.
 	
 <div class="resource">
 	<h3>Additional Resource</h3>
-	<p>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank">Importance of Grout Thermal Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</p>
+	<p>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank">Importance of Thermal Grout Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</p>
 </div>
 ## Circulating Fluid
 
