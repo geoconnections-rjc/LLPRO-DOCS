@@ -3,6 +3,7 @@
 Use this page to create a new horizontally-bored ground heat exchanger layout within the selected Zone Group. An unlimited number of GHEX designs are allowed, although only one may be active at a given time.
 
 ## Tab Navigation
+
 At the top of the GHEX page are two tabs allowing you to navigate between the GHEX design parameters (default page) and the GHEX header.
 
 * <span class="icon_def">![GHEX Details](img/ghex.png "GHEX Details")</span> View/Edit GHEX design parameters
@@ -53,7 +54,6 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 	<h3>Additional Resource</h3>
 	<p>For more information on Kusudah-Achenbach soil temperature definitions (including reference tables), refer to Section 5.3.2.1 (Chapter 5, pages 52-59) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
 </div>
-
 
 ## Borehole Definition
 
@@ -108,9 +108,6 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 
 ## Loopfield Layout
 
-* <span class="term">Account for Entry</span> Select this box if a portion of the loop will be installed as part of the bore entry.
-    * For example, if a bore is installed 45 ft. below grade and the drilling entry angle is specified to be 3:1 (18.4 degrees), it will take a 135 ft. run for the drilling length to reach the target depth.
-    * With this box selected, **LoopLink PRO** will account for the portion of the loop that is installed above target depth.
 * <span class="term">Rows</span> The number of rows to be used in the horizontally-bored GHEX layout.
     * For example, a 10x2 loopfield layout would have 10 rows with 2 bores in each row for a total of 20 bores (rows x bores per row).
 * <span class="term">Bores per Row</span> The number of bores in each row to be used in the horizontally-bored GHEX layout.
@@ -127,8 +124,9 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
     * A good value for drilling offset is **Cc Spacing Row / Bores per Row**.
     * For example, assuming a 15 ft. Cc Spacing Row and 3 Bores per Row, a typical offset value would be 15/3 = 5 ft. 
 * <span class="term">Angle of Approach</span> The angle at which the contractor will drill into the soil from the surface until the target depth is achieved.
-    * The most commonly used values are provided as selection choices.  
-
+    * **LoopLink PRO** will account for the portion of the loop that is installed above target depth. The most commonly used values are provided as selection choices.
+    * For example, if a bore is installed 45 ft. below grade and the drilling entry angle is specified to be 3:1 (18.4 degrees), it will take a 135 ft. run for the drilling length to reach the target depth.
+    
 ## Calculation Results
 
 Calculation results are displayed in the left-hand output panel:
@@ -136,12 +134,6 @@ Calculation results are displayed in the left-hand output panel:
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
-
-## GHEX Performance
-* <span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.
-* <span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the **grout resistance** in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.
-    * The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).
-    * Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.   
 
 ## Geometry
 
@@ -166,6 +158,13 @@ Calculation results are displayed in the left-hand output panel:
     * This is the value to specify in the project design documents to ensure that the system will operate within specified limits in both the short- and long-term. 
 * <span class="term">Avg Bore Depth</span> The calculated average installation depth for the entire loopfield, which is a function of the **Number of Bores** as well as the specified **Cc Spacing Row**, **Cc Spacing Bore**, **Start Depth**, **Drilling Offset**, and **Angle of Approach** (if **Account for Entry** is selected).
 * <span class="term">Avg CC Spacing</span> The calculated average of center-center spacing for the entire loopfield, which is a function of the **Number of Bores** as well as the specified **Cc Spacing Row**, **Cc Spacing Bore**, **Drilling Offset**, and **Angle of Approach** (if **Account for Entry** is selected). 
+
+## Thermal Resistance
+
+* <span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.
+* <span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the **grout resistance** in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.
+    * The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).
+    * Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.   
 
 ## Ground Energy
 

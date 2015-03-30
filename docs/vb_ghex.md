@@ -11,15 +11,12 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 
 ## GHEX Name
 
-
 * <span class="term">Name</span> Name the GHEX currently being designed. An unlimited number of GHEX designs are allowed, although only one may be active at a given time.
 * <span class="term">Year</span> The analysis period to use in the GHEX model. **LoopLink PRO** will use this value to predict the temperature change of the soil resulting from imbalances between the amount of heat added to the ground in cooling mode and removed from the ground in heating mode. Values from 10-20 years are most common.
 	* The recommended value for this field is 10 years.
 	<li class="warning"><h3>WARNING</h3><p>Use of excessive values in this field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</p></li>
 
-
 ## Formation Details
-
 
 * <span class="term">Deep Earth Temperature</span> The temperature of the soil, which can be assumed to be constant starting at a depth of 20 feet below the surface down to about 200 feet below the surface.
     * Deep earth temperature varies with location and weather conditions but is typically assumed to be 1-2 degrees above the average air temperature for the project location.
@@ -105,6 +102,7 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 	<h3>Additional Resource</h3>
 	<p>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank">Importance of Thermal Grout Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</p>
 </div>
+
 ## Circulating Fluid
 
 * <span class="term">Circulating Fluid Selection</span> Specify the fluid type and antifreeze concentration to be used (if applicable). In general, freeze protection is recommended when heating mode EWTs will fall below 45&deg;F (7.2 C).
@@ -112,7 +110,6 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
     * The recommended freeze point will be 10&deg;F (5.6 C) below the average loop temperature under peak heating conditions.
 
 ## Loopfield Layout
-
 
 * <span class="term">Rows</span> The number of rows to be used in the vertically-bored GHEX layout.
     * For example, a 2x10 rectangular loopfield layout would have 2 rows with 10 bores in each row for a total of 20 bores (rows x bores per row).
@@ -142,12 +139,6 @@ Calculation results are displayed in the left-hand output panel:
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
 
-## GHEX Performance
-* <span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.
-* <span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the **grout resistance** in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.
-    * The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).
-    * Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.   
-
 ## Geometry
 
 * <span class="term">Number of Bores</span> The total number of bores in the GHEX, calculated to be **(Rows) x (Bores per Row)**.
@@ -170,10 +161,13 @@ Calculation results are displayed in the left-hand output panel:
 * <span class="term">Total Design Length</span> The greater of the **Y1 Total Length** and the **YN Total Length** for the dominant mode of operation.
     * This is the value to specify in the project design documents to ensure that the system will operate within specified limits in both the short- and long-term. 
 * <span class="term">Avg CC Spacing</span> The calculated average of center-center spacing for the entire loopfield, which is a function of the **Number of Bores** as well as the specified **Cc Spacing Row** and **Cc Spacing Bore**. 
-* <span class="term">Row CC Spacing</span> The center-center spacing between rows. This value will affect the predicted temperature change of the soil resulting from imbalances between the amount of heat added to the ground in cooling mode and removed from the ground in heating mode. **For systems with severe imbalances, values less than 20 ft. are not recommended**. 
-* <span class="term">Bore CC Spacing</span> The center-center spacing between bores in a given row.
-    * You may specify a separate value in this field when the Cc Spacing Row and Cc Spacing Bore fields are un-linked.
-    * **For systems with severe imbalances, values less than 20 ft. are not recommended**. 
+
+## Thermal Resistance
+
+* <span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.
+* <span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the **grout resistance** in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.
+    * The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).
+    * Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.  
 
 ## Ground Energy
 

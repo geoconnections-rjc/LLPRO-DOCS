@@ -2,7 +2,7 @@
 # Non Production Files
 ######################
 
-/DEVELOPMENT_FILES/
+/site/
 
 *.komodoproject
 .komodotools/
