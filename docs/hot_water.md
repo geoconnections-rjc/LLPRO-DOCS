@@ -49,7 +49,7 @@ With this mode selected, the **Average Monthly Consumption** and **Months per Ye
 * <span class="term">Capacity</span> The capacity of the GSHP equipment being used for hot water generation, which must be large enough to meet the instantaneous load.
 
 <div class="resource">
-	<h3>Additional Resource</h3>
+	<h3>Additional Resource</h3>zone Copy
 	<p>For more information on sizing refrigeration-based water heaters, refer to Page 50.27 in Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook">ASHRAE HVAC Applications Handbook (2011)</a>.</p>
 </div>
 

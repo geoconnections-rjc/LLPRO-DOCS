@@ -4,9 +4,7 @@ Use this page to create a new zone within the selected Zone Group. An unlimited 
 
 ## Zone Name
 
-
 * **Name** Name the zone currently being designed. An unlimited number of zones are allowed.
-
 
 ## Load Profile
 

@@ -9,7 +9,9 @@
   
 
   
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,600&subset=latin,latin-ext,greek' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
@@ -23,7 +25,6 @@
   <style>
     body {font-size: 90%;}
     pre, code {font-size: 100%;}
-    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
   </style> 
 </head>
 
@@ -44,6 +45,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../accounts">Account Management</a>
+                
             </li>
         
 
@@ -51,13 +53,15 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../project_list">Project List</a>
+                
             </li>
         
 
     
         
             <li class="toctree-l1 ">
-                <a class="" href="../project">Create a New Project</a>
+                <a class="" href="../project">Project</a>
+                
             </li>
         
 
@@ -65,6 +69,20 @@
         
             <li class="toctree-l1 current">
                 <a class="current" href=".">Zone Group</a>
+                
+                    <ul>
+                    
+                        <li class="toctree-l3"><a href="#zone-group">Zone Group</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-group-name">Zone Group Name</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-group-flow">Zone Group Flow</a></li>
+                        
+                            <li><a class="toctree-l4" href="#entering-water-temperatures">Entering Water Temperatures</a></li>
+                        
+                    
+                    </ul>
+                
             </li>
         
 
@@ -72,6 +90,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../zone">Zone</a>
+                
             </li>
         
 
@@ -79,6 +98,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../hot_water">Hot Water Systems</a>
+                
             </li>
         
 
@@ -86,6 +106,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../vb_ghex">Vertically-Bored GHEX</a>
+                
             </li>
         
 
@@ -93,6 +114,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../hb_ghex">Horizontally-Bored GHEX</a>
+                
             </li>
         
 
@@ -100,6 +122,7 @@
         
             <li class="toctree-l1 ">
                 <a class="" href="../header">SDSU-RR Header Design</a>
+                
             </li>
         
 
@@ -133,9 +156,9 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="zone-group">ZONE GROUP</h1>
+              <h1 id="zone-group">Zone Group</h1>
 <p>Use this page to create a new zone group within the project. An unlimited number of zone groups are allowed.</p>
-<p>In <strong>LLPRO</strong>, a Zone Group can only be served by one active GHEX. Here are a few examples for project setup/types that can be easily modeled in <strong>LLPRO</strong>:</p>
+<p>In <strong>LoopLink PRO</strong>, a Zone Group can only be served by one active GHEX. Here are a few examples for project setup/types that can be easily modeled in <strong>LoopLink PRO</strong>:</p>
 <ul>
 <li>A single (block) zone served by a small GHEX.<ul>
 <li>An example would be a small office with a central heat pump. </li>
@@ -150,51 +173,52 @@
 </ul>
 </li>
 </ul>
-<h2 id="zone-group-name">ZONE GROUP NAME</h2>
-<hr />
+<h2 id="zone-group-name">Zone Group Name</h2>
 <ul>
-<li><strong>Name</strong> - Name the zone group currently being designed. An unlimited number of zone groups are allowed.</li>
-<li><strong>Flow Analysis Mode</strong> - Select the desired mode to calculate the system flow requirements.<ul>
-<li><strong>Peak Block (Primary-Secondary)</strong> - Select this mode if the interior building loop will be decoupled from the exterior GHEX piping (i.e. - inside flow rate can be differ from the outside flow rate).<ul>
+<li><span class="term">Name</span> Name the zone group currently being designed. An unlimited number of zone groups are allowed.</li>
+</ul>
+<h2 id="zone-group-flow">Zone Group Flow</h2>
+<ul>
+<li><span class="term">Flow Analysis Mode</span> Select the desired mode to calculate the system flow requirements.<ul>
+<li><span class="term">Peak Block (Primary-Secondary)</span> Select this mode if the interior building loop will be decoupled from the exterior GHEX piping (i.e. - inside flow rate can be differ from the outside flow rate).<ul>
 <li>In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from both reduced load and flow requirements due to the fact that the inside and outside flow rates can differ.</li>
-<li><strong>LLPRO</strong> will calcualate system flow based on the peak load requirements for the GHEX (after accounting for peak load reduction in load sharing applications) according to the desired <strong>Block Flow Per Ton</strong></li>
+<li><strong>LoopLink PRO</strong> will calculate system flow based on the peak load requirements for the GHEX (after accounting for peak load reduction in load sharing applications) according to the desired <strong>Block Flow Per Ton</strong></li>
 </ul>
 </li>
-<li><strong>Peak Block (Unitary)</strong> - Select this mode if the interior building loop is directly coupled to the exterior GHEX piping where the inside and outside flow rates have to be the same.<ul>
-<li>In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from reduced load requirements but must be able to accommodate the higher flow rate required by concurrent equipment operation due to the unitary piping/control arrangement.</li>
-<li><strong>LLPRO</strong> will calcualate system flow based on the peak load requirements for the GHEX (in addition to any loads that operate concurrently in load sharing applications which will increase system flow requirements) according to the desired <strong>Block Flow Per Ton</strong></li>
+<li><span class="term">Peak Block (Unitary)</span> Select this mode if the interior building loop is directly coupled to the exterior GHEX piping where the inside and outside flow rates have to be the same.<ul>
+<li>In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from reduced load requirements but must be able to accommodate the higher flow rate required by concurrent equipment operation (separate equipment serving the simultaneous heating and cooling loads) due to the unitary piping/control arrangement.</li>
+<li><strong>LoopLink PRO</strong> will calculate system flow based on the peak load requirements for the GHEX (in addition to any loads that operate concurrently in load sharing applications which will increase system flow requirements) according to the desired <strong>Block Flow Per Ton</strong></li>
 </ul>
 </li>
-<li><strong>Connected</strong> - Select this mode to directly specify the system flow rate (which is done on the Zone page). </li>
+<li><span class="term">Connected</span> Select this mode to directly specify the system flow rate (which is done on the Zone page). </li>
 </ul>
 </li>
-<li><strong>Block Flow Per Ton</strong> - The Zone Group flow rate that the GHEX must accommodate. <ul>
+<li><span class="term">Block Flow Per Ton</span> The Zone Group flow rate that the GHEX must accommodate. <ul>
 <li>Optimal flow rates for closed loop systems are in the 2.5-3.0 gpm per ton range.</li>
 <li>In some cases, 2 gpm per ton is acceptable but 3+ gpm per ton almost always results in excessive pump power.</li>
 <li>This input will only appear when either <strong>Peak Block (Primary-Secondary)</strong> or <strong>Peak Block (Unitary)</strong> is the selected flow analysis mode for the Zone Group. </li>
 </ul>
 </li>
 </ul>
-<h2 id="entering-water-temperatures-ewt">ENTERING WATER TEMPERATURES (EWT)</h2>
-<hr />
+<h2 id="entering-water-temperatures">Entering Water Temperatures</h2>
 <p>The design EWT will depend on location, type of GHEX and the trade-off between performance and GHEX size (first cost). Design EWT values will drastically affect GHEX design lengths.</p>
 <ul>
-<li><strong>EWT Min</strong> - The minimum entering water temperature the closed-loop ground connection will be designed to provide under peak heating conditions.<ul>
-<li>As a starting point for design, the minimum EWT should be 15-20°F (8.3-11.1 C) below the deep earth temperature at the project location or 25°F (-3.8 C), whichever is greater.</li>
-<li>It is not uncommon to start with a 30°F (-1.1 C) minimum EWT and adjust up or down, depending on location and the heating requirements of the system. </li>
+<li><span class="term">EWT Min</span> The minimum entering water temperature the closed-loop ground connection will be designed to provide under peak heating conditions.<ul>
+<li>As a starting point for design, the minimum EWT should be 15-20&deg;F (8.3-11.1&deg;C) below the deep earth temperature at the project location or 25&deg;F (-3.8&deg;C), whichever is greater.</li>
+<li>It is not uncommon to start with a 30&deg;F (-1.1&deg;C) minimum EWT and adjust up or down, depending on location and the heating requirements of the system. </li>
 </ul>
 </li>
-<li><strong>EWT Max</strong> - The maximum entering water temperature the closed-loop ground connection will be designed to provide under peak cooling conditions.<ul>
-<li>As a starting point for design, the maximum EWT should be 30-40°F (16.7-22.2 C) above the deep earth temperature at the project location or 95°F (35 C), whichever is less.</li>
-<li>It is not uncommon to start with a 90°F (32.2 C) maximum EWT and adjust up or down, depending on location and the cooling requirements of the system. 
-For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's Ground Source Heat Pump Residential and Light Commercial Design and Installation Guide.</li>
+<li><span class="term">EWT Max</span> The maximum entering water temperature the closed-loop ground connection will be designed to provide under peak cooling conditions.<ul>
+<li>As a starting point for design, the maximum EWT should be 30-40&deg;F (16.7-22.2&deg;C) above the deep earth temperature at the project location or 95&deg;F (35&deg;C), whichever is less.</li>
+<li>It is not uncommon to start with a 90&deg;F (32.2&deg;C) maximum EWT and adjust up or down, depending on location and the cooling requirements of the system. </li>
 </ul>
 </li>
 </ul>
-<hr />
-<h2 id="customer-support">CUSTOMER SUPPORT</h2>
-<hr />
-<p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com" title="LoopLink PRO Support">eMail</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.</p>
+<div class="resource">
+    <h3>Additional Resource</h3>
+    <p>For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
+</div>
+
 
             </div>
           </div>
@@ -205,7 +229,7 @@ For more information on guidelines to follow when selecting minimum entering wat
         <a href="../zone" class="btn btn-neutral float-right" title="Zone"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../project" class="btn btn-neutral" title="Create a New Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project" class="btn btn-neutral" title="Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -213,12 +237,12 @@ For more information on guidelines to follow when selecting minimum entering wat
   <hr/>
 
   <div role="contentinfo">
-    <p>
-    <!-- Copyright etc -->
+    <h2>Customer Support</h2>
+    <p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com">LoopLink PRO Support</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.
     </p>
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://www.mkdocs.org">MkDocs</a>.
 </footer>
 	  
         </div>
