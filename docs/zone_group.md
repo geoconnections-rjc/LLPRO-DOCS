@@ -44,6 +44,6 @@ The design EWT will depend on location, type of GHEX and the trade-off between p
 
 <div class="resource">
 	<h3>Additional Resource</h3>
-	<p>For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
+	<p>For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
 </div>
 

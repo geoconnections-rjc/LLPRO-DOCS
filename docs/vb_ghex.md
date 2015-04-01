@@ -32,7 +32,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 
 <div class="resource">
 	<h3>Additional Resource</h3>
-	<p>For more information on soil properties (including reference tables), refer to Section 5.3.2.1 (Chapter 5, pages 59-62) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
+	<p>For more information on soil properties (including reference tables), refer to Section 5.3.2.1 (Chapter 5, pages 59-62) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
 </div>
 
 <div class="resource">
