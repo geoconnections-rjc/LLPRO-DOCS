@@ -84,6 +84,14 @@
     
         
             <li class="toctree-l1 ">
+                <a class="" href="../operating_conditions">Detailed Equipment Selection</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
                 <a class="" href="../hot_water">Hot Water Systems</a>
                 
             </li>
@@ -120,9 +128,9 @@
                         
                             <li><a class="toctree-l4" href="#calculation-results">Calculation Results</a></li>
                         
-                            <li><a class="toctree-l4" href="#ghex-performance">GHEX Performance</a></li>
-                        
                             <li><a class="toctree-l4" href="#geometry">Geometry</a></li>
+                        
+                            <li><a class="toctree-l4" href="#thermal-resistance">Thermal Resistance</a></li>
                         
                             <li><a class="toctree-l4" href="#ground-energy">Ground Energy</a></li>
                         
@@ -312,12 +320,8 @@
 </ul>
 </li>
 <li>
-<p><span class="term">Grout Thermal Conductivity</span> The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.</p>
+<p><span class="term">Thermal Grout Conductivity</span> The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.</p>
 <ul>
-<<<<<<< HEAD
-<li><strong>Thermal Grout Conductivity</strong> - The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.<ul>
-=======
->>>>>>> origin/master
 <li>Thermal conductivity is a measure of how fast heat moves through a material due to a temperature difference.</li>
 <li>
 <table>
@@ -343,25 +347,14 @@
 <li>Refer to <strong>Bore Length as a Function of Grout TC</strong> graph to see the effect of grout TC value on GHEX design lengths.</li>
 </ul>
 </li>
-<<<<<<< HEAD
-<li><strong>Bore Length as a Function of Grout TC</strong> - Click this button to view the calculated design lengths for the current GHEX layout at various Thermal Grout Conductivity values that are readily available from most thermal grout manufacturers. </li>
-<li>Thermal Grout Conductivity values typically range from:<ul>
-<li>0.38 - 0.45 Btu/hr-ft-°F (0.65 - 0.78 W/m-K) for non-thermally enhanced grouting products.</li>
-<li>0.57 - 1.60 Btu/hr-ft-°F (1.00 - 2.77 W/m-K) for thermally enhanced grouting products.</li>
-<li>Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-°F (0.78 W/m-K).</li>
-</ul>
-</li>
-<li>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" title="GeoPro Document Library">Importance of Thermal Grout Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</li>
-=======
-<li><span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various grout thermal conductivity values that are readily available from most thermal grout manufacturers.<ul>
+<li><span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various Thermal Grout Conductivity values that are readily available from most thermal grout manufacturers.<ul>
 <li>This feature is not available until the ghex has been saved.</li>
 </ul>
 </li>
->>>>>>> origin/master
 </ul>
 <div class="resource">
     <h3>Additional Resource</h3>
-    <p>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank">Importance of Grout Thermal Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</p>
+    <p>Refer to the <a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank">Importance of Thermal Grout Conductivity</a> for further discussion on the effect that grout TC will have on design lengths as it relates to system economics.</p>
 </div>
 
 <h2 id="circulating-fluid">Circulating Fluid</h2>
@@ -377,11 +370,6 @@
 </ul>
 <h2 id="loopfield-layout">Loopfield Layout</h2>
 <ul>
-<li><span class="term">Account for Entry</span> Select this box if a portion of the loop will be installed as part of the bore entry.<ul>
-<li>For example, if a bore is installed 45 ft. below grade and the drilling entry angle is specified to be 3:1 (18.4 degrees), it will take a 135 ft. run for the drilling length to reach the target depth.</li>
-<li>With this box selected, <strong>LoopLink PRO</strong> will account for the portion of the loop that is installed above target depth.</li>
-</ul>
-</li>
 <li><span class="term">Rows</span> The number of rows to be used in the horizontally-bored GHEX layout.<ul>
 <li>For example, a 10x2 loopfield layout would have 10 rows with 2 bores in each row for a total of 20 bores (rows x bores per row).</li>
 </ul>
@@ -410,7 +398,8 @@
 </ul>
 </li>
 <li><span class="term">Angle of Approach</span> The angle at which the contractor will drill into the soil from the surface until the target depth is achieved.<ul>
-<li>The most commonly used values are provided as selection choices.  </li>
+<li><strong>LoopLink PRO</strong> will account for the portion of the loop that is installed above target depth. The most commonly used values are provided as selection choices.</li>
+<li>For example, if a bore is installed 45 ft. below grade and the drilling entry angle is specified to be 3:1 (18.4 degrees), it will take a 135 ft. run for the drilling length to reach the target depth.</li>
 </ul>
 </li>
 </ul>
@@ -420,15 +409,6 @@
 <li>Cooling mode calculation results are highlighted in <strong><span class="cooling">BLUE</span></strong>.</li>
 <li>Heating mode calculations results are highlighted in <strong><span class="heating">YELLOW</span></strong>.</li>
 <li>Note that when an input is changed, the calculation results will not display on screen until the page is saved.</li>
-</ul>
-<h2 id="ghex-performance">GHEX Performance</h2>
-<ul>
-<li><span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.</li>
-<li><span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the <strong>grout resistance</strong> in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.<ul>
-<li>The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).</li>
-<li>Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.   </li>
-</ul>
-</li>
 </ul>
 <h2 id="geometry">Geometry</h2>
 <ul>
@@ -465,6 +445,15 @@
 </li>
 <li><span class="term">Avg Bore Depth</span> The calculated average installation depth for the entire loopfield, which is a function of the <strong>Number of Bores</strong> as well as the specified <strong>Cc Spacing Row</strong>, <strong>Cc Spacing Bore</strong>, <strong>Start Depth</strong>, <strong>Drilling Offset</strong>, and <strong>Angle of Approach</strong> (if <strong>Account for Entry</strong> is selected).</li>
 <li><span class="term">Avg CC Spacing</span> The calculated average of center-center spacing for the entire loopfield, which is a function of the <strong>Number of Bores</strong> as well as the specified <strong>Cc Spacing Row</strong>, <strong>Cc Spacing Bore</strong>, <strong>Drilling Offset</strong>, and <strong>Angle of Approach</strong> (if <strong>Account for Entry</strong> is selected). </li>
+</ul>
+<h2 id="thermal-resistance">Thermal Resistance</h2>
+<ul>
+<li><span class="term">Grout Resistance</span> The effective thermal resistance of the grouted cross-section of the borehole, which is a function of the size, spacing and configuration of the pipes in the borehole as well as the thermal conductivity of the grouting material placed in the annular space between the pipes and bore wall.</li>
+<li><span class="term">Bore Resistance</span> The effective thermal resistance of the completed borehole, which is the <strong>grout resistance</strong> in addition to the fluid film resistance (convection coefficient) and the pipe material resistance.<ul>
+<li>The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).</li>
+<li>Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.   </li>
+</ul>
+</li>
 </ul>
 <h2 id="ground-energy">Ground Energy</h2>
 <ul>

@@ -50,6 +50,24 @@ Monthly load data is an intermediate data set to perform GHEX design length calc
 ##### Import (.CSV)
 You may import monthly loads via a Trane **TRACE 700** [GT file](http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html "Trane TRACE 700") report (must be in .CSV format).
 
+This sample GT file would be interpreted as follows:
+
+| Month                   | Total Cooling (kBtu)    | Peak Cooling (kBtu/hr)  | Total Heating (kBtu)    | Peak Heating (kBtu/hr)  |
+| :---------------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
+| January                 | 100                     | 1                       | 12,000                  | 120                     |
+| February                | 200                     | 2                       | 11,000                  | 110                     |
+| March                   | 300                     | 3                       | 10,000                  | 100                     |
+| April                   | 400                     | 4                       | 9,000                   | 90                      |
+| May                     | 500                     | 5                       | 8,000                   | 80                      |
+| June                    | 600                     | 6                       | 7,000                   | 70                      | 
+| July                    | 700                     | 7                       | 6,000                   | 60                      | 
+| August                  | 800                     | 8                       | 5,000                   | 50                      | 
+| September               | 900                     | 9                       | 4,000                   | 40                      |   
+| October                 | 1,000                   | 10                      | 3,000                   | 30                      | 
+| November                | 1,100                   | 11                      | 2,000                   | 20                      |  
+| December                | 1,200                   | 12                      | 1,000                   | 10                      |
+| Peak/Total              | Total = 7,800           | Peak = 12               | Total = 78,000          | Peak = 120              |
+
 * **Percentage of Peak** After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
     * Be sure to enter the percentages according to the time block in which the loads occur. In multi-zone projects, **LoopLink PRO** will use this information to determine the maximum heating and cooling loads for the GHEX design. 
     * The most critical values will be entered in the time block in which the peak values occur (100%).
