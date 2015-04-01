@@ -48,25 +48,25 @@ Monthly load data is an intermediate data set to perform GHEX design length calc
     * The recommended entries in the off-peak time blocks will be the percentage that corresponds with the **AVERAGE** heating and cooling loads in each respective time period.
 
 ##### Import (.CSV)
-You may import monthly loads via a Trane **TRACE 700** [GT file](http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html "Trane TRACE 700") report (must be in .CSV format).
+You may import monthly loads via a Trane **TRACE 700** [GT file](http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html "Trane TRACE 700") report (must be saved in .CSV, .TXT, or .GT file format).
 
-This sample GT file would be interpreted as follows:
+[Click here](examples/SampleGT.txt "Sample GT Report") to download a sample GT file, would be interpreted as follows:
 
 | Month                   | Total Cooling (kBtu)    | Peak Cooling (kBtu/hr)  | Total Heating (kBtu)    | Peak Heating (kBtu/hr)  |
 | :---------------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
-| January                 | 100                     | 1                       | 12,000                  | 120                     |
-| February                | 200                     | 2                       | 11,000                  | 110                     |
-| March                   | 300                     | 3                       | 10,000                  | 100                     |
-| April                   | 400                     | 4                       | 9,000                   | 90                      |
-| May                     | 500                     | 5                       | 8,000                   | 80                      |
-| June                    | 600                     | 6                       | 7,000                   | 70                      | 
-| July                    | 700                     | 7                       | 6,000                   | 60                      | 
-| August                  | 800                     | 8                       | 5,000                   | 50                      | 
-| September               | 900                     | 9                       | 4,000                   | 40                      |   
-| October                 | 1,000                   | 10                      | 3,000                   | 30                      | 
-| November                | 1,100                   | 11                      | 2,000                   | 20                      |  
-| December                | 1,200                   | 12                      | 1,000                   | 10                      |
-| Peak/Total              | Total = 7,800           | Peak = 12               | Total = 78,000          | Peak = 120              |
+| January                 | 58,588                  | 485.920                 | 208,315                 | 1025.406                |
+| February                | 54,606                  | 473.293                 | 162,140                 | **1196.877**            |
+| March                   | 90,318                  | 652.786                 | 111,750                 | 896.059                 |
+| April                   | 121,940                 | 1064.211                | 40,434                  | 581.409                 |
+| May                     | 211,928                 | 1064.995                | 13,962                  | 677.173                 |
+| June                    | 281,978                 | 1081.846                | 5,291                   | 99.917                  | 
+| July                    | 295,799                 | **1088.627 **           | 3,585                   | 49.355                  | 
+| August                  | 294,107                 | 1085.444                | 4,724                   | 61.505                  | 
+| September               | 199,621                 | 1075.208                | 8,153                   | 166.673                 |   
+| October                 | 117,951                 | 792.267                 | 55,536                  | 702.072                 | 
+| November                | 86,021                  | 628.935                 | 107,063                 | 735.374                 |  
+| December                | 56,683                  | 373.090                 | 188,213                 | 1082.873                |
+| Peak/Total              | Total = 1,871,540       | Peak = 1088.627         | Total = 909,166         | Peak = 1196.877         |
 
 * **Percentage of Peak** After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
     * Be sure to enter the percentages according to the time block in which the loads occur. In multi-zone projects, **LoopLink PRO** will use this information to determine the maximum heating and cooling loads for the GHEX design. 
