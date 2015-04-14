@@ -17,9 +17,10 @@ You may search all of the projects (shared and private) accessible to you within
 All searches are case insensitive so 'TEST' is the same as 'Test' is the same as 'tEst' etc.
 
 The search function is limited to specific categories. You may choose to search by PROJECT, CLIENT or LOCATION.
-    * **PROJECT** The default search selection. Searching by PROJECT will find all projects with a name that contains the search string.
-    * **CLIENT** Searching by CLIENT will find all projects with a client whose first or last name contains the search string.
-    * **LOCATION** Seaching by LOCATION will find all projects with a location (country, street, city or state) containing the search string.
+
+* **PROJECT** The default search selection. Searching by PROJECT will find all projects with a name that contains the search string.
+* **CLIENT** Searching by CLIENT will find all projects with a client whose first or last name contains the search string.
+* **LOCATION** Seaching by LOCATION will find all projects with a location (country, street, city or state) containing the search string.
     
 Any search performed will be remembered as you navigate from folder to folder. Each folder will display a count in the form&mdash; X of Y next to the folder name. X is the number of projects in that folder that match your search and Y is the total number of projects in that folder.
 
@@ -28,10 +29,10 @@ By clicking on one of the filters, your project list will be reduced or expanded
 
 To the right of the name of each filter is the count of projects that match the result of clicking on the filter.
 
-    * **All My Projects** The default filter for the project list. This filter contains every project you have created.
-    * **Checked Out To Me** This filter shows just the projects that are checked out to you. When a project is checked out to you.
+* **All My Projects** The default filter for the project list. This filter contains every project you have created.
+* **Checked Out To Me** This filter shows just the projects that are checked out to you. When a project is checked out to you.
     
-    If this filter unavailable, you have not shared any projects with other users and so check-in/check-out roles do not apply to you.
+If this filter unavailable, you have not shared any projects with other users and so check-in/check-out roles do not apply to you.
     
 ## Folders
 Folders allow you to more easily organize large numbers of projects.  In LoopLink PRO folders may only contain projects not other folders.
@@ -64,13 +65,16 @@ The project list will contain all of the projects that match the search, filter 
 
 ### Universal Actions
 Click on any text in the project listing to navigate to the project.
-    # <span class="icon_def">![Generate Report](img/report.png "Generate Report")</span> Open the report generation page.
-    # <span class="icon_def">![Duplicate Project](img/duplicate.png "Duplicate Project")</span> Create an identical copy of this project and all of the elements contained therein. If you are a collaborator and you duplicate a project owned by another user, woul will be the owner of the duplicate project.
-    Sharing permissions do not transfer to duplicates.
-    # <span class="icon_def">![Delete Project](img/delete.png "Delete Project")</span> Deletes the project. Deleted projects will be transferred to the Trash folder and will be recoverable until you 'empty' them from the trash.
-        # If you delete a project that is shared with other users, they will no longer be able to access the project.
-        # Projects recovered from the trash will be restored to their original sharing permisssions.
-        # Projects recovered from the trash will be returned to their original containing folder (if it exists). If the original folder is unavailable, the project will be marked as 'Unfiled'
+
+* <span class="icon_def">![Generate Report](img/report.png "Generate Report")</span> Open the report generation page.
+* <span class="icon_def">![Duplicate Project](img/duplicate.png "Duplicate Project")</span> Create an identical copy of this project and all of the elements contained therein.
+	* If you are a collaborator and you duplicate a project owned by another user, you will be the owner of the duplicate project.
+	* Sharing permissions do not transfer to duplicates.
+* <span class="icon_def">![Delete Project](img/delete.png "Delete Project")</span> Deletes the project.
+	* Deleted projects are moved to the Trash folder and will be recoverable until you 'empty' the trash.
+	* If you delete a project that is shared with other users, they will no longer be able to access the project.
+	* Projects recovered from the trash will be restored to their original sharing permisssions.
+	* Projects recovered from the trash will be returned to their original containing folder (if it exists). If the original folder is unavailable, the project will be marked as 'Unfiled'
 
 ### Check In/Check Out
 LoopLink PRO allows users to share projects with any one else that has a LoopLink PRO account. To facilitate this interaction, the Check In/Check Out policy has been implemented. Just like a library book, a project may only be checked out to a single user at a time. Only the person to whom the project is checked out will be able to make changes. All other users will be forced into a read-only mode.
@@ -78,16 +82,17 @@ LoopLink PRO allows users to share projects with any one else that has a LoopLin
 If you have not shared your project with other users, the project is necessarily checked out to you.
 
 #### Status
-    # <span class="icon_def">![Available for Checkout](img/available.png "Available for Checkout")</span> The open box indicates that the project is available to be checked out by you. Click on the box or any of the text describing the project to check it out.
-    
-    # <span class="icon_def">![Checked Out By You](img/checked_out.png "Checked Out By You")</span> A box with a check mark inside of it indicates a project that is currently checked out by you.  You are the only user who has the baility to modify the project.
-    
-    # <span class="icon_def">![Locked](img/locked.png "Locked")</span> Projects with the lock icon may be checked out by another user or projects for which you are only granted the permission to view. In either case, you only have the ability to view the project and generate a report. You are not able to edit any of the projects design parameters.
+
+* <span class="icon_def">![Available for Checkout](img/available.png "Available for Checkout")</span> The open box indicates that the project is available to be checked out by you. Click on the box or any of the text describing the project to check it out.
+
+* <span class="icon_def">![Checked Out By You](img/check_in.png "Checked Out By You")</span> A box with a check mark inside of it indicates a project that is currently checked out by you.  You are the only user who has the baility to modify the project.
+
+* <span class="icon_def">![Locked](img/checked_out.png "Locked")</span> Projects with the lock icon may be checked out by another user or projects for which you are only granted the permission to view. In either case, you only have the ability to view the project and generate a report. You are not able to edit any of the projects design parameters.
 
 #### Checking Out Projects
 Projects that are not currently checked out will by default be checked out to the first user with edit access to open the project. The project will remain as checked out to them until they manually check the project in through the project list or through a 'Check In Request' response.
-    * The project owner may force a project check in by denying access to the collaborator who has the project checked out.
-    * Changing access rights is immediate and may result in unsaved changes made by the collaborator to whom the prpject is checked out.
+* The project owner may force a project check in by denying access to the collaborator who has the project checked out.
+* Changing access rights is immediate and may result in unsaved changes made by the collaborator to whom the prpject is checked out.
 
 #### Request Check In
 If you have the right to edit a project but the project is checked out to someone else, you may be given the opportunity to request check in. Availability of this request feature is first come/first served.
