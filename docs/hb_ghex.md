@@ -65,6 +65,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
     * Greater wall thickness (resulting in higher pipe pressure ratings) are associated with lower values of DR.
     * DR-11 HDPE (3408/3608) is the most commonly used u-bend piping, which has a 160 psi pressure rating at 73.4&deg;F.
     * DR-9 HDPE (3408/3608) has a 200 psi pressure rating at 73.4&deg;F.
+    * Pertinent properties of Outside Diameter (OD), Inside Diameter (ID) and Pressure Rating (psi, according to AWWA C901/C906) are displayed once a pipe selection has been made.  
     * Refer to Table A.1 in Chapter 3 of the [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute") for more information on HDPE pipe pressure ratings.
 * <span class="term">Nominal Size</span> The u-bend pipe diameter to be used in the active section of the horizontally-bored GHEX.
     * **LoopLink PRO** will account for film resistance (a function of Reynold's number, which is determined by calculating gpm per loop, circulating fluid type, temperature and antifreeze concentration).
