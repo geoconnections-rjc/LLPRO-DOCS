@@ -216,7 +216,7 @@ Zone load entry will depend on the input method chosen:</li>
 <p><em>For more information on EFLH values for various locations, building types and occupancy patterns, refer to Table 8 in Chapter 34, page 18 in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>.</em></p>
 <h3 id="monthly-load-entry">Monthly Load Entry</h3>
 <p>Monthly load data is an intermediate data set to perform GHEX design length calculations. You may manually enter monthly load data or import it (.CSV). </p>
-<h5 id="manual-entry">Manual Entry</h5>
+<h5 id="manual-monthly-load-entry">Manual Monthly Load Entry</h5>
 <ul>
 <li><strong>Total Cooling</strong> The total amount of heat energy (kBtu or kWh) that must be removed from the space in cooling to maintain the space t-stat set point.<ul>
 <li>Enter the value for each respective month. <strong>LoopLink PRO</strong> will use the annual sum and to calculate values for annual EFLH in cooling mode.</li>
@@ -237,27 +237,123 @@ Zone load entry will depend on the input method chosen:</li>
 </ul>
 </li>
 </ul>
-<h5 id="import-csv">Import (.CSV)</h5>
-<p>You may import monthly loads via a Trane <strong>TRACE 700</strong> <a href="http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html" title="Trane TRACE 700">GT file</a> report (must be in .CSV format).</p>
-<pre><code>* This sample GT file would be interpreted as follows:.
-*   | Month                   | Total Cooling (kBtu )   | Peak Cooling (kBtu/hr)  | Total Heating (kBtu)    | Peak Heating (kBtu/hr)  |
-    | :---------------------: | :---------------------: | :---------------------: | :---------------------: | :---------------------: |
-    | January                 | 100                     |
-    | February                | 4.0 - 6.0 gpm       |
-            | March                   |
-            | April
-            | May
-            | June
-            | July
-            | August
-            | September
-            | October
-            | November
-            | December
-            | Peak/Total
-</code></pre>
+<h5 id="import-monthly-loads-csv-txt-or-gt">Import Monthly Loads (.CSV, .TXT, or .GT)</h5>
 <ul>
-<li><strong>Percentage of Peak</strong> After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.<ul>
+<li>
+<p>You may import monthly loads via a <strong><a href="http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html" title="Explanation of TRACE GT file">Trane TRACE 500 .GT file</a></strong>.</p>
+</li>
+<li>
+<p><a href="../examples/SampleGT.txt" title="Sample GT Report">Click here</a> to download a sample GT file, would be interpreted as follows:</p>
+</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Total Cooling (kBtu)</th>
+<th>Peak Cooling (kBtu/hr)</th>
+<th>Total Heating (kBtu)</th>
+<th>Peak Heating (kBtu/hr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January</td>
+<td>58,588</td>
+<td>485.920</td>
+<td>208,315</td>
+<td>1025.406</td>
+</tr>
+<tr>
+<td>February</td>
+<td>54,606</td>
+<td>473.293</td>
+<td>162,140</td>
+<td><strong>1196.877</strong></td>
+</tr>
+<tr>
+<td>March</td>
+<td>90,318</td>
+<td>652.786</td>
+<td>111,750</td>
+<td>896.059</td>
+</tr>
+<tr>
+<td>April</td>
+<td>121,940</td>
+<td>1064.211</td>
+<td>40,434</td>
+<td>581.409</td>
+</tr>
+<tr>
+<td>May</td>
+<td>211,928</td>
+<td>1064.995</td>
+<td>13,962</td>
+<td>677.173</td>
+</tr>
+<tr>
+<td>June</td>
+<td>281,978</td>
+<td>1081.846</td>
+<td>5,291</td>
+<td>99.917</td>
+</tr>
+<tr>
+<td>July</td>
+<td>295,799</td>
+<td><strong>1088.627 </strong></td>
+<td>3,585</td>
+<td>49.355</td>
+</tr>
+<tr>
+<td>August</td>
+<td>294,107</td>
+<td>1085.444</td>
+<td>4,724</td>
+<td>61.505</td>
+</tr>
+<tr>
+<td>September</td>
+<td>199,621</td>
+<td>1075.208</td>
+<td>8,153</td>
+<td>166.673</td>
+</tr>
+<tr>
+<td>October</td>
+<td>117,951</td>
+<td>792.267</td>
+<td>55,536</td>
+<td>702.072</td>
+</tr>
+<tr>
+<td>November</td>
+<td>86,021</td>
+<td>628.935</td>
+<td>107,063</td>
+<td>735.374</td>
+</tr>
+<tr>
+<td>December</td>
+<td>56,683</td>
+<td>373.090</td>
+<td>188,213</td>
+<td>1082.873</td>
+</tr>
+<tr>
+<td>Peak/Total</td>
+<td>Total = 1,871,540</td>
+<td>Peak = 1088.627</td>
+<td>Total = 909,166</td>
+<td>Peak = 1196.877</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Percentage of Peak</strong> After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.</p>
+<ul>
 <li>Be sure to enter the percentages according to the time block in which the loads occur. In multi-zone projects, <strong>LoopLink PRO</strong> will use this information to determine the maximum heating and cooling loads for the GHEX design. </li>
 <li>The most critical values will be entered in the time block in which the peak values occur (100%).</li>
 <li>Accuracy is not as critical for the percentage values in off-peak time blocks as they will simply be used to calculate the system part-load factor.</li>

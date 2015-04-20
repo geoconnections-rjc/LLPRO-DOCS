@@ -60,18 +60,15 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 </div>
 
 ## Borehole Definition
-
 * <span class="term">Uses Permanent Casing</span> Select this box if loopfield construction will be such that permanent casing will be left in the bore.  **LoopLink PRO** will account for the effect of increased bore diameter in the cased portion of the bore as well as the effect of increased borehole thermal resistance when PVC casing is used.
 * <span class="term">Bore Diameter</span> The diameter of the borehole being drilled for insertion of the GHEX piping.
     * Common borehole diameters range from 4&quot;-6&quot;, depending on drilling conditions and the size of the u-bend piping being utilized.
-* <span class="term">Piping Material</span> The piping material used in the active portion of the vertical GHEX.
+* <span class="term">Piping Material</span> The piping material used in the active portion of the vertical GHEX. 
+    * Pertinent properties of Outside Diameter (OD), Inside Diameter (ID) and Working Pressure (psi) are displayed (per ASTM D-3035) once the piping material, dimension ratio & nominal size have been selected.
     * HDPE and PEXa are the only piping materials formally accepted by the [IGSHPA Standards Committee](http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html "Geo-Connections Bookstore") for use in the buried portion of a GHEX piping system.
 * <span class="term">Dimension Ratio (DR)</span> The ratio of loop pipe outside diameter to its wall thickness.
-    * Greater wall thickness (resulting in higher pipe pressure ratings) are associated with lower values of DR.
-    * DR-11 HDPE (3408/3608) is the most commonly used u-bend piping, which has a 160 psi pressure rating at 73.4&deg;F.
-    * DR-9 HDPE (3408/3608) has a 200 psi pressure rating at 73.4&deg;F.
-    * Pertinent properties of Outside Diameter (OD), Inside Diameter (ID) and Pressure Rating (psi, according to AWWA C901/C906) are displayed once a pipe selection has been made.  
     * Refer to Table A.1 in Chapter 3 of the [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute") for more information on HDPE pipe pressure ratings.
+    * Per Section 1C.2.3 of [IGSHPA's Design & Installation Standards ](http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html "Geo-Connections Bookstore"), all ground-loop piping with a diameter of 2&quot; or less should have a minimum working pressure of 160 psi.  
 * <span class="term">Nominal Size</span> The u-bend pipe diameter to be used in the active section of the vertically-bored GHEX.
     * **LoopLink PRO** will account for film resistance (a function of Reynold's number, which is determined by calculating gpm per loop, circulating fluid type, temperature and antifreeze concentration).
 	* Design the GHEX to stay within the provided flow ranges (per parallel loop) in order to guarantee that parallel loop flow will be:
