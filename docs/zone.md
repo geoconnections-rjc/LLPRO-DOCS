@@ -133,9 +133,6 @@ View the loads (by time block) for the current **Zone** according to the informa
     * A value less than 100% indicates that the equipment is undersized relative to the peak load.
 * <span class="term">Efficiency</span> The calculated cooling EER and heating COP for the equipment specified in the current **Zone**.
 * <span class="term">Demand</span> The calculated electrical demand for the equipment specified in the current **Zone**.
-* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the current **Zone**. This is only displayed for **Connected** flow analysis mode.
-* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the current **Zone** . Part load factor (PLF) is used to determine the system design flow rate for **Connected** flow analysis mode.
-* <span class="term">Design Flow</span> The calculated **Zone** flow that the active GHEX must accomodate. This is only displayed for **Connected** flow analysis mode.
 ## Zone Group Design Day
 
 View the aggregate loads for the active **Zone Group**.

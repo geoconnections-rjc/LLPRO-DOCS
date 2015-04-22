@@ -93,9 +93,6 @@ View the calculated loads (by time block) for the current **Hot Water Zone** acc
     * A value less than 100% indicates that the equipment is undersized relative to the peak load.
 * <span class="term">Efficiency</span> The calculated heating COP for all equipment specified in the active hot water zone.
 * <span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active hot water zone.
-* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the active hot water zone. This is only displayed for **Connected** flow analysis mode.
-* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the active hot water zone . Part load factor (PLF) is used to determine the system design flow rate for **Connected** flow analysis mode.
-* <span class="term">Design Flow</span> The calculated active hot water zone flow that the active GHEX must accomodate, either based on peak block load (**Peak Block (Primary-Secondary)** or **Peak Block (Unitary)**) or based on connected flow multiplied by the part load factor (**Connected**).
 
 ## Zone Group Design Day
 
