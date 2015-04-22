@@ -13,19 +13,18 @@ In **LoopLink PRO**, a Zone Group can only be served by one active GHEX. Here ar
 
 ## Zone Group Name
 
-
 * <span class="term">Name</span> Name the zone group currently being designed. An unlimited number of zone groups are allowed.
 
 ## Zone Group Flow
 
-* <span class="term">Flow Analysis Mode</span> Select the desired mode to calculate the system flow requirements.
-    * <span class="term">Peak Block (Primary-Secondary)</span> Select this mode if the interior building loop will be decoupled from the exterior GHEX piping (i.e. - inside flow rate can differ from the outside flow rate).
-        * In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from both reduced load and flow requirements due to the fact that the inside and outside flow rates can differ.
-        * **LoopLink PRO** will calculate system flow based on the peak load requirements for the GHEX (after accounting for peak load reduction in load sharing applications) according to the desired **Block Flow Per Ton**
-    * <span class="term">Peak Block (Unitary)</span> Select this mode if the interior building loop is directly coupled to the exterior GHEX piping where the inside and outside flow rates have to be the same.
-        * In load-sharing applications (i.e. simultaneous hot water generation and space cooling load), the GHEX will benefit from reduced load requirements but must be able to accommodate the higher flow rate required by concurrent equipment operation (separate equipment serving the simultaneous heating and cooling loads) due to the unitary piping/control arrangement.
-        * **LoopLink PRO** will calculate system flow based on the peak load requirements for the GHEX (in addition to any loads that operate concurrently in load sharing applications which will increase system flow requirements) according to the desired **Block Flow Per Ton**
-    * <span class="term">Connected</span> Select this mode to directly specify the system flow rate (which is done on the Zone page). 
+* <span class="term">Flow Analysis Mode</span> Select the desired mode to determine the design flow. Depending on the selection, **LoopLink PRO** will calculate flow either based on peak block load or specified equipment flow.
+    * <span class="term">Peak Block (Primary-Secondary)</span> Select this mode to calculate design flow based on the peak loads where the interior piping flow is decoupled from the exterior GHEX piping  flow (i.e. - the inside flow rate can differ from the outside flow rate).
+        * With this analysis mode, **LoopLink PRO** will account for peak load reduction due to load sharing and calculate flow according to the desired **Block Flow Per Ton**.
+        * An example of a load-sharing application would be simultaneous hot water generation and space cooling load.  In this example, the GHEX will benefit from both reduced load and flow due to the fact that the inside and outside flow rates can differ.
+    * <span class="term">Peak Block (Unitary)</span> Select this mode to calculate design flow based on the peak loads where the interior building flow is directly coupled to the exterior GHEX piping (i.e. - the inside and outside flow rates must match one another).
+        * With this analysis mode, **LoopLink PRO** will calculate system flow based on the peak loads according to the desired **Block Flow Per Ton**. It will not account for peak reduction due to load sharing in the zone group.
+        * An example of loads that operate concurrently to increase system flow requirements would be simultaneous space cooling and hot water generation. In this example, the GHEX will benefit from reduced load but not reduced flow requirements due to the fact that the inside and outside flow rates cannot differ.
+    * <span class="term">Connected</span> Select this mode to determine the design flow based on equipment requirements in the zone group. 
 * <span class="term">Block Flow Per Ton</span> The Zone Group flow rate that the GHEX must accommodate. 
     * Optimal flow rates for closed loop systems are in the 2.5-3.0 gpm per ton range.
     * In some cases, 2 gpm per ton is acceptable but 3+ gpm per ton almost always results in excessive pump power.

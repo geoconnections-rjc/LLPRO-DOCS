@@ -25,7 +25,7 @@ Design day load data is the minimum information required to perform GHEX design 
 * **<span class="cooling">COOLING MODE LOAD ENTRY</span>** Enter loads in the <span class="cooling">COOLING COLUMN</span> to account for peak cooling and annual ground loads for the current **Zone** according to the time block in which they occur.
     * The most critical values will be the peak loads placed in the time block in which they occur.
     * Enter the average <span class="cooling">COOLING</span> loads in the remaining (three) time blocks. 
-* **Equivalent Full Load Run Hours** The number of hours the zone would have to be under peak heating/cooling load conditions for the system to add/remove the equivalent amount of heat energy to meet its annual heating/cooling requirements (Peak Load (Btu/hr) x EFLH (hr) = Energy Added/Removed (Btu)).
+* <span class="term">Equivalent Full Load Run Hours</span> The number of hours the zone would have to be under peak heating/cooling load conditions for the system to add/remove the equivalent amount of heat energy to meet its annual heating/cooling requirements (Peak Load (Btu/hr) x EFLH (hr) = Energy Added/Removed (Btu)).
     * This input is used to determine annual ground loads and can be used as an alternative to a detailed hour-by-hour building analysis.
 
 
@@ -34,15 +34,15 @@ Design day load data is the minimum information required to perform GHEX design 
 ### Monthly Load Entry
 Monthly load data is an intermediate data set to perform GHEX design length calculations. You may manually enter monthly load data or import it (.CSV). 
 ##### Manual Monthly Load Entry
-* **Total Cooling** The total amount of heat energy (kBtu or kWh) that must be removed from the space in cooling to maintain the space t-stat set point.
+* <span class="term">Total Cooling</span> The total amount of heat energy (kBtu or kWh) that must be removed from the space in cooling to maintain the space t-stat set point.
     * Enter the value for each respective month. **LoopLink PRO** will use the annual sum and to calculate values for annual EFLH in cooling mode.
     * The values entered should be the monthly cooling energy requirements for the equipment (which include duct/distribution system losses, ventilation, etc. when appropriate) but should not include compressor energy from the GSHP units themselves (i.e. - heat removed from space, not heat of rejection).
-* **Peak Cooling** The peak cooling load for each month. **LoopLink PRO** will find the month where peak cooling load occurs and use it for the design day analysis.
-* **Total Heating** The total amount of heat energy (kBtu or kWh) that must be added to the space in heating to maintain the space t-stat set point.
+* <span class="term">Peak Cooling</span> The peak cooling load for each month. **LoopLink PRO** will find the month where peak cooling load occurs and use it for the design day analysis.
+* <span class="term">Total Heating</span> The total amount of heat energy (kBtu or kWh) that must be added to the space in heating to maintain the space t-stat set point.
     * Enter the value for each respective month. **LoopLink PRO** will use the annual sum and to calculate values for annual EFLH in heating mode.
     * The values entered should be the monthly heating energy requirements for the equipment (which include duct/distribution system losses, ventilation, etc. when appropriate) but should not include compressor energy from the GSHP units themselves (i.e. - heat added to space, not heat of extraction).
-* **Peak Heating** The peak heating load for each month. **LoopLink PRO** will find the month where peak heating load occurs and use it for the design day analysis.
-* **Percentage of Peak** Specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
+* <span class="term">Peak Heating</span> The peak heating load for each month. **LoopLink PRO** will find the month where peak heating load occurs and use it for the design day analysis.
+* <span class="term">Percentage of Peak</span> Specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
     * The most critical values will be entered in the time block in which the peak values occur (100%).
     * Accuracy is not as critical for the percentage values in off-peak time blocks as they will simply be used to calculate the system part-load factor.
     * The recommended entries in the off-peak time blocks will be the percentage that corresponds with the **AVERAGE** heating and cooling loads in each respective time period.
@@ -67,7 +67,7 @@ Monthly load data is an intermediate data set to perform GHEX design length calc
     | December                | 56,683                  | 373.090                 | 188,213                 | 1082.873                |
     | Peak/Total              | Total = 1,871,540       | Peak = 1088.627         | Total = 909,166         | Peak = 1196.877         |
 
-* **Percentage of Peak** After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
+* <span class="term">Percentage of Peak</span> After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.
     * Be sure to enter the percentages according to the time block in which the loads occur. In multi-zone projects, **LoopLink PRO** will use this information to determine the maximum heating and cooling loads for the GHEX design. 
     * The most critical values will be entered in the time block in which the peak values occur (100%).
     * Accuracy is not as critical for the percentage values in off-peak time blocks as they will simply be used to calculate the system part-load factor.
@@ -84,17 +84,17 @@ Monthly load data is an advanced data set to perform GHEX design length calculat
 ###Simple Equipment Entry
 With this method, only basic inputs of equipment capacity and efficiency are needed. Equipment selection tables are hidden.
 
-* **Connected Flow** The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.
+* <span class="term">Connected Flow</span> The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.
     * This field will only appear if **Connected** is the chosen **Flow Analysis Mode** for the **Zone Group**.
-* **Cooling Cap** The total cooling capacity of the specified equipment for a given set of operating conditions.
+* <span class="term">Cooling Cap</span> The total cooling capacity of the specified equipment for a given set of operating conditions.
     * Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.
-* **Sensible Capacity Ratio (SCR)** The equipment's ratio of sensible cooling capacity to its total cooling capacity, expressed as a decimal.
+* <span class="term">Sensible Capacity Ratio (SCR)</span> The equipment's ratio of sensible cooling capacity to its total cooling capacity, expressed as a decimal.
     * For example, a SCR=0.75 indicates that 75% of the selected unit's total cooling capacity is attributed to sensible cooling and the remaining 25% being attributed to latent cooling.
     * Typical SCR values range from 0.75-0.78 under normal operating conditions for GSHP equipment.  
-* **EER** The efficiency of the specified equipment in cooling mode, defined to be its **Total Cooling Capacity** (Btu/hr) divided by **Electrical Demand** (Watts).
-* **Heating Cap** The heating capacity of the specified equipment for a given set of operating conditions.
+* <span class="term">EER</span> The efficiency of the specified equipment in cooling mode, defined to be its **Total Cooling Capacity** (Btu/hr) divided by **Electrical Demand** (Watts).
+* <span class="term">Heating Cap</span> The heating capacity of the specified equipment for a given set of operating conditions.
     * Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.
-* **COP** The efficiency of the specified equipment in heating mode, defined to be its **Heating Capacity** (Btu/hr) divided by **Electrical Demand** (converted to Btu/hr, 3,412 Btu/hr = 1 kW).
+* <span class="term">COP</span> The efficiency of the specified equipment in heating mode, defined to be its **Heating Capacity** (Btu/hr) divided by **Electrical Demand** (converted to Btu/hr, 3,412 Btu/hr = 1 kW).
 
 *For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's [Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide](http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html "Geo-Connections Bookstore")*
 
@@ -123,31 +123,35 @@ View the loads (by time block) for the current **Zone** according to the informa
 
 * **<span class="heating">HEATING LOAD BY TIME BLOCK</span>** The specified heating loads (by time block) for the current **Zone**.
 * **<span class="cooling">COOLING LOAD BY TIME BLOCK</span>** The specified cooling loads (by time block) for the current **Zone**.
-* **Full Load Run Hours** The specified value for FLRHs in the current **Zone**.
+* <span class="term">Full Load Run Hours</span> The specified value for FLRHs in the current **Zone**.
 
 ## Zone Equipment
 
-
-* **Total Capacity** The calculated heating/cooling capacity for the equipment specified in the current **Zone**.
-* **Sensible Capacity** The calculated sensible cooling capacity for the equipment specified in the current **Zone** (does not apply to heating).
-* **Total Sizing** The percentage of peak load that the specified equipment will be capable of covering for the current **Zone**.
+* <span class="term">Total Capacity</span> The calculated heating/cooling capacity for the equipment specified in the current **Zone**.
+* <span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for the equipment specified in the current **Zone** (does not apply to heating).
+* <span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the current **Zone**.
     * A value less than 100% indicates that the equipment is undersized relative to the peak load.
-* **Efficiency** The calculated cooling EER and heating COP for the equipment specified in the current **Zone**.
-* **Demand** The calculated electrical demand for the equipment specified in the current **Zone**.
-
+* <span class="term">Efficiency</span> The calculated cooling EER and heating COP for the equipment specified in the current **Zone**.
+* <span class="term">Demand</span> The calculated electrical demand for the equipment specified in the current **Zone**.
+* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the current **Zone**. This is only displayed for **Connected** flow analysis mode.
+* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the current **Zone** . Part load factor (PLF) is used to determine the system design flow rate for **Connected** flow analysis mode.
+* <span class="term">Design Flow</span> The calculated **Zone** flow that the active GHEX must accomodate. This is only displayed for **Connected** flow analysis mode.
 ## Zone Group Design Day
 
 View the aggregate loads for the active **Zone Group**.
 
 * **<span class="heating">HEATING LOAD BY TIME BLOCK</span>** The calculated heating loads (by time block) for all active space conditioning and hot water zones in the **Zone Group**.
 * **<span class="cooling">COOLING LOAD BY TIME BLOCK</span>** The calculated cooling loads (by time block) for all active space conditioning and hot water zones in the **Zone Group**.
-* **Full Load Run Hours** The weighted average value for FLRHs, which considers all active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Full Load Run Hours</span> The weighted average value for FLRHs, which considers all active space conditioning and hot water zones in the **Zone Group**.
 
 ## Zone Group Equipment
 
-* **Total Capacity** The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
-* **Sensible Capacity** The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the **Zone Group** (does not apply to heating).
-* **Total Sizing** The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Total Capacity</span> The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the **Zone Group** (does not apply to heating).
+* <span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the **Zone Group**.
     * A value less than 100% indicates that the equipment is undersized relative to the peak load.
-* **Efficiency** The calculated cooling EER and heating COP for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
-* **Demand** The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Efficiency</span> The calculated cooling EER and heating COP for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the **Zone Group**. This is only displayed for **Connected** flow analysis mode.
+* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the **Zone Group** . Part load factor (PLF) is used to determine the system design flow rate for **Connected** flow analysis mode.
+* <span class="term">Design Flow</span> The calculated **Zone Group** flow that the active GHEX must accomodate, either based on peak block load (**Peak Block (Primary-Secondary)** or **Peak Block (Unitary)**) or based on connected flow multiplied by the part load factor (**Connected**).
