@@ -125,9 +125,9 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
     * **LoopLink PRO** will account for the portion of the loop that is installed above target depth. The most commonly used values are provided as selection choices.
     * For example, if a bore is installed 45 ft. below grade and the drilling entry angle is specified to be 3:1 (18.4 degrees), it will take a 135 ft. run for the drilling length to reach the target depth.
     
-## Calculation Results
+# Object Summary
 
-Calculation results are displayed in the left-hand output panel:
+The Object Summary is displayed to the left of the main page.
 
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.

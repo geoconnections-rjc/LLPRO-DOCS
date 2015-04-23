@@ -22,9 +22,9 @@ With this method, the simple heat pump entry fields are hidden. An unlimited num
     * Save the selection to apply it to the zone.
     * Once a model has been added to the zone, you may add another or move on to the next task in the project.
 
-## Calculation Results
+# Object Summary
 
-Calculation results are displayed in the left-hand output panel:
+The Object Summary is displayed to the left of the main page.
 
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.

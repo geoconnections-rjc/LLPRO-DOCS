@@ -206,3 +206,7 @@ table th, table td{
 code {
     white-space: pre;
 }
+
+.toctree-l4{
+   margin-left:1em;
+}

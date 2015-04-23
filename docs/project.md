@@ -7,6 +7,7 @@ At the top of the Project page are two tabs allowing you to navigate between the
 
 * <span class="icon_def">![Project Details](img/project_details.png "Project Details")</span> View project details
 * <span class="icon_def">![Project History](img/project_history.png "Project History")</span> View project history
+* <span class="icon_def">![Project Report](img/report.png "Project Report")</span> Generate a project report.
 
 ## Sharing
 
@@ -56,3 +57,18 @@ As you work, LoopLink PRO records the changes made to a project in this simple h
 * <span class="term">Field History</span>
 	* Field names are shown in bold. You can click on any field name and all recorded changes to that specific field will be highlighted.
 * This log cannot be modified.
+
+# Report
+The project report page gives you the ability to create an easy to read and share summary of your project. Reports are preformatted and output in DOCx files you can open and edit in <a href="https://office.live.com/start/word.aspx" target="_blank">Word&trade;</a>, <a href="https://www.apple.com/mac/pages/" target="_blank">Pages&trade;</a>,  <a href="https://www.openoffice.org/download/index.html" target="_blank">OpenOffice&trade;</a> or <a href="https://www.libreoffice.org/" target="_blank">LibreOffice&trade;</a> to name a few.
+
+Only active elements will be included in the report.
+
+## Report Types
+
+* <span class="term">Standard Report</span> The standard report will provide a breakdown of the project Zone Group(s) and the active ghex (when available).
+* <span class="term">Detailed Report</span> The detailed report will break out the inputs and outputs for each active element within the project Zone Group(s).
+
+## Selecting Zone Groups
+Some users will choose to use Zone Groups as testing grounds for multiple loop designs or load profiles and may not want to generate a report for all of their iterations. Simply select the Zone Groups you would like to include and generate your report.
+
+

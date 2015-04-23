@@ -130,9 +130,9 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
     * You may specify a separate value in this field when the Cc Spacing Row and Cc Spacing Bore fields are un-linked.
     * **For systems with severe imbalances, values less than 20 ft. are not recommended**. 
 
-## Calculation Results
+# Object Summary
 
-Calculation results are displayed in the left-hand output panel:
+The Object Summary is displayed to the left of the main page.
 
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.

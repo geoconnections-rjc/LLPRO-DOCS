@@ -63,9 +63,9 @@ With this mode selected, the **Average Monthly Consumption** and **Months per Ye
     * Water-water heat pumps (as well as non-reversible water source units) are viable options for hot water generation when required temperatures are below 120&deg;F, although some may be able to reach hot water delivery temperatures up to 140&deg;F.
     * Consult with the manufacturer for more information.
 
-## Calculation Results
+# Object Summary
 
-Calculation results are displayed in the left-hand output panel:
+The Object Summary is displayed to the left of the main page.
 
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
