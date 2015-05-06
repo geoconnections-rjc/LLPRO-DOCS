@@ -106,11 +106,14 @@
                         
                             <li><a class="toctree-l4" href="#operating-conditions">Operating Conditions</a></li>
                         
-                            <li><a class="toctree-l4" href="#calculation-results">Calculation Results</a></li>
+                    
+                        <li class="toctree-l3"><a href="#object-summary">Object Summary</a></li>
                         
                             <li><a class="toctree-l4" href="#heat-energy-by-timeblock">Heat Energy by Timeblock</a></li>
                         
                             <li><a class="toctree-l4" href="#hwg-info">HWG Info</a></li>
+                        
+                            <li><a class="toctree-l4" href="#hwg-capacity">HWG Capacity</a></li>
                         
                             <li><a class="toctree-l4" href="#zone-group-design-day">Zone Group Design Day</a></li>
                         
@@ -253,7 +256,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="calculation-results">Calculation Results</h2>
+<h1 id="object-summary">Object Summary</h1>
 <p>The Object Summary is displayed to the left of the main page.</p>
 <ul>
 <li>Cooling mode calculation results are highlighted in <strong><span class="cooling">BLUE</span></strong>.</li>
@@ -278,6 +281,16 @@
 <li><span class="term">Ground Energy</span> The amount of heat energy extracted from the ground due to hot water system operation for the current <strong>Hot Water Zone</strong>.</li>
 <li><span class="term">Water Volume</span> The calculated volume of hot water generated annually for the current <strong>Hot Water Zone</strong>.</li>
 </ul>
+<h2 id="hwg-capacity">HWG Capacity</h2>
+<ul>
+<li><span class="term">Total Capacity</span> The calculated heating capacity for all equipment specified in the active hot water zone.</li>
+<li><span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the active hot water zone.<ul>
+<li>A value less than 100% indicates that the equipment is undersized relative to the peak load.</li>
+</ul>
+</li>
+<li><span class="term">Efficiency</span> The calculated heating COP for all equipment specified in the active hot water zone.</li>
+<li><span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active hot water zone.</li>
+</ul>
 <h2 id="zone-group-design-day">Zone Group Design Day</h2>
 <p>View the aggregate loads for the active <strong>Zone Group</strong>.</p>
 <ul>
@@ -295,6 +308,9 @@
 </li>
 <li><span class="term">Efficiency</span> The calculated cooling EER/heating COP for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
 <li><span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the <strong>Zone Group</strong>. This is only displayed for <strong>Connected</strong> flow analysis mode.</li>
+<li><span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the <strong>Zone Group</strong> . Part load factor (PLF) is used to determine the system design flow rate for <strong>Connected</strong> flow analysis mode.</li>
+<li><span class="term">Design Flow</span> The calculated <strong>Zone Group</strong> flow that the active GHEX must accomodate, either based on peak block load (<strong>Peak Block (Primary-Secondary)</strong> or <strong>Peak Block (Unitary)</strong>) or based on connected flow multiplied by the part load factor (<strong>Connected</strong>).</li>
 </ul>
 
             </div>

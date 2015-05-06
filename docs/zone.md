@@ -92,9 +92,11 @@ With this method, only basic inputs of equipment capacity and efficiency are nee
     * For example, a SCR=0.75 indicates that 75% of the selected unit's total cooling capacity is attributed to sensible cooling and the remaining 25% being attributed to latent cooling.
     * Typical SCR values range from 0.75-0.78 under normal operating conditions for GSHP equipment.  
 * <span class="term">EER</span> The efficiency of the specified equipment in cooling mode, defined to be its **Total Cooling Capacity** (Btu/hr) divided by **Electrical Demand** (Watts).
+    * Typical values for design EER will range between 10-20 under design conditions.
 * <span class="term">Heating Cap</span> The heating capacity of the specified equipment for a given set of operating conditions.
     * Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.
 * <span class="term">COP</span> The efficiency of the specified equipment in heating mode, defined to be its **Heating Capacity** (Btu/hr) divided by **Electrical Demand** (converted to Btu/hr, 3,412 Btu/hr = 1 kW).
+    * Typical values for design COP will range between 3.0-4.5 under design conditions.
 
 *For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's [Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide](http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html "Geo-Connections Bookstore")*
 

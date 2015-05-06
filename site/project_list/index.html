@@ -60,13 +60,27 @@
                         
                             <li><a class="toctree-l4" href="#finding-your-project-list">Finding Your Project List</a></li>
                         
-                            <li><a class="toctree-l4" href="#navigation">Navigation</a></li>
+                    
+                        <li class="toctree-l3"><a href="#navigation">Navigation</a></li>
+                        
+                            <li><a class="toctree-l4" href="#search">Search</a></li>
                         
                             <li><a class="toctree-l4" href="#filters">Filters</a></li>
                         
+                            <li><a class="toctree-l4" href="#projects-shared-by">Projects Shared By</a></li>
+                        
                             <li><a class="toctree-l4" href="#folders">Folders</a></li>
                         
-                            <li><a class="toctree-l4" href="#list">List</a></li>
+                            <li><a class="toctree-l4" href="#trash">Trash</a></li>
+                        
+                    
+                        <li class="toctree-l3"><a href="#list">List</a></li>
+                        
+                            <li><a class="toctree-l4" href="#create-a-new-project">Create A New Project</a></li>
+                        
+                            <li><a class="toctree-l4" href="#universal-actions">Universal Actions</a></li>
+                        
+                            <li><a class="toctree-l4" href="#check-incheck-out">Check In/Check Out</a></li>
                         
                     
                     </ul>
@@ -173,25 +187,29 @@
 <p>The left-most, navigation column contains search, filters, shared and private folders. The center column is a listing of all the projects that match your current search and/or folder selection and the right-most column is a list of all of your active notifications.</p>
 <h2 id="finding-your-project-list">Finding Your Project List</h2>
 <p>The project list is the first page that opens for all users when they login. If you click on a project name or navigate away from the project list in some way, you may return to the list by simply clicking the LoopLink PRO logo in the top left corner.  Alternatively, you can select 'Project List' under the account menu made accessible by clicking on your initials in the top right corner.</p>
-<h2 id="navigation">Navigation</h2>
-<h3 id="search">Search</h3>
+<h1 id="navigation">Navigation</h1>
+<h2 id="search">Search</h2>
 <p>You may search all of the projects (shared and private) accessible to you within LoopLink PRO. The search feature will look for all or part of the term entered into the field and will filter available projects accordingly. Search criterion will be applied across all of your shared and private projects and the results will be made available organized by folder.</p>
 <p>All searches are case insensitive so 'TEST' is the same as 'Test' is the same as 'tEst' etc.</p>
 <p>The search function is limited to specific categories. You may choose to search by PROJECT, CLIENT or LOCATION.</p>
 <ul>
-<li><strong>PROJECT</strong> The default search selection. Searching by PROJECT will find all projects with a name that contains the search string.</li>
-<li><strong>CLIENT</strong> Searching by CLIENT will find all projects with a client whose first or last name contains the search string.</li>
-<li><strong>LOCATION</strong> Seaching by LOCATION will find all projects with a location (country, street, city or state) containing the search string.</li>
+<li><span class="term">PROJECT</span> The default search selection. Searching by PROJECT will find all projects with a name that contains the search string.</li>
+<li><span class="term">CLIENT</span> Searching by CLIENT will find all projects with a client whose first or last name contains the search string.</li>
+<li><span class="term">LOCATION</span> Seaching by LOCATION will find all projects with a location (country, street, city or state) containing the search string.</li>
 </ul>
 <p>Any search performed will be remembered as you navigate from folder to folder. Each folder will display a count in the form&mdash; X of Y next to the folder name. X is the number of projects in that folder that match your search and Y is the total number of projects in that folder.</p>
 <h2 id="filters">Filters</h2>
 <p>By clicking on one of the filters, your project list will be reduced or expanded to all of the projects matching the very broad categories of All My Projects and in the case of users with teammates, Checked Out To Me. A filter searches across all folders.</p>
 <p>To the right of the name of each filter is the count of projects that match the result of clicking on the filter.</p>
 <ul>
-<li><strong>All My Projects</strong> The default filter for the project list. This filter contains every project you have created.</li>
-<li><strong>Checked Out To Me</strong> This filter shows just the projects that are checked out to you. When a project is checked out to you.</li>
+<li><span class="term">All My Projects</span> The default filter for the project list. This filter contains every project you have created.</li>
+<li><span class="term">Checked Out To Me</span> This filter shows just the projects that are checked out to you. When a project is checked out to you.<ul>
+<li>If this filter unavailable, you have not shared any projects with other users and so check-in/check-out roles do not apply to you.</li>
 </ul>
-<p>If this filter unavailable, you have not shared any projects with other users and so check-in/check-out roles do not apply to you.</p>
+</li>
+</ul>
+<h2 id="projects-shared-by">Projects Shared By</h2>
+<p>This section of the navigation contains the names of your teammates who have given you access to at least one project. Click your teammates name to see a list of all the projects they have shared with you.</p>
 <h2 id="folders">Folders</h2>
 <p>Folders allow you to more easily organize large numbers of projects.  In LoopLink PRO folders may only contain projects not other folders.</p>
 <p>By default, clicking the 'Create New Project' button will add a project to the currently active folder. If no folder is active or you are looking at a filtered view like 'All My Projects' the project will be added to the unfiled folder.</p>
@@ -208,9 +226,38 @@
 <p>Deleting a folder does not delete the projects contained therein.  All of a folders projects will be moved to 'Unfiled' if the folder is deleted.</p>
 <h3 id="organizing-folders">Organizing Folders</h3>
 <p>Drag and drop folders into the desired position in the folder list.</p>
-<h2 id="list">List</h2>
+<h2 id="trash">Trash</h2>
+<p>After deleting a project, a trashcan icon with a running counter will appear in the bottom of the navigation panel on the left side of the screen. Click the icon to view a list of all of the projects you have deleted.</p>
+<ul>
+<li><span class="icon_def"><img alt="Recover From Trash" src="../img/recover.png" title="Recover From Trash" /></span> The trash can with an arrow will recover a deleted project from the trash.<ul>
+<li>Recovered projects will be returned to the folder from whence they were deleted.</li>
+<li>If the original folder is not available the project will simply be left Unfiled.</li>
+</ul>
+</li>
+<li><span class="icon_def"><img alt="Permanently Delete Project" src="../img/delete.png" title="Permanently Delete Project" /></span> Irreversibly deletes the project from LoopLink PRO.<ul>
+<li><strong>YOU CANNOT RETRIEVE A PROJECT THAT HAS BEEN DELETED FROM THE TRASH.</strong></li>
+</ul>
+</li>
+</ul>
+<p>When viewing your trash, the typically dark grey project list header will be red and instead of a 'Create New Project' button, you will have an 'Empty Trash' button.</p>
+<ul>
+<li><span class="term">Empty Trash</span>  Irreversibly deletes all of the projects in your trash from LoopLink PRO.<ul>
+<li><strong>YOU CANNOT RETRIEVE A PROJECT THAT HAS BEEN DELETED FROM THE TRASH.</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="list">List</h1>
 <p>The project list will contain all of the projects that match the search, filter and/or folder specified. By default, projects are organized in order of the most recent modified date.</p>
-<h3 id="universal-actions">Universal Actions</h3>
+<h2 id="create-a-new-project">Create A New Project</h2>
+<p>At the top of the center column and to the right is a large orange button labeled 'Create New Project' click it to start a new project.</p>
+<ul>
+<li>At the start of a new project, you will be guided through two required steps.<ol>
+<li>You must provide a name for your project.</li>
+<li>You must define a Zone Group.</li>
+</ol>
+</li>
+</ul>
+<h2 id="universal-actions">Universal Actions</h2>
 <p>Click on any text in the project listing to navigate to the project.</p>
 <ul>
 <li><span class="icon_def"><img alt="Generate Report" src="../img/report.png" title="Generate Report" /></span> Open the report generation page.</li>
@@ -220,6 +267,7 @@
 </ul>
 </li>
 <li><span class="icon_def"><img alt="Delete Project" src="../img/delete.png" title="Delete Project" /></span> Deletes the project.<ul>
+<li>Only project owners can delete projects. The button will be greyed out for projects shared with you.</li>
 <li>Deleted projects are moved to the Trash folder and will be recoverable until you 'empty' the trash.</li>
 <li>If you delete a project that is shared with other users, they will no longer be able to access the project.</li>
 <li>Projects recovered from the trash will be restored to their original sharing permisssions.</li>
@@ -227,29 +275,34 @@
 </ul>
 </li>
 </ul>
-<h3 id="check-incheck-out">Check In/Check Out</h3>
-<p>LoopLink PRO allows users to share projects with any one else that has a LoopLink PRO account. To facilitate this interaction, the Check In/Check Out policy has been implemented. Just like a library book, a project may only be checked out to a single user at a time. Only the person to whom the project is checked out will be able to make changes. All other users will be forced into a read-only mode.</p>
+<h2 id="check-incheck-out">Check In/Check Out</h2>
+<p>LoopLink PRO allows users to share projects with any one. To facilitate this interaction, the Check In/Check Out policy has been implemented. Just like a library book, a project may only be checked out to a single user at a time. Only the person to whom the project is checked out will be able to make changes. All other users will be forced into a read-only mode.</p>
 <p>If you have not shared your project with other users, the project is necessarily checked out to you.</p>
-<h4 id="status">Status</h4>
+<h3 id="status">Status</h3>
 <ul>
 <li>
 <p><span class="icon_def"><img alt="Available for Checkout" src="../img/available.png" title="Available for Checkout" /></span> The open box indicates that the project is available to be checked out by you. Click on the box or any of the text describing the project to check it out.</p>
 </li>
 <li>
-<p><span class="icon_def"><img alt="Checked Out By You" src="../img/check_in.png" title="Checked Out By You" /></span> A box with a check mark inside of it indicates a project that is currently checked out by you.  You are the only user who has the baility to modify the project.</p>
+<p><span class="icon_def"><img alt="Checked Out By You" src="../img/check_in.png" title="Checked Out By You" /></span> A box with a check mark inside of it indicates a project that is currently checked out by you.  You are the only user who has the ability to modify the project.</p>
 </li>
 <li>
-<p><span class="icon_def"><img alt="Locked" src="../img/checked_out.png" title="Locked" /></span> Projects with the lock icon may be checked out by another user or projects for which you are only granted the permission to view. In either case, you only have the ability to view the project and generate a report. You are not able to edit any of the projects design parameters.</p>
+<p><span class="icon_def"><img alt="Locked" src="../img/checked_out.png" title="Locked" /></span> The lock icon indicates that a project is either be checked out by another user or the project is one which you are only permitted to view. In either case, you only have the ability to view the project and generate a report. You are not able to edit any of the projects design parameters.</p>
 </li>
 </ul>
-<h4 id="checking-out-projects">Checking Out Projects</h4>
-<p>Projects that are not currently checked out will by default be checked out to the first user with edit access to open the project. The project will remain as checked out to them until they manually check the project in through the project list or through a 'Check In Request' response.
-<em> The project owner may force a project check in by denying access to the collaborator who has the project checked out.
-</em> Changing access rights is immediate and may result in unsaved changes made by the collaborator to whom the prpject is checked out.</p>
-<h4 id="request-check-in">Request Check In</h4>
+<h3 id="checking-out-projects">Checking Out Projects</h3>
+<ul>
+<li>Projects that are not currently checked out will by default be checked out to the first user with edit access to open the project. The project will remain as checked out to them until they manually check the project in through the project list or through a 'Check In Request' response.<ul>
+<li>The project owner may force a project check in by denying access to the collaborator who has the project checked out.</li>
+<li>Changing access rights is immediate and may result in unsaved changes made by the collaborator to whom the prpject is checked out.</li>
+</ul>
+</li>
+</ul>
+<h3 id="request-check-in">Request Check In</h3>
 <p>If you have the right to edit a project but the project is checked out to someone else, you may be given the opportunity to request check in. Availability of this request feature is first come/first served.
 A project may have only a single active check in request. The person with the file checked out will receive an email and an on screen notification. They may refuse or accept the the request from either. If accepted, the project will automatically be checked out and the user requesting the check in will be notified by email and on screen notification.</p>
 <p>Anyone with permission to edit may check out the project once it is checked in however, only the requesting party will be notified directly of the project's availability.</p>
+<p>Check in requests expire after 24hours. After which time another check in request may be issued.</p>
 
             </div>
           </div>
