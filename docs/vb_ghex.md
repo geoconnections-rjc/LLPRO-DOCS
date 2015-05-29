@@ -175,8 +175,8 @@ The Object Summary is displayed to the left of the main page.
     * Hot water generation will add to the annual heating ground load, as indicated by the value only being shown in the **<span class="heating">HEATING</span>** column.
 * <span class="term">Total</span> The total cooling ground load due to space conditioning loads and the total heating ground load due to space conditioning load as well as hot water generation loads. 
 * <span class="term">NET</span> The difference between the cooling ground load and the heating ground load.
-    * A negative value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
-    * A positive value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 
 ## Operating Conditions
 
@@ -189,14 +189,14 @@ The Object Summary is displayed to the left of the main page.
 * <span class="term">Y1 Temp. Penalty</span> The temperature change of the soil after the first year of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
     * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET** ground load as well as loopfield geometry (grid/layout and bore spacing). The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
-    * A negative value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
-    * A positive value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 * <span class="term">YN Temp. Penalty</span> The temperature change of the soil after N-years of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
     * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET** ground load as well as loopfield geometry (grid/layout and bore spacing).
     * The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
-    * A negative value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
-    * A positive value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
+    * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 <li class="warning"><h3>WARNING</h3><p>Use of excessive values in the **Year** field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</li>
 
 ## Fluid Properties (Design Path)
