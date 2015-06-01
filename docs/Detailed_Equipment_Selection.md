@@ -2,10 +2,6 @@
 
 Use this page specify the GSHP models to use for the project. Apply a specific set of operating conditions to each GSHP for accurate performance modeling. 
 
-## Operating Conditions
-
-
-
 
 
 ## Equipment Selection

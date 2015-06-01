@@ -14,7 +14,7 @@ My team contains a list of individuals you have shared projects with or have sha
 
 ### Adding Teammates
 You can build your team directly through your projects by inviting anyone with an email address to view or edit your LoopLink PRO projects.
-[Learn more about sharing](project.md#sharing)
+[Learn more about sharing](Project.md#sharing)
 
 ### Deleting Teammates
 To delete teammates, click the delete button to the right of their table row. A confirmation dialog will be displayed.  Follow the instructions provided in the dialog.
