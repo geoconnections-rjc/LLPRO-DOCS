@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Zone - LoopLink PRO Help</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,600&subset=latin,latin-ext,greek' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> LoopLink PRO Help</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../accounts">Account Management</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../project_list">Project List</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../project">Project</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../zone_group">Zone Group</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">Zone</a>
+                
+                    <ul>
+                    
+                        <li class="toctree-l3"><a href="#zone">Zone</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-name">Zone Name</a></li>
+                        
+                            <li><a class="toctree-l4" href="#load-profile">Load Profile</a></li>
+                        
+                            <li><a class="toctree-l4" href="#equipment-selection">Equipment Selection</a></li>
+                        
+                    
+                        <li class="toctree-l3"><a href="#object-summary">Object Summary</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-design-day">Zone Design Day</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-equipment">Zone Equipment</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-group-design-day">Zone Group Design Day</a></li>
+                        
+                            <li><a class="toctree-l4" href="#zone-group-equipment">Zone Group Equipment</a></li>
+                        
+                    
+                    </ul>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../operating_conditions">Detailed Equipment Selection</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../hot_water">Hot Water Systems</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../vb_ghex">Vertically-Bored GHEX</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../hb_ghex">Horizontally-Bored GHEX</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../header">SDSU-RR Header Design</a>
+                
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Zone</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="zone">Zone</h1>
+<p>Use this page to create a new zone within the selected Zone Group. An unlimited number of zones are allowed. </p>
+<h2 id="zone-name">Zone Name</h2>
+<ul>
+<li><strong>Name</strong> Name the zone currently being designed. An unlimited number of zones are allowed.</li>
+</ul>
+<h2 id="load-profile">Load Profile</h2>
+<ul>
+<li>
+<p><span class="term">Days Occupied Per Week</span> The days per week of building occupancy. If the building has periods of partial occupancy, these should be entered as a weighted average.</p>
+<ul>
+<li>For example, if a building is occupied 8 hours per day Monday through Friday and 4 hours on Saturday, a value of 5.5 days per week is recommended. 
+Zone load entry will depend on the input method chosen:</li>
+</ul>
+</li>
+<li>
+<p><strong>Simple Load Entry(Design Day)</strong> Manual Entry Only</p>
+</li>
+<li><strong>Monthly Load Entry</strong> Import or Manual Entry</li>
+<li><strong>Hourly Load Entry</strong> Import Only</li>
+</ul>
+<h3 id="simple-load-entry-design-day">Simple Load Entry: Design Day</h3>
+<p>Design day load data is the minimum information required to perform GHEX design length calculations. Enter the heating and cooling loads for each time block increment. The most critical values will be the peak loads placed in the time block in which they occur. Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor. The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> heating and cooling loads in each respective time period.</p>
+<ul>
+<li><strong><span class="heating">HEATING MODE LOAD ENTRY</span></strong> Enter loads in the <span class="heating">HEATING COLUMN</span> to account for peak heating and annual ground loads for the current <strong>Zone</strong> according to the time block in which they occur.<ul>
+<li>The most critical values will be the peak loads placed in the time block in which they occur.</li>
+<li>Enter the average <span class="heating">HEATING</span> loads in the remaining (three) time blocks.</li>
+</ul>
+</li>
+<li><strong><span class="cooling">COOLING MODE LOAD ENTRY</span></strong> Enter loads in the <span class="cooling">COOLING COLUMN</span> to account for peak cooling and annual ground loads for the current <strong>Zone</strong> according to the time block in which they occur.<ul>
+<li>The most critical values will be the peak loads placed in the time block in which they occur.</li>
+<li>Enter the average <span class="cooling">COOLING</span> loads in the remaining (three) time blocks. </li>
+</ul>
+</li>
+<li><span class="term">Equivalent Full Load Run Hours</span> The number of hours the zone would have to be under peak heating/cooling load conditions for the system to add/remove the equivalent amount of heat energy to meet its annual heating/cooling requirements (Peak Load (Btu/hr) x EFLH (hr) = Energy Added/Removed (Btu)).<ul>
+<li>This input is used to determine annual ground loads and can be used as an alternative to a detailed hour-by-hour building analysis.</li>
+</ul>
+</li>
+</ul>
+<p><em>For more information on EFLH values for various locations, building types and occupancy patterns, refer to Table 8 in Chapter 34, page 18 in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>.</em></p>
+<h3 id="monthly-load-entry">Monthly Load Entry</h3>
+<p>Monthly load data is an intermediate data set to perform GHEX design length calculations. You may manually enter monthly load data or import it (.CSV). </p>
+<h5 id="manual-monthly-load-entry">Manual Monthly Load Entry</h5>
+<ul>
+<li><span class="term">Total Cooling</span> The total amount of heat energy (kBtu or kWh) that must be removed from the space in cooling to maintain the space t-stat set point.<ul>
+<li>Enter the value for each respective month. <strong>LoopLink PRO</strong> will use the annual sum and to calculate values for annual EFLH in cooling mode.</li>
+<li>The values entered should be the monthly cooling energy requirements for the equipment (which include duct/distribution system losses, ventilation, etc. when appropriate) but should not include compressor energy from the GSHP units themselves (i.e. - heat removed from space, not heat of rejection).</li>
+</ul>
+</li>
+<li><span class="term">Peak Cooling</span> The peak cooling load for each month. <strong>LoopLink PRO</strong> will find the month where peak cooling load occurs and use it for the design day analysis.</li>
+<li><span class="term">Total Heating</span> The total amount of heat energy (kBtu or kWh) that must be added to the space in heating to maintain the space t-stat set point.<ul>
+<li>Enter the value for each respective month. <strong>LoopLink PRO</strong> will use the annual sum and to calculate values for annual EFLH in heating mode.</li>
+<li>The values entered should be the monthly heating energy requirements for the equipment (which include duct/distribution system losses, ventilation, etc. when appropriate) but should not include compressor energy from the GSHP units themselves (i.e. - heat added to space, not heat of extraction).</li>
+</ul>
+</li>
+<li><span class="term">Peak Heating</span> The peak heating load for each month. <strong>LoopLink PRO</strong> will find the month where peak heating load occurs and use it for the design day analysis.</li>
+<li><span class="term">Percentage of Peak</span> Specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.<ul>
+<li>The most critical values will be entered in the time block in which the peak values occur (100%).</li>
+<li>Accuracy is not as critical for the percentage values in off-peak time blocks as they will simply be used to calculate the system part-load factor.</li>
+<li>The recommended entries in the off-peak time blocks will be the percentage that corresponds with the <strong>AVERAGE</strong> heating and cooling loads in each respective time period.</li>
+</ul>
+</li>
+</ul>
+<h5 id="import-monthly-loads-csv-txt-or-gt">Import Monthly Loads (.CSV, .TXT, or .GT)</h5>
+<ul>
+<li>
+<p>You may import monthly loads via a <strong><a href="http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html" title="Explanation of TRACE GT file">Trane TRACE 500 .GT file</a></strong>.</p>
+</li>
+<li>
+<p><a href="../examples/SampleGT.txt" title="Sample GT Report">Click here</a> to download a sample GT file, would be interpreted as follows:</p>
+</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Total Cooling (kBtu)</th>
+<th>Peak Cooling (kBtu/hr)</th>
+<th>Total Heating (kBtu)</th>
+<th>Peak Heating (kBtu/hr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January</td>
+<td>58,588</td>
+<td>485.920</td>
+<td>208,315</td>
+<td>1025.406</td>
+</tr>
+<tr>
+<td>February</td>
+<td>54,606</td>
+<td>473.293</td>
+<td>162,140</td>
+<td><strong>1196.877</strong></td>
+</tr>
+<tr>
+<td>March</td>
+<td>90,318</td>
+<td>652.786</td>
+<td>111,750</td>
+<td>896.059</td>
+</tr>
+<tr>
+<td>April</td>
+<td>121,940</td>
+<td>1064.211</td>
+<td>40,434</td>
+<td>581.409</td>
+</tr>
+<tr>
+<td>May</td>
+<td>211,928</td>
+<td>1064.995</td>
+<td>13,962</td>
+<td>677.173</td>
+</tr>
+<tr>
+<td>June</td>
+<td>281,978</td>
+<td>1081.846</td>
+<td>5,291</td>
+<td>99.917</td>
+</tr>
+<tr>
+<td>July</td>
+<td>295,799</td>
+<td><strong>1088.627 </strong></td>
+<td>3,585</td>
+<td>49.355</td>
+</tr>
+<tr>
+<td>August</td>
+<td>294,107</td>
+<td>1085.444</td>
+<td>4,724</td>
+<td>61.505</td>
+</tr>
+<tr>
+<td>September</td>
+<td>199,621</td>
+<td>1075.208</td>
+<td>8,153</td>
+<td>166.673</td>
+</tr>
+<tr>
+<td>October</td>
+<td>117,951</td>
+<td>792.267</td>
+<td>55,536</td>
+<td>702.072</td>
+</tr>
+<tr>
+<td>November</td>
+<td>86,021</td>
+<td>628.935</td>
+<td>107,063</td>
+<td>735.374</td>
+</tr>
+<tr>
+<td>December</td>
+<td>56,683</td>
+<td>373.090</td>
+<td>188,213</td>
+<td>1082.873</td>
+</tr>
+<tr>
+<td>Peak/Total</td>
+<td>Total = 1,871,540</td>
+<td>Peak = 1088.627</td>
+<td>Total = 909,166</td>
+<td>Peak = 1196.877</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><span class="term">Percentage of Peak</span> After importing monthly loads, you must specify the appropriate percentage (compared to the peak value) for the heating and cooling loads in each time block increment.</p>
+<ul>
+<li>Be sure to enter the percentages according to the time block in which the loads occur. In multi-zone projects, <strong>LoopLink PRO</strong> will use this information to determine the maximum heating and cooling loads for the GHEX design. </li>
+<li>The most critical values will be entered in the time block in which the peak values occur (100%).</li>
+<li>Accuracy is not as critical for the percentage values in off-peak time blocks as they will simply be used to calculate the system part-load factor.</li>
+<li>The recommended entries in the off-peak time blocks will be the percentage that corresponds with the <strong>AVERAGE</strong> heating and cooling loads in each respective time period.</li>
+</ul>
+</li>
+</ul>
+<h3 id="hourly-load-entry-import-only-csv">Hourly Load Entry - Import Only (.CSV)</h3>
+<p>Monthly load data is an advanced data set to perform GHEX design length calculations.</p>
+<ul>
+<li>The only method of adding hourly load data is to import it.</li>
+<li>A properly formatted file would be saved in .CSV format and have 8760 lines of data in two columns (first column = <span class="cooling">COOLING LOADS</span>, second column = <span class="heating">HEATING LOADS</span>).</li>
+</ul>
+<h2 id="equipment-selection">Equipment Selection</h2>
+<h3 id="simple-equipment-entry">Simple Equipment Entry</h3>
+<p>With this method, only basic inputs of equipment capacity and efficiency are needed. Equipment selection tables are hidden.</p>
+<ul>
+<li><span class="term">Connected Flow</span> The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.<ul>
+<li>This field will only appear if <strong>Connected</strong> is the chosen <strong>Flow Analysis Mode</strong> for the <strong>Zone Group</strong>.</li>
+</ul>
+</li>
+<li><span class="term">Cooling Cap</span> The total cooling capacity of the specified equipment for a given set of operating conditions.<ul>
+<li>Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.</li>
+</ul>
+</li>
+<li><span class="term">Sensible Capacity Ratio (SCR)</span> The equipment's ratio of sensible cooling capacity to its total cooling capacity, expressed as a decimal.<ul>
+<li>For example, a SCR=0.75 indicates that 75% of the selected unit's total cooling capacity is attributed to sensible cooling and the remaining 25% being attributed to latent cooling.</li>
+<li>Typical SCR values range from 0.75-0.78 under normal operating conditions for GSHP equipment.  </li>
+</ul>
+</li>
+<li><span class="term">EER</span> The efficiency of the specified equipment in cooling mode, defined to be its <strong>Total Cooling Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (Watts).</li>
+<li><span class="term">Heating Cap</span> The heating capacity of the specified equipment for a given set of operating conditions.<ul>
+<li>Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.</li>
+</ul>
+</li>
+<li><span class="term">COP</span> The efficiency of the specified equipment in heating mode, defined to be its <strong>Heating Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (converted to Btu/hr, 3,412 Btu/hr = 1 kW).</li>
+</ul>
+<p><em>For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential &amp; Light Commercial Design and Installation Guide</a></em></p>
+<h3 id="detailed-equipment-entry">Detailed Equipment Entry</h3>
+<p>With this method, the simple heat pump entry fields are hidden. An unlimited number of different make/models of GSHP units are allowed in a single zone.</p>
+<ul>
+<li>Specify whether a <strong>Water-Air</strong> or <strong>Water-Water</strong> unit will be added to the zone. Note that chillers are found in the <strong>Water-Water</strong> category.<ul>
+<li>Use the provided filters to find the appropriate model.</li>
+<li>Once a model has been selected, specify the quantity to add to the zone.</li>
+<li>Use the provided sliders to adjust GSHP performance based on the desired operating conditions - source flow (gpm), entering load air/water temperatures, and load flow (cfm or gpm).</li>
+<li>Save the selection to apply it to the zone.</li>
+<li>Once a model has been added to the zone, you may add another or move on to the next task in the project.</li>
+</ul>
+</li>
+</ul>
+<h1 id="object-summary">Object Summary</h1>
+<p>The Object Summary is displayed to the left of the main page.</p>
+<ul>
+<li>Cooling mode calculation results are highlighted in <strong><span class="cooling">BLUE</span></strong>.</li>
+<li>Heating mode calculations results are highlighted in <strong><span class="heating">YELLOW</span></strong>.</li>
+<li>Note that when an input is changed, the calculation results will not display on screen until the page is saved.</li>
+<li>Individual <strong>Zone</strong> outputs are shown on the top-half of the left-hand output panel. The aggregate <strong>Zone Group</strong> outputs (which include all space conditioning and hot water zone loads) are shown on the bottom-half of the output panel.</li>
+</ul>
+<h2 id="zone-design-day">Zone Design Day</h2>
+<p>View the loads (by time block) for the current <strong>Zone</strong> according to the information entered.</p>
+<ul>
+<li><strong><span class="heating">HEATING LOAD BY TIME BLOCK</span></strong> The specified heating loads (by time block) for the current <strong>Zone</strong>.</li>
+<li><strong><span class="cooling">COOLING LOAD BY TIME BLOCK</span></strong> The specified cooling loads (by time block) for the current <strong>Zone</strong>.</li>
+<li><span class="term">Full Load Run Hours</span> The specified value for FLRHs in the current <strong>Zone</strong>.</li>
+</ul>
+<h2 id="zone-equipment">Zone Equipment</h2>
+<ul>
+<li><span class="term">Total Capacity</span> The calculated heating/cooling capacity for the equipment specified in the current <strong>Zone</strong>.</li>
+<li><span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for the equipment specified in the current <strong>Zone</strong> (does not apply to heating).</li>
+<li><span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the current <strong>Zone</strong>.<ul>
+<li>A value less than 100% indicates that the equipment is undersized relative to the peak load.</li>
+</ul>
+</li>
+<li><span class="term">Efficiency</span> The calculated cooling EER and heating COP for the equipment specified in the current <strong>Zone</strong>.</li>
+<li><span class="term">Demand</span> The calculated electrical demand for the equipment specified in the current <strong>Zone</strong>.</li>
+</ul>
+<h2 id="zone-group-design-day">Zone Group Design Day</h2>
+<p>View the aggregate loads for the active <strong>Zone Group</strong>.</p>
+<ul>
+<li><strong><span class="heating">HEATING LOAD BY TIME BLOCK</span></strong> The calculated heating loads (by time block) for all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><strong><span class="cooling">COOLING LOAD BY TIME BLOCK</span></strong> The calculated cooling loads (by time block) for all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><span class="term">Full Load Run Hours</span> The weighted average value for FLRHs, which considers all active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+</ul>
+<h2 id="zone-group-equipment">Zone Group Equipment</h2>
+<ul>
+<li><span class="term">Total Capacity</span> The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the <strong>Zone Group</strong> (does not apply to heating).</li>
+<li><span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the <strong>Zone Group</strong>.<ul>
+<li>A value less than 100% indicates that the equipment is undersized relative to the peak load.</li>
+</ul>
+</li>
+<li><span class="term">Efficiency</span> The calculated cooling EER and heating COP for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the <strong>Zone Group</strong>.</li>
+<li><span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the <strong>Zone Group</strong>. This is only displayed for <strong>Connected</strong> flow analysis mode.</li>
+<li><span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the <strong>Zone Group</strong> . Part load factor (PLF) is used to determine the system design flow rate for <strong>Connected</strong> flow analysis mode.</li>
+<li><span class="term">Design Flow</span> The calculated <strong>Zone Group</strong> flow that the active GHEX must accomodate, either based on peak block load (<strong>Peak Block (Primary-Secondary)</strong> or <strong>Peak Block (Unitary)</strong>) or based on connected flow multiplied by the part load factor (<strong>Connected</strong>).</li>
+</ul>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../operating_conditions" class="btn btn-neutral float-right" title="Detailed Equipment Selection"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../zone_group" class="btn btn-neutral" title="Zone Group"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <h2>Customer Support</h2>
+    <p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com">LoopLink PRO Support</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../zone_group" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../operating_conditions" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
