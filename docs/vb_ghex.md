@@ -175,7 +175,7 @@ The Object Summary is displayed to the left of the main page.
     * Hot water generation will add to the annual heating ground load, as indicated by the value only being shown in the **<span class="heating">HEATING</span>** column.
 * <span class="term">Total</span> The total cooling ground load due to space conditioning loads and the total heating ground load due to space conditioning load as well as hot water generation loads. 
 * <span class="term">NET</span> The difference between the cooling ground load and the heating ground load.
-    * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant. ?
+    * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 
 ## Operating Conditions
