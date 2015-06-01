@@ -160,8 +160,12 @@ table{
 }
 table th{
     background: #EAEAEF;
-
+	white-space: normal;
 }
+table, table th, table td {
+	border-color:#6A6A6F !important;
+}
+
 table th, table td{
     border: solid 1px #6A6A6F;
     padding:0.5em;
