@@ -14,14 +14,18 @@ LoopLink PRO is web-based software for commercial geothermal system design. It f
 * Lay out interior piping and compute head loss through the critical path, and select pumps and control method.
 * Determine system efficiency and consider modifying the water distribution system if pump demand exceeds 10% of the system total demand, modify the air distribution system if fan demand exceeds 15% of the system total, select more efficient pumps, or redesign ground loops (Chapter 7).
 
-##Recommended References
-These publications will serve as excellent resources for the GSHP system designer: 
+<div class="resource">
+<h3>Recommended References</h3>
+<p>These publications will serve as excellent resources for the GSHP system designer:</p>
+<ul>
+<li><a href="https://www.ashrae.org/resources--publications/handbook"  target="_blank" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a></li>
+<li><a href="http://www.techstreet.com/ashrae/products/1887017" target="_blank" title="ASHRAE Publications">Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems</a></li>
+<li><a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></li>
+<li><a href="http://www.geoconnectionsinc.com/bookstore/grouting_for_vertical_ghp_systems.html" target="_blank" title="Geo-Connections Bookstore">Grouting for Vertical GHP Systems</a></li>
+<li><a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html" target="_blank" title="Geo-Connections Bookstore">Closed-Loop Geothermal Heat Pump System Design & Installation Standards</a></li>
+<li><a href="http://plasticpipe.org/publications/pe_handbook.html" target="_blank" title="Plastic Pipe Institute">Second Edition Handbook of PE Pipe</a></li>
+<li><a href="http://geoproinc.com/resources/importance_of_grout_tc.html" target="_blank" title="GeoPro Document Library">Importance of Thermal Grout Conductivity</a></li>
+</ul>
 
-* [ASHRAE HVAC Applications Handbook (2011)](https://www.ashrae.org/resources--publications/handbook "ASHRAE Publications")
-* [Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems](http://www.techstreet.com/ashrae/products/1887017 "ASHRAE Publications")
-* [Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide](http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html "Geo-Connections Bookstore")
-* [Grouting for Vertical GHP Systems](http://www.geoconnectionsinc.com/bookstore/grouting_for_vertical_ghp_systems.html "Geo-Connections Bookstore")
-* [Closed-Loop Geothermal Heat Pump System Design & Installation Standards](http://www.geoconnectionsinc.com/bookstore/IGSHPA_design_installation_standards.html "Geo-Connections Bookstore")
-* [Second Edition Handbook of PE Pipe](http://plasticpipe.org/publications/pe_handbook.html "Plastic Pipe Institute")
-* [Importance of Thermal Grout Conductivity](http://geoproinc.com/resources/importance_of_grout_tc.html "GeoPro Document Library")
+</div>
 
