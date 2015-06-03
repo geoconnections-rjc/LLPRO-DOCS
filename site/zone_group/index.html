@@ -80,6 +80,8 @@
                         
                             <li><a class="toctree-l4" href="#entering-water-temperatures">Entering Water Temperatures</a></li>
                         
+                            <li><a class="toctree-l4" href="#import-zones">Import Zones</a></li>
+                        
                     
                     </ul>
                 
@@ -166,7 +168,13 @@
             <div class="section">
               <h1 id="zone-group">Zone Group</h1>
 <p>Use this page to create a new zone group within the project. An unlimited number of zone groups are allowed.</p>
-<p>In <strong>LoopLink PRO</strong>, a Zone Group can only be served by one active GHEX. Here are a few examples for project setup/types that can be easily modeled in <strong>LoopLink PRO</strong>:</p>
+<ul>
+<li>
+<p><span class="term">The Zone Group Construct</span>
+A Zone Group can be a building comprised of hundreds of zones or a campus of hundreds of buildings. You can add any number of Zone Groups to a project and each one acts like a project within a project. Each Zone Group can contain any number of Zones or Domestic Hot Water elements and each of those elements can contain any number of heat pumps all with their own independently adjustable operating conditions. The zone group ties them all to a single active loopfield but allows you to model any number of possible loop designs.</p>
+</li>
+<li>
+<p>Here are a few examples for project setup/types that can be easily modeled as a Zone Group in <strong>LoopLink PRO</strong>:</p>
 <ul>
 <li>A single (block) zone served by a small GHEX.<ul>
 <li>An example would be a small office with a central heat pump. </li>
@@ -181,11 +189,14 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h2 id="zone-group-name">Zone Group Name</h2>
 <ul>
-<li><span class="term">Name</span> Name the zone group currently being designed. An unlimited number of zone groups are allowed.</li>
+<li><span class="term">Name</span> Name the zone group currently being designed. Since an unlimited number of zone groups are allowed, the name should be unique to avoid confusion. </li>
 </ul>
 <h2 id="zone-group-flow">Zone Group Flow</h2>
+<p>LoopLink PRO natively accounts for the film resistance of a given fluid type, temperature and concentration at the design system flowrate in the ground-loop design calculations. Because of this, you must specify how design flowrate is to be determined. </p>
 <ul>
 <li><span class="term">Flow Analysis Mode</span> Select the desired mode to determine the design flow. Depending on the selection, <strong>LoopLink PRO</strong> will calculate flow either based on peak block load or specified equipment flow.<ul>
 <li><span class="term">Peak Block (Primary-Secondary)</span> Select this mode to calculate design flow based on the peak loads where the interior piping flow is decoupled from the exterior GHEX piping  flow (i.e. - the inside flow rate can differ from the outside flow rate).<ul>
@@ -227,6 +238,17 @@
     <p>For more information on guidelines to follow when selecting minimum entering water temperature see Section 2.7 (Chapter 2, page 70-73) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
 </div>
 
+<h2 id="import-zones">Import Zones</h2>
+<p>You can import a zone file from GCHPCalc or GLD directly into your zone group. Depending on the file type and number of zones, you may be prompted to supply more information.</p>
+<ul>
+<li><span class="term">Importing .zon files from GCHPCalc or GSHPCalc</span> When you submit a .zon file from GCHPCalc or GSHPCalc, a window will appear prompting you to enter more information.<ul>
+<li>Zone Name, Connected Flow (when applicable), Cooling Cap (Kbtu/hr), Sensible Capacity Ratio, EER, Heating Cap (kBtu/hr), and COP are necessary to create a valid zone within the project.</li>
+<li>By default, the installed capacity values will be such that they match the loads for the given zone. Overwrite these values as necessary.</li>
+<li>For .zon files that contain information for multiple zones in a given project, the EER and COP values that are applied to the first zone in the list will be applied to all remaining zones in the file. Overwrite these values as necessary.</li>
+</ul>
+</li>
+<li><span class="term">Importing .zon files from GLD</span> When you submit a .zon file from GLD, all of the necessary information to create a valid zone is in the file. No further information is required for zone creation. Overwrite the values saved in the individual zone(s) as necessary.</li>
+</ul>
 
             </div>
           </div>
@@ -244,10 +266,10 @@
 
   <hr/>
 
-  <div role="contentinfo">
-    <h2>Customer Support</h2>
-    <p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com">LoopLink PRO Support</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.
-    </p>
+  <div role="contentinfo" class="center">
+    <p>Copyright &copy; 2014-<script language="JavaScript" type="text/javascript">var d = new Date(); document.write(d.getFullYear())</script> <a href="http://geoconnectionsinc.com/" target="_blank">Geo-Connections, Inc.</a><br>(866) 995-4449</p>
+<p><a href="/terms/" target="_blank">Terms of Service</a> <a href="/privacy/" target="_blank" style="margin-left:1em; margin-right:1em;">Privacy Policy</a> <a href="/refunds/" target="_blank">Refund Policy</a><a style="margin-left:1em; margin-right:1em;" href="/contact/" target="_blank">Contact Us</a></p>
+
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a>.

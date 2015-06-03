@@ -176,10 +176,10 @@
           <div role="main">
             <div class="section">
               <h1 id="zone">Zone</h1>
-<p>Use this page to create a new zone within the selected Zone Group. An unlimited number of zones are allowed. </p>
+<p>Use this page to create a new zone within the selected Zone Group. An unlimited number of zones are allowed.</p>
 <h2 id="zone-name">Zone Name</h2>
 <ul>
-<li><strong>Name</strong> Name the zone currently being designed. An unlimited number of zones are allowed.</li>
+<li><strong>Name</strong> Name the zone currently being designed. Since an unlimited number of zones are allowed, the name should be unique to avoid confusion. </li>
 </ul>
 <h2 id="load-profile">Load Profile</h2>
 <ul>
@@ -385,12 +385,18 @@ Zone load entry will depend on the input method chosen:</li>
 <li>Typical SCR values range from 0.75-0.78 under normal operating conditions for GSHP equipment.  </li>
 </ul>
 </li>
-<li><span class="term">EER</span> The efficiency of the specified equipment in cooling mode, defined to be its <strong>Total Cooling Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (Watts).</li>
+<li><span class="term">EER</span> The efficiency of the specified equipment in cooling mode, defined to be its <strong>Total Cooling Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (Watts).<ul>
+<li>Typical values for EER will range between 10-20 under design conditions.</li>
+</ul>
+</li>
 <li><span class="term">Heating Cap</span> The heating capacity of the specified equipment for a given set of operating conditions.<ul>
 <li>Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.</li>
 </ul>
 </li>
-<li><span class="term">COP</span> The efficiency of the specified equipment in heating mode, defined to be its <strong>Heating Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (converted to Btu/hr, 3,412 Btu/hr = 1 kW).</li>
+<li><span class="term">COP</span> The efficiency of the specified equipment in heating mode, defined to be its <strong>Heating Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (converted to Btu/hr, 3,412 Btu/hr = 1 kW).<ul>
+<li>Typical values for COP will range between 3.0-4.5 under design conditions.</li>
+</ul>
+</li>
 </ul>
 <p><em>For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential &amp; Light Commercial Design and Installation Guide</a></em></p>
 <h3 id="detailed-equipment-entry">Detailed Equipment Entry</h3>
@@ -469,10 +475,10 @@ Zone load entry will depend on the input method chosen:</li>
 
   <hr/>
 
-  <div role="contentinfo">
-    <h2>Customer Support</h2>
-    <p>Thank you for using LoopLink PRO. For technical support and other inquiries, contact us via <a href="mailto:looplink@geoconnectionsinc.com">LoopLink PRO Support</a> or give us a call at (866) 995-4449. Our customer service and software support teams are available 8:00am - 5:00pm (CST) Monday through Friday.
-    </p>
+  <div role="contentinfo" class="center">
+    <p>Copyright &copy; 2014-<script language="JavaScript" type="text/javascript">var d = new Date(); document.write(d.getFullYear())</script> <a href="http://geoconnectionsinc.com/" target="_blank">Geo-Connections, Inc.</a><br>(866) 995-4449</p>
+<p><a href="/terms/" target="_blank">Terms of Service</a> <a href="/privacy/" target="_blank" style="margin-left:1em; margin-right:1em;">Privacy Policy</a> <a href="/refunds/" target="_blank">Refund Policy</a><a style="margin-left:1em; margin-right:1em;" href="/contact/" target="_blank">Contact Us</a></p>
+
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a>.
