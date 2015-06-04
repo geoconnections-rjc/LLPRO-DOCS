@@ -11,7 +11,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 
 ## GHEX Name
 
-* <span class="term">Name</span> Name the GHEX currently being designed. An unlimited number of GHEX designs are allowed, although only one may be active at a given time.
+* <span class="term">Name</span> Name the GHEX currently being designed. An unlimited number of GHEX designs are allowed, although only one may be active at a given time. The name should be unique to avoid confusion.
 * <span class="term">Year</span> The analysis period to use in the GHEX model. **LoopLink PRO** will use this value to predict the temperature change of the soil resulting from imbalances between the amount of heat added to the ground in cooling mode and removed from the ground in heating mode. Values from 10-20 years are most common.
     * The recommended value for this field is 10 years.
 	<li class="warning"><h3>WARNING</h3><p>Use of excessive values in this field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</p></li>
@@ -87,10 +87,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 		| non-thermally enhanced  | 0.38 - 0.45 Btu/hr-ft-&deg;F (0.65 - 0.78 W/m-K)  |
 		| thermally enhanced      | 0.57 - 1.60 Btu/hr-ft-&deg;F (1.00 - 2.77 W/m-K)  |
 	* Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-&deg;F (0.78 W/m-K).
-	* Refer to **Bore Length as a Function of Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
-* <span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various Thermal Grout Conductivity values that are readily available from most thermal grout manufacturers.
-	* This feature is not available until the ghex has been saved.
-	
+	* Refer to **Bore Length vs. Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
 
 <div class="resource">
 	<h3>Additional Resource</h3>
@@ -133,8 +130,14 @@ The Object Summary is displayed to the left of the main page.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
 
-## Geometry
+## Graphs
+* Click the appropriate link to view the graph. Graphs will not be available until the ghex has been saved.
+    * <span class="term">Bore Length as a Function of Grout TC</span> View the calculated design lengths for the current GHEX layout at various thermal grout conductivity values that are readily available from most thermal grout manufacturers.        
+    * <span class = "term">EWT vs. Time</span> View the predicted entering water temperatures for the system over the specified time period (N-years).
+        * The graph only will display annual minimum and maximum values for EWT if design day loads are used on any zone or hot water system within the active zone group.
+        * The graph will display monthly average values as well as the annual minimum and maximum values for EWT if monthly or hourly loads are saved in **every zone** within the active zone group.
 
+## Geometry
 * <span class="term">Number of Bores</span> The total number of bores in the GHEX, calculated to be **(Rows) x (Bores per Row)**.
 * <span class="term">Y1 Length/Bore</span> The length of each bore required to ensure the system will operate within designer-specified limits during the first year of system operation.
     * This parameter does not account for the long-term effects of ground load imbalances.

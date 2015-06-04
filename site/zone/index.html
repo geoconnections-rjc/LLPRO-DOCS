@@ -16,11 +16,31 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../img\Vertical Bore 1_files\jquery-ui.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\jquery.jqplot.min.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\structure_color.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\typography.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\units_equations.css" rel="stylesheet">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script>
+  <script src="../img\Vertical Bore 1_files\FormRepo.js"></script>
+  <script src="../img\Vertical Bore 1_files\LLPRO.converter.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.event_listeners.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.validation.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisLabelRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisTickRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasOverlay.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasTextRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.categoryAxisRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.enhancedLegendRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.highlighter.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery-ui.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.jqplot.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.min.js"></script>
 
   <style>
     body {font-size: 90%;}
@@ -86,7 +106,8 @@
                         
                             <li><a class="toctree-l4" href="#load-profile">Load Profile</a></li>
                         
-                            <li><a class="toctree-l4" href="#equipment-selection">Equipment Selection</a></li>
+                    
+                        <li class="toctree-l3"><a href="#equipment-selection">Equipment Selection</a></li>
                         
                     
                         <li class="toctree-l3"><a href="#object-summary">Object Summary</a></li>
@@ -191,15 +212,37 @@ Zone load entry will depend on the input method chosen:</li>
 </ul>
 </li>
 <li>
-<p><strong>Simple Load Entry(Design Day)</strong> Manual Entry Only</p>
-</li>
-<li><strong>Monthly Load Entry</strong> Import or Manual Entry</li>
-<li><strong>Hourly Load Entry</strong> Import Only</li>
-</ul>
-<h3 id="simple-load-entry-design-day">Simple Load Entry: Design Day</h3>
-<p>Design day load data is the minimum information required to perform GHEX design length calculations. Enter the heating and cooling loads for each time block increment. The most critical values will be the peak loads placed in the time block in which they occur. Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor. The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> heating and cooling loads in each respective time period.</p>
+<p><span class="term">Load Entry Methods</span> LoopLink PRO natively supports analysis for three different load entry methods</p>
 <ul>
-<li><strong><span class="heating">HEATING MODE LOAD ENTRY</span></strong> Enter loads in the <span class="heating">HEATING COLUMN</span> to account for peak heating and annual ground loads for the current <strong>Zone</strong> according to the time block in which they occur.<ul>
+<li><span class="icon_def"><img alt="Design Day Loads" src="..//img/day.png" title="Design Day Loads" /></span> <strong>Simple Load Entry (Design Day)</strong><ul>
+<li>Manual Entry Only</li>
+</ul>
+</li>
+<li><span class="icon_def"><img alt="Monthly Loads" src="..//img/monthly.png" title="Monthly Loads" /></span> <strong>Monthly Load Entry</strong><ul>
+<li>Import or Manual Entry</li>
+<li>For imported files, supported filetypes from Trane TRACE 500 are ".gl" and ".gt". The files may also be saved in .txt or .csv format. </li>
+</ul>
+</li>
+<li><span class="icon_def"><img alt="Hourly Loads" src="..//img/hourly.png" title="Hourly Loads" /></span> <strong>Hourly Load Entry</strong><ul>
+<li>Import Only (.csv)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="simple-load-entry-design-day"><span class="icon_def"><img alt="Design Day Loads" src="..//img/day.png" title="Design Day Loads" /></span> Simple Load Entry: Design Day</h3>
+<ul>
+<li>
+<p>Design day load data is the minimum information required to perform GHEX design length calculations.</p>
+<ul>
+<li>Enter the heating and cooling loads for each time block increment. The most critical values will be the peak loads placed in the time block in which they occur.</li>
+<li>Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor.</li>
+<li>The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> heating and cooling loads in each respective time period.</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="heating">HEATING MODE LOAD ENTRY</span></strong> Enter loads in the <span class="heating">HEATING COLUMN</span> to account for peak heating and annual ground loads for the current <strong>Zone</strong> according to the time block in which they occur.</p>
+<ul>
 <li>The most critical values will be the peak loads placed in the time block in which they occur.</li>
 <li>Enter the average <span class="heating">HEATING</span> loads in the remaining (three) time blocks.</li>
 </ul>
@@ -215,8 +258,13 @@ Zone load entry will depend on the input method chosen:</li>
 </li>
 </ul>
 <p><em>For more information on EFLH values for various locations, building types and occupancy patterns, refer to Table 8 in Chapter 34, page 18 in the <a href="https://www.ashrae.org/resources--publications/handbook" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a>.</em></p>
-<h3 id="monthly-load-entry">Monthly Load Entry</h3>
-<p>Monthly load data is an intermediate data set to perform GHEX design length calculations. You may manually enter monthly load data or import it (.CSV). </p>
+<h3 id="monthly-load-entry"><span class="icon_def"><img alt="Monthly Loads" src="..//img/monthly.png" title="Monthly Loads" /></span> Monthly Load Entry</h3>
+<ul>
+<li>Monthly load data is an intermediate data set to perform GHEX design length calculations.<ul>
+<li>You may manually enter monthly load data or import it (.csv. .txt, .gl, or .gt). </li>
+</ul>
+</li>
+</ul>
 <h5 id="manual-monthly-load-entry">Manual Monthly Load Entry</h5>
 <ul>
 <li><span class="term">Total Cooling</span> The total amount of heat energy (kBtu or kWh) that must be removed from the space in cooling to maintain the space t-stat set point.<ul>
@@ -238,7 +286,7 @@ Zone load entry will depend on the input method chosen:</li>
 </ul>
 </li>
 </ul>
-<h5 id="import-monthly-loads-csv-txt-or-gt">Import Monthly Loads (.CSV, .TXT, or .GT)</h5>
+<h5 id="import-monthly-loads-csv-txt-gt-or-gl">Import Monthly Loads (.csv, .txt, .gt, or .gl)</h5>
 <ul>
 <li>
 <p>You may import monthly loads via a <strong><a href="http://www.trane.com/commercial/north-america/us/en/products-systems/design-and-analysis-tools/c-d-s--help/cds-software-news/march-2008.html" title="Explanation of TRACE GT file">Trane TRACE 500 .GT file</a></strong>.</p>
@@ -362,14 +410,16 @@ Zone load entry will depend on the input method chosen:</li>
 </ul>
 </li>
 </ul>
-<h3 id="hourly-load-entry-import-only-csv">Hourly Load Entry - Import Only (.CSV)</h3>
-<p>Monthly load data is an advanced data set to perform GHEX design length calculations.</p>
+<h3 id="hourly-load-entry-import-only-csv"><span class="icon_def"><img alt="Hourly Loads" src="..//img/hourly.png" title="Hourly Loads" /></span> Hourly Load Entry - Import Only (.CSV)</h3>
 <ul>
+<li>Hourly load data is an advanced data set to perform GHEX design length calculations.<ul>
 <li>The only method of adding hourly load data is to import it.</li>
 <li>A properly formatted file would be saved in .CSV format and have 8760 lines of data in two columns (first column = <span class="cooling">COOLING LOADS</span>, second column = <span class="heating">HEATING LOADS</span>).</li>
 </ul>
+</li>
+</ul>
 <h2 id="equipment-selection">Equipment Selection</h2>
-<h3 id="simple-equipment-entry">Simple Equipment Entry</h3>
+<h3 id="simple-equipment-entry"><span class="icon_def"><img alt="Simple Equipment Entry" src="..//img/simple.png" title="Simple Equipment Entry" /></span> Simple Equipment Entry</h3>
 <p>With this method, only basic inputs of equipment capacity and efficiency are needed. Equipment selection tables are hidden.</p>
 <ul>
 <li><span class="term">Connected Flow</span> The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.<ul>
@@ -399,10 +449,11 @@ Zone load entry will depend on the input method chosen:</li>
 </li>
 </ul>
 <p><em>For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential &amp; Light Commercial Design and Installation Guide</a></em></p>
-<h3 id="detailed-equipment-entry">Detailed Equipment Entry</h3>
-<p>With this method, the simple heat pump entry fields are hidden. An unlimited number of different make/models of GSHP units are allowed in a single zone.</p>
+<h3 id="detailed-equipment-entry"><span class="icon_def"><img alt="Detailed Equipment Entry" src="..//img/detailed.png" title="Detailed Equipment Entry" /></span> Detailed Equipment Entry</h3>
 <ul>
-<li>Specify whether a <strong>Water-Air</strong> or <strong>Water-Water</strong> unit will be added to the zone. Note that chillers are found in the <strong>Water-Water</strong> category.<ul>
+<li>With this method, the simple heat pump entry fields are hidden. An unlimited number of different make/models of GSHP units are allowed in a single zone.</li>
+<li>The basic steps are as follows:<ul>
+<li>Specify whether a <strong>Water-Air</strong> or <strong>Water-Water</strong> unit will be added to the zone. Note that chillers are found in the <strong>Water-Water</strong> category.</li>
 <li>Use the provided filters to find the appropriate model.</li>
 <li>Once a model has been selected, specify the quantity to add to the zone.</li>
 <li>Use the provided sliders to adjust GSHP performance based on the desired operating conditions - source flow (gpm), entering load air/water temperatures, and load flow (cfm or gpm).</li>

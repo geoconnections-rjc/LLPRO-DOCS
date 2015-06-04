@@ -25,7 +25,12 @@ Use the provided filters to narrow search results as necessary. Filter by manufa
 * The parameters that you can adjust will depend on heat pump being selected.  Keep in mind that for both heat pump types, the entering water temperatures (EWTmin/EWTmax) are already specified for the zone group and heat pump performance will be adjusted accordingly.
     * <span class="term">Water-Air Heat Pumps</span> Load side entering air temperature (EAT DB/WB), load side air flow (CFM) and source side water flow (GPM). 
     * <span class="term">Water-Water Heat Pumps</span> Load side entering/leaving water temperature (ELT or LLT, depending on manufacturer), load side water flow (GPM) and source side water flow (GPM).
-* The range for each parameter will automatically be limited per the heat pump manufacturer's specifications.   
+* The range for each parameter will automatically be limited per the heat pump manufacturer's specifications.
+
+##Consult the Heat Pump Manufactuer
+* LoopLink PRO will limit the operating conditions based on the published ratings for each heat pump and adjust accordingly but you still must consult with the heat pump manufacturer in order to:
+    * Verify rated performance of the equipment being selected
+    * Ensure that the equipment is capable of operating under the conditions that you specify
 
 *For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's [Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide](http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html "Geo-Connections Bookstore")*
 

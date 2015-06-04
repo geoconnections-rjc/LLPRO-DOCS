@@ -11,7 +11,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 
 ## GHEX Name
 
-* <span class="term">Name</span> Name the GHEX currently being designed. An unlimited number of GHEX designs are allowed, although only one may be active at a given time.
+* <span class="term">Name</span> Name the GHEX currently being designed. An unlimited number of GHEX designs are allowed, although only one may be active at a given time. The name should be unique to avoid confusion.
 * <span class="term">Year</span> The analysis period to use in the GHEX model. **LoopLink PRO** will use this value to predict the temperature change of the soil resulting from imbalances between the amount of heat added to the ground in cooling mode and removed from the ground in heating mode. Values from 10-20 years are most common.
 	* The recommended value for this field is 10 years.
 	<li class="warning"><h3>WARNING</h3><p>Use of excessive values in this field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</p></li>
@@ -85,7 +85,6 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 	* Refer to the figure below to view the correlation between u-bend pipe diameter, vertical bore depth, and gpm per flow path.
 	* ![Nominal Pipe Size vs. Bore Depth & GPM](img/diameter_bore_length_gpm_relation.gif "Nominal Pipe Size vs. Bore Depth and GPM")
 
-
 * <span class="term">Thermal Grout Conductivity</span> The thermal conductivity of the grouting material to be placed into the borehole after insertion of the u-bend.
     * Thermal conductivity is a measure of how fast heat moves through a material due to a temperature difference.
 	*	| Grout Type              | Conductivity Range                                |
@@ -93,9 +92,7 @@ Borehole Thermal Resistance (BTR) is a function of the resistance of the piping 
 		| non-thermally enhanced  | 0.38 - 0.45 Btu/hr-ft-&deg;F (0.65 - 0.78 W/m-K)  |
 		| thermally enhanced      | 0.57 - 1.60 Btu/hr-ft-&deg;F (1.00 - 2.77 W/m-K)  |
 	* Thermally enhanced grouting products typically require the addition of silica sand or graphite-based additives in the field in order to increase the thermal conductivity above 0.45 Btu/hr-ft-&deg;F (0.78 W/m-K).
-	* Refer to **Bore Length as a Function of Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
-* <span class="term">Bore Length as a Function of Grout TC</span> Click this button to view the calculated design lengths for the current GHEX layout at various Thermal Grout Conductivity values that are readily available from most thermal grout manufacturers.
-	* This feature is not available until the ghex has been saved.
+	* Refer to **Bore Length vs. Grout TC** graph to see the effect of grout TC value on GHEX design lengths.
 	
 <div class="resource">
 	<h3>Additional Resource</h3>
@@ -137,6 +134,13 @@ The Object Summary is displayed to the left of the main page.
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
+
+## Graphs
+* Click the appropriate link to view the graph. Graphs will not be available until the ghex has been saved.
+    * <span class="term">Bore Length vs. Grout TC</span> View the calculated design lengths for the current GHEX layout at various thermal grout conductivity values that are readily available from most thermal grout manufacturers.        
+    * <span class = "term">EWT vs. Time</span> View the predicted entering water temperatures for the system over the specified time period (N-years).
+        * The graph only will display annual minimum and maximum values for EWT if design day loads are used on any zone or hot water system within the active zone group.
+        * The graph will display monthly average values as well as the annual minimum and maximum values for EWT if monthly or hourly loads are saved in **every zone** within the active zone group.
 
 ## Geometry
 

@@ -16,11 +16,31 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../img\Vertical Bore 1_files\jquery-ui.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\jquery.jqplot.min.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\structure_color.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\typography.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\units_equations.css" rel="stylesheet">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script>
+  <script src="../img\Vertical Bore 1_files\FormRepo.js"></script>
+  <script src="../img\Vertical Bore 1_files\LLPRO.converter.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.event_listeners.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.validation.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisLabelRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisTickRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasOverlay.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasTextRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.categoryAxisRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.enhancedLegendRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.highlighter.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery-ui.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.jqplot.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.min.js"></script>
 
   <style>
     body {font-size: 90%;}
@@ -241,6 +261,7 @@ A Zone Group can be a building comprised of hundreds of zones or a campus of hun
 <h2 id="import-zones">Import Zones</h2>
 <p>You can import a zone file from GCHPCalc or GLD directly into your zone group. Depending on the file type and number of zones, you may be prompted to supply more information.</p>
 <ul>
+<li><span class="icon_def"><img alt="Import Zones" src="..//img/import_zone.png" title="Import Zone" /></span> Click the icon to select a file for import.<ul>
 <li><span class="term">Importing .zon files from GCHPCalc or GSHPCalc</span> When you submit a .zon file from GCHPCalc or GSHPCalc, a window will appear prompting you to enter more information.<ul>
 <li>Zone Name, Connected Flow (when applicable), Cooling Cap (Kbtu/hr), Sensible Capacity Ratio, EER, Heating Cap (kBtu/hr), and COP are necessary to create a valid zone within the project.</li>
 <li>By default, the installed capacity values will be such that they match the loads for the given zone. Overwrite these values as necessary.</li>
@@ -248,6 +269,8 @@ A Zone Group can be a building comprised of hundreds of zones or a campus of hun
 </ul>
 </li>
 <li><span class="term">Importing .zon files from GLD</span> When you submit a .zon file from GLD, all of the necessary information to create a valid zone is in the file. No further information is required for zone creation. Overwrite the values saved in the individual zone(s) as necessary.</li>
+</ul>
+</li>
 </ul>
 
             </div>

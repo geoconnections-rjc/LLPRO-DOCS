@@ -16,11 +16,31 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../img\Vertical Bore 1_files\jquery-ui.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\jquery.jqplot.min.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\structure_color.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\typography.css" rel="stylesheet">
+  <link href="../img\Vertical Bore 1_files\units_equations.css" rel="stylesheet">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
   <script src="../js/theme.js"></script>
+  <script src="../img\Vertical Bore 1_files\FormRepo.js"></script>
+  <script src="../img\Vertical Bore 1_files\LLPRO.converter.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.event_listeners.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.js"></script>
+  <script src="../img\Vertical Bore 1_files\LL_PRO.validation.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisLabelRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasAxisTickRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasOverlay.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.canvasTextRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.categoryAxisRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.enhancedLegendRenderer.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jqplot.highlighter.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery-ui.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.jqplot.min.js"></script>
+  <script src="../img\Vertical Bore 1_files\jquery.min.js"></script>
 
   <style>
     body {font-size: 90%;}
@@ -106,6 +126,8 @@
                         
                             <li><a class="toctree-l4" href="#operating-conditions">Operating Conditions</a></li>
                         
+                            <li><a class="toctree-l4" href="#equipment-selection">Equipment Selection</a></li>
+                        
                     
                         <li class="toctree-l3"><a href="#object-summary">Object Summary</a></li>
                         
@@ -186,9 +208,18 @@
 <li><span class="term">Name</span> Name the hot water zone currently being designed. Since an unlimited number of hot water zones are allowed, the name should be unique to avoid confusion. </li>
 </ul>
 <h2 id="peak-block-hot-water-generation">Peak Block Hot Water Generation</h2>
-<p>Enter the hot water demand rates for each time block increment. <strong>The most critical values will be the maximum hot water generation loads placed in the time block in which they occur.</strong>  Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor. The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> hot water demand rates in each respective time period.</p>
 <ul>
-<li><span class="term">HEATING MODE HOT WATER DEMAND ENTRY</span> Enter hot water loads in the <span class="heating">HEATING COLUMN</span> to account for added peak heating demand and annual ground loads due to concurrent operation of the hot water generation and space conditioning (heating) system.<ul>
+<li>
+<p>Enter the hot water demand rates for each time block increment.</p>
+<ul>
+<li>The most critical values will be the maximum hot water generation loads placed in the time block in which they occur.</li>
+<li>Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor.</li>
+<li>The recommended entries in the off-peak time blocks will be the <strong>AVERAGE</strong> hot water demand rates in each respective time period.</li>
+</ul>
+</li>
+<li>
+<p><span class="term">HEATING MODE HOT WATER DEMAND ENTRY</span> Enter hot water loads in the <span class="heating">HEATING COLUMN</span> to account for added peak heating demand and annual ground loads due to concurrent operation of the hot water generation and space conditioning (heating) system.</p>
+<ul>
 <li>Doing so will increase heating GHEX design lengths for heating dominant applications.</li>
 <li>From a design standpoint, it is most conservative to give the hot water generation system full benefit when heating is the critical load requirement. </li>
 </ul>
@@ -209,7 +240,7 @@
 </div>
 
 <h2 id="average-generated-volume">Average Generated Volume</h2>
-<h3 id="simple-hot-water-consumption-entry">Simple Hot Water Consumption Entry</h3>
+<h3 id="simple-hot-water-consumption-entry"><span class="icon_def"><img alt="Design Day Loads" src="..//img/day.png" title="Design Day Loads" /></span> Simple Hot Water Consumption Entry</h3>
 <p>With this mode selected, the <strong>Detailed Monthly Hot Water Volume</strong> inputs are hidden.</p>
 <ul>
 <li><span class="term">Average Monthly Consumption</span> The predicted <strong>AVERAGE</strong> monthly hot water consumption for the zone, which is used to determine the annual energy requirements for the hot water zone as well as its associated heating ground load.</li>
@@ -220,7 +251,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="detailed-hot-water-consumption-entry">Detailed Hot Water Consumption Entry</h3>
+<h3 id="detailed-hot-water-consumption-entry"><span class="icon_def"><img alt="Monthly Loads" src="..//img/monthly.png" title="Monthly Loads" /></span> Detailed Hot Water Consumption Entry</h3>
 <p>With this mode selected, the <strong>Average Monthly Consumption</strong> and <strong>Months per Year</strong> inputs are hidden.</p>
 <ul>
 <li><span class="term">Detailed Hot Water Consumption Entry Mode</span> Enter the predicted <strong>AVERAGE</strong> volume of hot water used for each month of the year. </li>
@@ -232,20 +263,6 @@
 </ul>
 <h2 id="operating-conditions">Operating Conditions</h2>
 <ul>
-<li><span class="term">Capacity</span> The capacity of the GSHP equipment being used for hot water generation, which must be large enough to meet the instantaneous load.</li>
-</ul>
-<div class="resource">
-    <h3>Additional Resource</h3>zone Copy
-    <p>For more information on sizing refrigeration-based water heaters, refer to Page 50.27 in Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook">ASHRAE HVAC Applications Handbook (2011)</a>.</p>
-</div>
-
-<ul>
-<li><span class="term">Connected Flow</span> The required loop (source-side) flow rate for proper heat pump operation.<ul>
-<li>In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.</li>
-<li>This field will only appear if <strong>Connected</strong> is the chosen <strong>Flow Analysis Mode</strong> for the <strong>Zone Group</strong>.</li>
-</ul>
-</li>
-<li><span class="term">COP<sub>avg</sub></span> The average heating efficiency of the hot water generation equipment, which is used to calculate the heat of extraction rate from the GHEX during hot water system operation.</li>
 <li><span class="term">Inlet Temperature</span> The temperature of the water entering the system before being heated.<ul>
 <li>A good first estimate for inlet water temperature is the local ground temperature. </li>
 </ul>
@@ -256,6 +273,42 @@
 </ul>
 </li>
 </ul>
+<h2 id="equipment-selection">Equipment Selection</h2>
+<h3 id="simple-equipment-entry"><span class="icon_def"><img alt="Simple Equipment Entry" src="..//img/simple.png" title="Simple Equipment Entry" /></span> Simple Equipment Entry</h3>
+<p>With this method, only basic inputs of equipment capacity and efficiency are needed. Equipment selection tables are hidden.</p>
+<ul>
+<li><span class="term">Connected Flow</span> The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.<ul>
+<li>This field will only appear if <strong>Connected</strong> is the chosen <strong>Flow Analysis Mode</strong> for the <strong>Zone Group</strong>.</li>
+</ul>
+</li>
+<li><span class="term">Capacity</span> The heating capacity of the specified equipment being used for hot water generation for a given set of operating conditions, , which must be large enough to meet the instantaneous load. <ul>
+<li>Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.</li>
+</ul>
+</li>
+<li><span class="term">COP Avg</span> The average efficiency of the specified equipment in heating mode, defined to be its <strong>Heating Capacity</strong> (Btu/hr) divided by <strong>Electrical Demand</strong> (converted to Btu/hr, 3,412 Btu/hr = 1 kW).<ul>
+<li>Typical values for COP will range between 3.0-4.5 under design conditions.</li>
+</ul>
+</li>
+</ul>
+<p><em>For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential &amp; Light Commercial Design and Installation Guide</a></em></p>
+<h3 id="detailed-equipment-entry"><span class="icon_def"><img alt="Detailed Equipment Entry" src="..//img/detailed.png" title="Detailed Equipment Entry" /></span> Detailed Equipment Entry</h3>
+<ul>
+<li>With this method, the simple heat pump entry fields are hidden. An unlimited number of different make/models of GSHP units are allowed in a single zone.</li>
+<li>The basic steps are as follows:<ul>
+<li>Click to add a <strong>Water-Water</strong> unit to the zone. Note that chillers are also found in the <strong>Water-Water</strong> category.</li>
+<li>Use the provided filters to find the appropriate model.</li>
+<li>Once a model has been selected, specify the quantity to add to the zone.</li>
+<li>Use the provided sliders to adjust GSHP performance based on the desired operating conditions - source flow (gpm), load side water temperatures (ELT, LLT), and load side water flow (gpm).</li>
+<li>Save the selection to apply it to the zone.</li>
+<li>Once a model has been added to the zone, you may add another or move on to the next task in the project.</li>
+</ul>
+</li>
+</ul>
+<div class="resource">
+    <h3>Additional Resource</h3>zone Copy
+    <p>For more information on sizing refrigeration-based water heaters, refer to Page 50.27 in Chapter 50 - Service Water Heating in the <a href="https://www.ashrae.org/resources--publications/handbook">ASHRAE HVAC Applications Handbook (2011)</a>.</p>
+</div>
+
 <h1 id="object-summary">Object Summary</h1>
 <p>The Object Summary is displayed to the left of the main page.</p>
 <ul>
