@@ -2,7 +2,9 @@ html, body{
 	font-family: 'Open Sans', Verdana, Geneva, sans-serif;
 	color:#3A3A3F;
 }
-
+.wy-nav-content-wrap{
+    background: #FAFAFF;
+}
 .wy-side-nav-search{
     background:#3A3A3F;
 }
@@ -10,6 +12,9 @@ html, body{
 .wy-body-for-nav {
     background: #FAFAFF;
     background-image: none;
+}
+.wy-menu-vertical a:active {
+  background-color: #BABABF !important;
 }
 .wy-nav-side{
     background: #6A6A6F;
@@ -69,6 +74,8 @@ p{
 .icon_def img{
     display: inline-block;
     margin:0 0.5em;
+    width:auto !important;
+    height:auto !important;
 }
 
 .wy-plain-list-disc ul>li,
@@ -88,6 +95,18 @@ article ul>li>ul{
     border-left: solid 0.5em #CACACF;
     margin-left: 2em;
     padding-left: 0.5em;
+}
+
+@media screen and (max-width: 480px){
+   .wy-plain-list-disc ul>li>ul,
+    .rst-content .section ul>li>ul,
+    .rst-content .toctree-wrapper ul>li>ul,
+    article ul>li>ul{
+        margin-bottom: 2em;
+        border-left: solid 0.5em #CACACF;
+        margin-left: 0;
+        padding-left: 0.5em;
+    } 
 }
 
 .wy-plain-list-disc ul>li>ul ul,
@@ -209,4 +228,8 @@ code {
 
 .toctree-l4{
    margin-left:1em;
+}
+
+.wy-nav-top{
+    background:#3A3A3F;
 }
