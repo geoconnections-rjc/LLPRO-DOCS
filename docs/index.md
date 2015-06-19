@@ -18,7 +18,7 @@ LoopLink PRO is web-based software for commercial geothermal system design. It f
 <h3>Recommended References</h3>
 <p>These publications will serve as excellent resources for the GSHP system designer:</p>
 <ul>
-<li><a href="https://www.ashrae.org/resources--publications/handbook"  target="_blank" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2011)</a></li>
+<li><a href="https://www.ashrae.org/resources--publications/handbook"  target="_blank" title="ASHRAE Publications">ASHRAE HVAC Applications Handbook (2015)</a></li>
 <li><a href="http://www.techstreet.com/ashrae/products/1887017" target="_blank" title="ASHRAE Publications">Geothermal Heating and Cooling: Design of Ground-Source Heat Pump Systems</a></li>
 <li><a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank" title="Geo-Connections Bookstore">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></li>
 <li><a href="http://www.geoconnectionsinc.com/bookstore/grouting_for_vertical_ghp_systems.html" target="_blank" title="Geo-Connections Bookstore">Grouting for Vertical GHP Systems</a></li>

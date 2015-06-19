@@ -172,13 +172,18 @@ The Object Summary is displayed to the left of the main page.
     * The fluid convection coefficient is a function of the fluid type, temperature and antifreeze concentration as well as the flow velocity through the pipe itself (Reynold's number).
     * Pipe resistance is a function of the piping material used as well as loop pipe diameter and wall thickness.  
 
-## Ground Energy
+## Energy Requirements
 
 * <span class="term">Space Conditioning</span> The calculated amount of energy rejected to the ground in cooling mode and extracted from the ground in heating mode, which is a function of the peak loads, annual equivalent FLRHs and equipment efficiencies (EER/COP).
 * <span class="term">Hot Water Generation</span> The calculated amount of energy extracted from the ground due to hot water generation, which is a function of the peak hot water demand, annual hot water consumption and equipment heating efficiency (COP).
     * Hot water generation will add to the annual heating ground load, as indicated by the value only being shown in the **<span class="heating">HEATING</span>** column.
 * <span class="term">Total</span> The total cooling ground load due to space conditioning loads and the total heating ground load due to space conditioning load as well as hot water generation loads. 
-* <span class="term">NET</span> The difference between the cooling ground load and the heating ground load.
+
+## Energy Sources & Sinks
+
+* <span class="term">Hybrid System</span> The portion of heat of extraction/rejection to/from the building that is covered by active hybrid system for the zone group.
+* <span class="term">Ground Energy</span> The portion of heat of extraction/rejection to/from the building that is covered by active GHEX for the zone group.
+* <span class="term">Net Ground Energy</span> The difference between the cooling ground load and the heating ground load after accounting for the portion that is covered by the hybrid system.
     * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 
@@ -187,17 +192,17 @@ The Object Summary is displayed to the left of the main page.
 * <span class="term">EWT</span> The minimum/maximum entering water temperatures from the GHEX (supplied to the GHSP equipment) will be designed to provide under peak heating/cooling conditions, typically assumed to be 30&deg;F (-1.1 C) in heating-dominant applications and 90&deg;F (32.2 C) in cooling-dominant applications.
     * This parameter is specified on the **Zone Group** page and will have a very large impact on calculated design lengths.
 * <span class="term">LWT</span> The calculated minimum/maximum leaving water temperatures from the GSHP equipment (supplied to the GHEX) under peak heating/cooling conditions.
-    * Leaving water temperatures are a function of the designer-specified EWTs, system flow and the heat of extraction/heat of rejection of the GSHP equipment specified for the **Zone Group**.
-* <span class="term">System Flow</span> The total system flow that the GHEX must accommodate.  This value will affect the calculations for LWT, loop flow, loop velocity, Reynold's number and head loss.
-    * System flow is calculated based on the installed equipment capacity or peak block load and/or peak hot water generation demand for the system (depending on the **Flow Analysis Mode** specified for the **Zone Group**). 
+    * Leaving water temperatures are a function of the designer-specified EWTs, design flow and the heat of extraction/heat of rejection of the GSHP equipment specified for the **Zone Group**.
+* <span class="term">Design Flow</span> The total flow that the GHEX must accommodate.  This value will affect the calculations for LWT, loop flow, loop velocity, Reynold's number and head loss.
+    * Design flow is calculated based on the installed equipment capacity or peak block load and/or peak hot water generation demand for the system (depending on the **Flow Analysis Mode** specified for the **Zone Group**). 
 * <span class="term">Y1 Temp. Penalty</span> The temperature change of the soil after the first year of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
-    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET** ground load as well as loopfield geometry (grid/layout and bore spacing). The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
+    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET GROUND ENERGY** load as well as loopfield geometry (grid/layout and bore spacing). The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
     * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 * <span class="term">YN Temp. Penalty</span> The temperature change of the soil after N-years of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
-    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET** ground load as well as loopfield geometry (grid/layout and bore spacing).
+    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET GROUND ENERGY** load as well as loopfield geometry (grid/layout and bore spacing).
     * The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
     * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
@@ -206,7 +211,7 @@ The Object Summary is displayed to the left of the main page.
 ## Fluid Properties (Design Path)
 
 * <span class="term">Freeze Protected To</span> The freeze point temperature of the specified fluid, based on the fluid type and antifreeze concentration. In general, freeze protection is recommended when heating mode EWTs will fall below 45&deg;F (7.2 C). The recommended freeze point will be 10&deg;F (5.6 C) below the average loop temperature under peak heating conditions.
-* <span class="term">Flow</span> The calculated flow through the individual parallel flow paths in the GHEX, which is a function of the system flow, total number of bores and the number of parallel loops per bore.
+* <span class="term">Flow</span> The calculated flow through the individual parallel flow paths in the GHEX, which is a function of the design flow, total number of bores and the number of parallel loops per bore.
 * <span class="term">Velocity</span> The calculated velocity through the individual parallel flow paths in the GHEX, which is a function of the calculated parallel loop **Flow** as well as the selected loop pipe size.
 * <span class="term">Reynold's Number</span> A dimensionless parameter used to quantify the flow regime for internal pipe flow (laminar, transition, or turbulent).
     * The occurrence of turbulent flow will maximize heat transfer between the circulating fluid and internal pipe wall (commonly referred to as film resistance).

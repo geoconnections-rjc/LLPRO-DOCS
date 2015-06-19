@@ -102,7 +102,6 @@ View the calculated loads (by time block) for the current **Hot Water Zone** acc
 
 ## HWG Info
 
-
 * <span class="term">Ground Energy</span> The amount of heat energy extracted from the ground due to hot water system operation for the current **Hot Water Zone**.
 * <span class="term">Water Volume</span> The calculated volume of hot water generated annually for the current **Hot Water Zone**.
 
