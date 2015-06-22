@@ -9,12 +9,13 @@ Use this page to add a boiler and/or cooling tower to the selected Zone Group. A
 ## Peak Block Load Reduction
 Specify the amount of peak load reduction due to boiler/cooling tower addition to the system.
 
-* <span class="term">Connect Cooling Tower/Boiler in Parallel</span> Select this box if the hybrid system is to be connected in parallel with the GHEX. This will affect the calculated flow requirements for the GHEX. 
-        * For a series-connected hybrid system, the GHEX must accommodate full system flow, regardless of the peak load reduction and associated flow requirements of the cooling tower/boiler.
-        * For a parallel-connected hybrid system, the GHEX only needs to accommodate the flow associated with the reduced peak loads when a hybrid system is in use. 
+* <span class="term">Connect Cooling Tower/Boiler in Parallel</span> Select this box if the hybrid system is to be connected in parallel with the GHEX.
+* This will affect the calculated flow requirements for the GHEX. 
+    * For a series-connected hybrid system, the GHEX must accommodate full system flow, regardless of the peak load reduction and associated flow requirements of the cooling tower/boiler.
+    * For a parallel-connected hybrid system, the GHEX only needs to accommodate the flow associated with the reduced peak loads when a hybrid system is in use. 
 * <span class="term">Percentage of Cooling Peak Block to Cooling Tower/Boiler</span> Specify the percentage of peak load that is to be covered by hybrid system operation.
     * For hybrid systems used to "pre-condition" the GHEX (i.e. - run at night or during off-peak time periods) but will not operate during peak load conditions, the percent reduction should be set to zero.
-    * The resulting zone group loads will be clamped according to the peak load reduction that is specified and may not be reduced by the same amount across all time blocks.
+    * The resulting zone group loads will be clamped according to the maximum peak load reduction that is specified and may not be reduced by the same amount across all time blocks.
     * Consider the following example of a zone group with a 1200 kBtu/hr (100-ton) peak load that is to be reduced by 480 kBtu/hr (40-tons) with a hybrid system (40% covered by hybrid) and has the following load distribution:
     *	| Time Block  | Peak Load by Time Block | Reduction by Time Block | Clamped Loads (with Hybrid) |
 		| :-----------: | :-----------------: | :-----------------: | :-----------------: |
@@ -23,7 +24,7 @@ Specify the amount of peak load reduction due to boiler/cooling tower addition t
 		| 4:00 pm - 8:00 pm | 1200 kBtu/hr | (480 kBtu/hr) | 720 kBtu/hr | 
 		| 8:00 pm - 8:00 am | 600 kBtu/hr | (0 kBtu/hr) | 600 kBtu/hr |      
         
-* <span class="term">Peak Block Reduction</span> The amount of peak block reduction by the hybrid system, calculated according to the percentage specified.
+* <span class="term">Peak Block Reduction</span> The maximum amount of peak block reduction by the hybrid system, calculated according to the percentage specified.
 * <span class="term">Required Capacity</span> The required capacity of the cooling tower/boiler to reduce the peak loads by the specified amount
     * This value will be a function of system efficiency (EER/COP) and associated heat of rejection/extraction.
 
@@ -50,55 +51,55 @@ The Object Summary is displayed to the left of the main page.
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
-* Individual **Hybrid System** and the aggregate **Zone Group** outputs are shown on the top-half of the left-hand output panel. The **Active GHEX Summary** outputs (which are based on the active GHEX in the zone group and are based on all space conditioning, hot water zone, and hybrid load information) are shown on the bottom-half of the output panel.
+* Individual Hybrid System and the aggregate Zone Group outputs are shown on the top-half of the left-hand output panel. The Active GHEX Summary outputs (which are based on the active GHEX in the zone group and are based on all space conditioning, hot water zone, and hybrid load information) are shown on the bottom-half of the output panel.
 
 ## Peak Block Clamping
 
 ## Hybrid Peak Reduction
-* View the calculated load reductions (by time block) for the current **Hybrid System** according to the information entered.
-* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating load increase (by time block) due to specified rate of hot water generation for the current **Hot Water Zone**.
-    * This load will effectively increase the total heating load for the **Zone Group** as well as the associated GHEX design lengths. 
-* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling load reduction (by time block) due to specified rate of hot water generation (due to concurrent cooling mode operation) for the current **Hot Water Zone**.
-    * This load will effectively decrease the total cooling load for the **Zone Group** as well as the associated GHEX design lengths. 
+* View the clamped load reductions (by time block) for the current Hybrid System according to the information entered. Keep in mind that the loads will be clamped according to the maximum peak load reduction that is specified and may not be reduced by the same amount across all time blocks.
+* <span class="term">HEATING LOAD REDUCTION BY TIME BLOCK</span> The calculated heating load decrease (by time block) due to specified percentage for the current Hybrid system.
+* <span class="term">COOLING LOAD REDUCTION BY TIME BLOCK</span> The calculated cooling load decrease (by time block) due to specified percentage for the current Hybrid system.
 
 ## Zone Group Design Day
-* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating load increase (by time block) due to specified rate of hot water generation for the current **Hot Water Zone**.
-    * This load will effectively increase the total heating load for the **Zone Group** as well as the associated GHEX design lengths. 
-* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling load reduction (by time block) due to specified rate of hot water generation (due to concurrent cooling mode operation) for the current **Hot Water Zone**.
-    * This load will effectively decrease the total cooling load for the **Zone Group** as well as the associated GHEX design lengths. 
+
+View the aggregate loads for the active Zone Group.
+
+* **<span class="heating">HEATING LOAD BY TIME BLOCK</span>** The calculated heating loads (by time block) for all active space conditioning, hot water and hybrid systems in the Zone Group.
+* **<span class="cooling">COOLING LOAD BY TIME BLOCK</span>** The calculated cooling loads (by time block) for all active space conditioning, hot water and hybrid systems in the Zone Group.
+* <span class="term">Full Load Run Hours</span> The weighted average value for FLRHs, which considers all active space conditioning, hot water and hybrid systems in the Zone Group.
 
 ## Active GHEX Summary
 
-* <span class="term">Active GHEX</span> The active GHEX for the zone group, for with the calculation results in the **Active GHEX Summary** are based on.
+* <span class="term">Active GHEX</span> The active GHEX for the zone group, for with the calculation results in the Active GHEX Summary are based on.
 * <span class="term">Type</span> The configuration (vertically-bored or horizontally-bored) of the Active GHEX for the zone group.
 
 * <span class="term">Design Flow</span> The total flow that the GHEX must accommodate.  This value will affect the calculations for LWT, loop flow, loop velocity, Reynold's number and head loss.
-    * Design flow is calculated based on the installed equipment capacity or peak block load and/or peak hot water generation demand for the system (depending on the **Flow Analysis Mode** specified for the **Zone Group**).
+    * Design flow is calculated based on the installed equipment capacity or peak block load and/or peak hot water generation demand for the system (depending on the Flow Analysis Mode specified for the Zone Group).
     * Design flow is affected by the connection method of the hybrid system (series or parallel).
         * For a series-connected hybrid system, the GHEX must accommodate full system flow, regardless of the peak load reduction and associated flow requirements of the boiler/cooling tower.
         * For a parallel-connected hybrid system, the GHEX only needs to accommodate the flow associated with the reduced peak loads when a hybrid system is in use.
 * <span class="term">Y1 Temp. Penalty</span> The temperature change of the soil after the first year of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
-    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET GROUND ENERGY** load as well as loopfield geometry (grid/layout and bore spacing). The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
+    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual NET GROUND ENERGY load as well as loopfield geometry (grid/layout and bore spacing). The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
     * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
 * <span class="term">YN Temp. Penalty</span> The temperature change of the soil after N-years of system operation.
     * This change results from imbalances between the amount of heat added to the ground in cooling and removed from the ground in heating and will reduce GHEX effectiveness over the long-term if unaccounted for.
-    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual **NET GROUND ENERGY** load as well as loopfield geometry (grid/layout and bore spacing).
+    * The calculated temperature change accounts for thermal interference from adjacent bores, which is a function of the annual NET GROUND ENERGY load as well as loopfield geometry (grid/layout and bore spacing).
     * The designer is faced with selecting a layout and separation distance that is reasonable in order to minimize required land area without causing large increases in required bore length (due to temperature penalty).
     * A negative value indicates that the annual ground load imbalance is **<span class="heating">HEATING</span>** dominant.
     * A positive value indicates that the annual ground load imbalance is **<span class="cooling">COOLING</span>** dominant.
-<li class="warning"><h3>WARNING</h3><p>Use of excessive values in the **Year** field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</li>
+<li class="warning"><h3>WARNING</h3><p>Use of excessive values in the Year-N field will result in extremely conservative estimates for the Year-N temperature penalty, thus increasing overall design lengths and system first cost. Keep in mind that this calculation assumes (1) the building load and annual equivalent FLRHs for the Zone Group are accurate without large margin of error and/or safety factor and (2) the building will be used in exactly the same manner every year for N-Years.</li>
 
 * <span class="term">Y1 Length/Bore</span> The depth of each bore required to ensure the system will operate within designer-specified limits during the first year of system operation.
     * This parameter does not account for the long-term effects of ground load imbalances. Outside of the inputs provided on the GHEX design page,
-    * **Y1 Length/Bore** is most sensitive to the peak loads and the minimum/maximum EWTs specified for the **Zone Group**.
-    * **Y1 Length/Bore** will also be a function of the number of bores in the selected layout, calculated to be **(Y1 Total Length) / (Number of Bores)**.
-* <span class="term">YN Length/Bore</span> The depth of each bore required to ensure the system will operate within designer-specified limits during the first **N-years** of system operation (as specified by user).
+    * Y1 Length/Bore is most sensitive to the peak loads and the minimum/maximum EWTs specified for the Zone Group.
+    * Y1 Length/Bore will also be a function of the number of bores in the selected layout, calculated to be (Y1 Total Length) / (Number of Bores).
+* <span class="term">YN Length/Bore</span> The depth of each bore required to ensure the system will operate within designer-specified limits during the first N-years of system operation (as specified by user).
     * This parameter accounts for the long-term effects of ground load imbalances. Outside of the inputs provided on the GHEX design page,
-    * **YN Length/Bore** is most sensitive to the peak loads, the minimum/maximum EWTs specified for the **Zone Group** and annual equivalent FLRHs.
-    * **YN Length/Bore** will also be a function of the number of bores in the selected layout, calculated to be **(YN Total Length) / (Number of Bores)**.
-* <span class="term">Design Length/Bore</span> The greater of the **Y1 Length/Bore** and the **YN Length/Bore** for the dominant mode of operation.
+    * YN Length/Bore is most sensitive to the peak loads, the minimum/maximum EWTs specified for the Zone Group and annual equivalent FLRHs.
+    * YN Length/Bore will also be a function of the number of bores in the selected layout, calculated to be (YN Total Length) / (Number of Bores).
+* <span class="term">Design Length/Bore</span> The greater of the Y1 Length/Bore and the YN Length/Bore for the dominant mode of operation.
     * This is the individual bore depth to specify in the project design documents to ensure that the system will operate within designer-specified limits in both the short- and long-term.
 
 ## Energy Requirements

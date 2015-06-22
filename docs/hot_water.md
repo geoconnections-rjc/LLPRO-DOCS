@@ -9,7 +9,7 @@ Use this page to create a new hot water generation zone within the selected Zone
 * Enter the hot water demand rates for each time block increment.
     * The most critical values will be the maximum hot water generation loads placed in the time block in which they occur.
     * Accuracy is not as critical for the loads in off-peak time blocks as they will simply be used to calculate the system part-load factor.
-    * The recommended entries in the off-peak time blocks will be the **AVERAGE** hot water demand rates in each respective time period.
+    * The recommended entries in the off-peak time blocks will be the AVERAGE hot water demand rates in each respective time period.
  
 * <span class="term">HEATING MODE HOT WATER DEMAND ENTRY</span> Enter hot water loads in the <span class="heating">HEATING COLUMN</span> to account for added peak heating demand and annual ground loads due to concurrent operation of the hot water generation and space conditioning (heating) system.
     * Doing so will increase heating GHEX design lengths for heating dominant applications.
@@ -30,18 +30,18 @@ Use this page to create a new hot water generation zone within the selected Zone
 ## Average Generated Volume
 
 ### <span class="icon_def">![Design Day Loads](/img/day.png "Design Day Loads")</span> Simple Hot Water Consumption Entry
-With this mode selected, the **Detailed Monthly Hot Water Volume** inputs are hidden.
+With this mode selected, the Detailed Monthly Hot Water Volume inputs are hidden.
 
-* <span class="term">Average Monthly Consumption</span> The predicted **AVERAGE** monthly hot water consumption for the zone, which is used to determine the annual energy requirements for the hot water zone as well as its associated heating ground load.
+* <span class="term">Average Monthly Consumption</span> The predicted AVERAGE monthly hot water consumption for the zone, which is used to determine the annual energy requirements for the hot water zone as well as its associated heating ground load.
 * <span class="term">Months per Year</span> The number of months that the hot water generation system will operate. For example, a school typically operates 9 months in a year whereas a hotel operates year round.
 * <span class="term">Standing/Distribution Losses (% of Total)</span> The amount of heat lost from the hot water system through the storage and distribution piping components of the system, expressed as a percentage.
     * According to Chapter 50 - Service Water Heating in the [ASHRAE HVAC Applications Handbook (2011)](https://www.ashrae.org/resources--publications/handbook "ASHRAE Publications"), *"Energy losses from hot-water distribution systems usually amount to at least 10-20% of total hot-water system energy use, and are often as high as 50%; losses of over 90% have been found in some installations."*
     * Proper hot-water distribution system design is extremely important.
 
 ### <span class="icon_def">![Monthly Loads](/img/monthly.png "Monthly Loads")</span> Detailed Hot Water Consumption Entry
-With this mode selected, the **Average Monthly Consumption** and **Months per Year** inputs are hidden.
+With this mode selected, the Average Monthly Consumption and Months per Year inputs are hidden.
 
-* <span class="term">Detailed Hot Water Consumption Entry Mode</span> Enter the predicted **AVERAGE** volume of hot water used for each month of the year. 
+* <span class="term">Detailed Hot Water Consumption Entry Mode</span> Enter the predicted AVERAGE volume of hot water used for each month of the year. 
 * <span class="term">Standing/Distribution Losses (% of Total)</span> The amount of heat lost from the hot water system through the storage and distribution piping components of the system, expressed as a percentage.
     * According to Chapter 50 - Service Water Heating in the [ASHRAE HVAC Applications Handbook (2011)](https://www.ashrae.org/resources--publications/handbook "ASHRAE Publications"), *"Energy losses from hot-water distribution systems usually amount to at least 10-20% of total hot-water system energy use, and are often as high as 50%; losses of over 90% have been found in some installations."*
     * Proper hot-water distribution system design is extremely important.
@@ -59,10 +59,10 @@ With this mode selected, the **Average Monthly Consumption** and **Months per Ye
 With this method, only basic inputs of equipment capacity and efficiency are needed. Equipment selection tables are hidden.
 
 * <span class="term">Connected Flow</span> The nominal flow rate for the specified equipment. In closed-loop applications, flow rates of 2.5-3.0 gpm per ton are typical.
-    * This field will only appear if **Connected** is the chosen **Flow Analysis Mode** for the **Zone Group**.
+    * This field will only appear if Connected is the chosen Flow Analysis Mode for the Zone Group.
 * <span class="term">Capacity</span> The heating capacity of the specified equipment being used for hot water generation for a given set of operating conditions, , which must be large enough to meet the instantaneous load. 
     * Equipment performance is a function of loop EWT, water flow, air flow and entering load side air/water temperatures.
-* <span class="term">COP Avg</span> The average efficiency of the specified equipment in heating mode, defined to be its **Heating Capacity** (Btu/hr) divided by **Electrical Demand** (converted to Btu/hr, 3,412 Btu/hr = 1 kW).
+* <span class="term">COP Avg</span> The average efficiency of the specified equipment in heating mode, defined to be its Heating Capacity (Btu/hr) divided by Electrical Demand (converted to Btu/hr, 3,412 Btu/hr = 1 kW).
     * Typical values for COP will range between 3.0-4.5 under design conditions.
 
 *For detailed discussion on factors that affect heat pump performance, refer to Section 2.3.3 (Chapter 2, pages 16-18) in IGSHPA's [Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide](http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html "Geo-Connections Bookstore")*
@@ -70,7 +70,7 @@ With this method, only basic inputs of equipment capacity and efficiency are nee
 ### <span class="icon_def">![Detailed Equipment Entry](/img/detailed.png "Detailed Equipment Entry")</span> Detailed Equipment Entry
 * With this method, the simple heat pump entry fields are hidden. An unlimited number of different make/models of GSHP units are allowed in a single zone.
 * The basic steps are as follows:
-    * Click to add a **Water-Water** unit to the zone. Note that chillers are also found in the **Water-Water** category.
+    * Click to add a Water-Water unit to the zone. Note that chillers are also found in the Water-Water category.
     * Use the provided filters to find the appropriate model.
     * Once a model has been selected, specify the quantity to add to the zone.
     * Use the provided sliders to adjust GSHP performance based on the desired operating conditions - source flow (gpm), load side water temperatures (ELT, LLT), and load side water flow (gpm).
@@ -89,21 +89,21 @@ The Object Summary is displayed to the left of the main page.
 * Cooling mode calculation results are highlighted in **<span class="cooling">BLUE</span>**.
 * Heating mode calculations results are highlighted in **<span class="heating">YELLOW</span>**.
 * Note that when an input is changed, the calculation results will not display on screen until the page is saved.
-* Individual **Zone** outputs are shown on the top-half of the left-hand output panel. The aggregate **Zone Group** outputs (which include all space conditioning and hot water zone loads) are shown on the bottom-half of the output panel.
+* Individual Zone outputs are shown on the top-half of the left-hand output panel. The aggregate Zone Group outputs (which include all space conditioning and hot water zone loads) are shown on the bottom-half of the output panel.
 
 ## Heat Energy by Timeblock
 
-View the calculated loads (by time block) for the current **Hot Water Zone** according to the hot water generation rates entered.
+View the calculated loads (by time block) for the current Hot Water Zone according to the hot water generation rates entered.
 
-* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating load increase (by time block) due to specified rate of hot water generation for the current **Hot Water Zone**.
-    * This load will effectively increase the total heating load for the **Zone Group** as well as the associated GHEX design lengths. 
-* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling load reduction (by time block) due to specified rate of hot water generation (due to concurrent cooling mode operation) for the current **Hot Water Zone**.
-    * This load will effectively decrease the total cooling load for the **Zone Group** as well as the associated GHEX design lengths. 
+* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating load increase (by time block) due to specified rate of hot water generation for the current Hot Water Zone.
+    * This load will effectively increase the total heating load for the Zone Group as well as the associated GHEX design lengths. 
+* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling load reduction (by time block) due to specified rate of hot water generation (due to concurrent cooling mode operation) for the current Hot Water Zone.
+    * This load will effectively decrease the total cooling load for the Zone Group as well as the associated GHEX design lengths. 
 
 ## HWG Info
 
-* <span class="term">Ground Energy</span> The amount of heat energy extracted from the ground due to hot water system operation for the current **Hot Water Zone**.
-* <span class="term">Water Volume</span> The calculated volume of hot water generated annually for the current **Hot Water Zone**.
+* <span class="term">Ground Energy</span> The amount of heat energy extracted from the ground due to hot water system operation for the current Hot Water Zone.
+* <span class="term">Water Volume</span> The calculated volume of hot water generated annually for the current Hot Water Zone.
 
 ## HWG Capacity
 * <span class="term">Total Capacity</span> The calculated heating capacity for all equipment specified in the active hot water zone.
@@ -114,20 +114,20 @@ View the calculated loads (by time block) for the current **Hot Water Zone** acc
 
 ## Zone Group Design Day
 
-View the aggregate loads for the active **Zone Group**.
+View the aggregate loads for the active Zone Group.
 
-* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating loads (by time block) for all active space conditioning and hot water zones in the **Zone Group**.
-* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling loads (by time block) for all active space conditioning and hot water zones in the **Zone Group**.
-* <span class="term">Full Load Run Hours</span> The weighted average value for FLRHs, which considers all active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">HEATING LOAD BY TIME BLOCK</span> The calculated heating loads (by time block) for all active space conditioning, hot water and hybrid systems in the Zone Group.
+* <span class="term">COOLING LOAD BY TIME BLOCK</span> The calculated cooling loads (by time block) for all active space conditioning, hot water and hybrid systems in the Zone Group.
+* <span class="term">Full Load Run Hours</span> The weighted average value for FLRHs, which considers all active space conditioning, hot water and hybrid systems in the Zone Group.
 
 ## Zone Group Equipment
 
-* <span class="term">Total Capacity</span> The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
-* <span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the **Zone Group** (does not apply to heating).
-* <span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the **Zone Group**.
+* <span class="term">Total Capacity</span> The calculated heating/cooling capacity for all equipment specified in the active space conditioning and hot water zones in the Zone Group.
+* <span class="term">Sensible Capacity</span> The calculated sensible cooling capacity for all equipment specified in the active space conditioning zones in the Zone Group (does not apply to heating).
+* <span class="term">Total Sizing</span> The percentage of peak load that the specified equipment will be capable of covering for the active space conditioning and hot water zones in the Zone Group.
     * A value less than 100% indicates that the equipment is undersized relative to the peak load.
-* <span class="term">Efficiency</span> The calculated cooling EER/heating COP for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
-* <span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the **Zone Group**.
-* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the **Zone Group**. This is only displayed for **Connected** flow analysis mode.
-* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the **Zone Group** . Part load factor (PLF) is used to determine the system design flow rate for **Connected** flow analysis mode.
-* <span class="term">Design Flow</span> The calculated **Zone Group** flow that the active GHEX must accomodate, either based on peak block load (**Peak Block (Primary-Secondary)** or **Peak Block (Unitary)**) or based on connected flow multiplied by the part load factor (**Connected**).
+* <span class="term">Efficiency</span> The calculated cooling EER/heating COP for all equipment specified in the active space conditioning and hot water zones in the Zone Group.
+* <span class="term">Demand</span> The calculated electrical demand for all equipment specified in the active space conditioning and hot water zones in the Zone Group.
+* <span class="term">Connected Flow</span> The combined flow rate of the specified equipment in the Zone Group. This is only displayed for Connected flow analysis mode.
+* <span class="term">Part Load Factor</span> The ratio of peak block load to the installed equipment capacity in the Zone Group . Part load factor (PLF) is used to determine the system design flow rate for Connected flow analysis mode.
+* <span class="term">Design Flow</span> The calculated Zone Group flow that the active GHEX must accomodate, either based on peak block load (Peak Block (Primary-Secondary) or Peak Block (Unitary)) or based on connected flow multiplied by the part load factor (Connected).
