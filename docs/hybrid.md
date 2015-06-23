@@ -12,7 +12,9 @@ Specify the amount of peak load reduction due to boiler/cooling tower addition t
 * <span class="term">Connect Cooling Tower/Boiler in Parallel</span> Select this box if the hybrid system is to be connected in parallel with the GHEX.
 * This will affect the calculated flow requirements for the GHEX. 
     * For a series-connected hybrid system, the GHEX must accommodate full system flow, regardless of the peak load reduction and associated flow requirements of the cooling tower/boiler.
-    * For a parallel-connected hybrid system, the GHEX only needs to accommodate the flow associated with the reduced peak loads when a hybrid system is in use. 
+	* ![GHEX Details](img/hybrid_series.png "Hybrid System Connected in Series")
+    * For a parallel-connected hybrid system, the GHEX only needs to accommodate the flow associated with the reduced peak loads when a hybrid system is in use.
+	* ![GHEX Details](img/hybrid_parallel.png "Hybrid System Connected in Parallel")
 * <span class="term">Percentage of Cooling Peak Block to Cooling Tower/Boiler</span> Specify the percentage of peak load that is to be covered by hybrid system operation.
     * For hybrid systems used to "pre-condition" the GHEX (i.e. - run at night or during off-peak time periods) but will not operate during peak load conditions, the percent reduction should be set to zero.
     * The resulting zone group loads will be clamped according to the maximum peak load reduction that is specified and may not be reduced by the same amount across all time blocks.
