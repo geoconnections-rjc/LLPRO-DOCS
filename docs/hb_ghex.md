@@ -41,7 +41,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
     * The minimum soil surface temperature typically occurs in 30-40 days from the start of the year.
 
 * <span class="term">Figure 5.11. Earth Temperature Data for Selected U.S. Cities</span> provides data for use in the Kusudah-Achenbach calculations:
-    * ![Earth Temperature Data for Selected U.S. Cities](img/Table 5.11.png "Earth Temperature Data for Selected U.S. Cities")
+    * ![Earth Temperature Data for Selected U.S. Cities](img/Table5.11.png "Earth Temperature Data for Selected U.S. Cities")
     
 <div class="resource">
 	<h3>Additional Resource</h3>
