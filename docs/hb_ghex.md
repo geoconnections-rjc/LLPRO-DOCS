@@ -30,7 +30,7 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
     * If a FTC test has not been performed, a good first estimate of formation thermal diffusivity is assuming it to be approximately 70% of the formation thermal conductivity value.
 
 * The temperature of the soil in the top 20 ft. of the earth's surface varies with location, time of year, and depth.  Mean Soil Temperature, Annual Swing, and Offset Day are necessary inputs to predict the soil temperature at a given location, time of year, and length using the Kusudah-Achenbach equation:
-	* Refer to the figure below to see how soil temperature in Chicago, IL varies with depth and time of year (according to the Kusudah-Achenbach model).
+    * Refer to the figure below to see how soil temperature in Chicago, IL varies with depth and time of year (according to the Kusudah-Achenbach model).
 	* ![Soil Temperature vs. Depth & Time of Year in Chicago, IL](img/chicago_il_air_soil_temps.gif "Soil Temperature vs. Depth & Time of Year in Chicago, IL")
 
 * <span class="term">Mean Soil Temperature</span> The mean earth temperature in top 10 feet of soil at a given location.
@@ -40,6 +40,9 @@ At the top of the GHEX page are two tabs allowing you to navigate between the GH
 * <span class="term">Offset Day</span> The number of days after January 1 to the minimum earth surface temperature.
     * The minimum soil surface temperature typically occurs in 30-40 days from the start of the year.
 
+* <span class="term">Figure 5.11. Earth Temperature Data for Selected U.S. Cities</span> provides data for use in the Kusudah-Achenbach calculations:
+    * ![Earth Temperature Data for Selected U.S. Cities](img/Table 5.11.png "Earth Temperature Data for Selected U.S. Cities")
+    
 <div class="resource">
 	<h3>Additional Resource</h3>
 	<p>For more information on soil properties (including reference tables), refer to Section 5.3.2.1 (Chapter 5, pages 59-62) in IGSHPA's <a href="http://www.geoconnectionsinc.com/bookstore/IGSHPA_rlc_manual.html" target="_blank">Ground Source Heat Pump Residential & Light Commercial Design and Installation Guide</a></p>
