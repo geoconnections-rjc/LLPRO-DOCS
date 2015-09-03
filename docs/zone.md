@@ -36,8 +36,8 @@ Zone load entry will depend on the input method chosen:
 * <span class="term">Equivalent Full Load Run Hours</span> The number of hours the zone would have to be under peak heating/cooling load conditions for the system to add/remove the equivalent amount of heat energy to meet its annual heating/cooling requirements (Peak Load (Btu/hr) x EFLH (hr) = Energy Added/Removed (Btu)).
     * This input is used to determine annual ground loads and can be used as an alternative to a detailed hour-by-hour building analysis.
 
-
 *For more information on EFLH values for various locations, building types and occupancy patterns, refer to Table 8 in Chapter 34, page 18 in the [ASHRAE HVAC Applications Handbook (2011)](https://www.ashrae.org/resources--publications/handbook "ASHRAE Publications").*
+    * [Click here](examples/Equivalent_Full_Load_Cooling_and_Heating_Hours.pdf "EFLH Table") to download a copy of this table (.pdf).
 
 ### <span class="icon_def">![Monthly Loads](/img/monthly.png "Monthly Loads")</span> Monthly Load Entry
 * Monthly load data is an intermediate data set to perform GHEX design length calculations.
