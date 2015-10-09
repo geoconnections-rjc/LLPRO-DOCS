@@ -138,7 +138,8 @@ The Object Summary is displayed to the left of the main page.
 
 ## Graphs
 * Click the appropriate link to view the graph. Graphs will not be available until the ghex has been saved.
-    * <span class="term">Bore Length vs. Grout TC</span> View the calculated design lengths for the current GHEX layout at various thermal grout conductivity values that are readily available from most thermal grout manufacturers.        
+    * <span class="term">Bore Length vs. Grout TC</span> View the calculated design lengths for the current GHEX layout at various thermal grout conductivity values that are readily available from most thermal grout manufacturers.
+	* <span class="term">Bore Length vs. Spacing</span> View the effect of average bore spacing on calculated design lengths for the current GHEX layout. This graph will not be available if your design length is based on year 1 because spacing is only a contributing factor to design lengths if the year N length is greater than year 1. 
     * <span class = "term">EWT vs. Time</span> View the predicted entering water temperatures for the system over the specified time period (N-years).
         * The graph only will display annual minimum and maximum values for EWT if design day loads are used on any zone or hot water system within the active zone group.
         * The graph will display monthly average values as well as the annual minimum and maximum values for EWT if monthly or hourly loads are saved in **every zone** within the active zone group.
