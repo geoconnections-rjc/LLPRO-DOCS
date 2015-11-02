@@ -87,6 +87,9 @@ Zone load entry will depend on the input method chosen:
     * The only method of adding hourly load data is to import it.
     * A properly formatted file would be saved in .CSV format and have 8760 lines of data in two columns (first column = <span class="cooling">COOLING LOADS</span>, second column = <span class="heating">HEATING LOADS</span>).
 
+## Space Sensible Heat Factor (SHF)
+The Space Sensible Heat Factor (SHF) is the portion of the total cooling load that can be attributed to sensible cooling load, defined to be the sensible cooling load divided by the total cooling load and expressed as a decimal.
+
 ## Equipment Selection
 
 ###<span class="icon_def">![Simple Equipment Entry](/img/simple.png "Simple Equipment Entry")</span> Simple Equipment Entry
