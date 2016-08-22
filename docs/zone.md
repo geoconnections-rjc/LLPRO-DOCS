@@ -17,7 +17,7 @@ Zone load entry will depend on the input method chosen:
         * Manual Entry Only
     * <span class="icon_def">![Monthly Loads](/img/monthly.png "Monthly Loads")</span> **Monthly Load Entry**
         * Import or Manual Entry
-        * For imported files, supported filetypes from Trane TRACE 500 are ".gl" and ".gt". The files may also be saved in .txt or .csv format. 
+        * For imported files, supported filetypes from Trane TRACE 700 are ".gl" and ".gt". The files may also be saved in .txt or .csv format. 
     * <span class="icon_def">![Hourly Loads](/img/hourly.png "Hourly Loads")</span> **Hourly Load Entry**
         * Import Only (.csv)
 
